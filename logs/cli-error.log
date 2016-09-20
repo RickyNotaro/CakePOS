@@ -1,0 +1,88 @@
+2016-09-20 18:39:07 Error: [Cake\Database\Exception] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*' at line 1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', '*', Array, Object(Cake\Database\Schema\Table))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('*', Array)
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\ORM\Table.php(440): Cake\Database\Schema\CachedCollection->describe('*')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\ORM\Table.php(518): Cake\ORM\Table->schema()
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), '*', '*')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('*')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Bake\Shell\Task\ModelTask->main('*')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(52): Bake\Shell\BakeShell->Bake\Shell\{closure}('*', 0)
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\BakeShell.php(260): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('*')
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\Shell.php(452): call_user_func_array(Array, Array)
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2016-09-20 18:39:18 Error: [Cake\Database\Exception] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*' at line 1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', '*', Array, Object(Cake\Database\Schema\Table))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('*', Array)
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\ORM\Table.php(440): Cake\Database\Schema\CachedCollection->describe('*')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\ORM\Table.php(518): Cake\ORM\Table->schema()
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), '*', '*')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('*')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Bake\Shell\Task\ModelTask->main('*')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(52): Bake\Shell\BakeShell->Bake\Shell\{closure}('*', 0)
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\BakeShell.php(260): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('*')
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\Shell.php(452): call_user_func_array(Array, Array)
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2016-09-20 18:41:57 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'posdb.sales' doesn't exist
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'sales', Array, Object(Cake\Database\Schema\Table))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('sales', Array)
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\ORM\Table.php(440): Cake\Database\Schema\CachedCollection->describe('sales')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\ORM\Table.php(518): Cake\ORM\Table->schema()
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'sales', 'Sales')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Sales')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Sales')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(52): Bake\Shell\BakeShell->Bake\Shell\{closure}('Sales', 0)
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\BakeShell.php(260): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('sales', 'payments')
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\Shell.php(452): call_user_func_array(Array, Array)
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2016-09-20 18:42:05 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'posdb.sales_payments' doesn't exist
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'sales_payments', Array, Object(Cake\Database\Schema\Table))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('sales_payments', Array)
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\ORM\Table.php(440): Cake\Database\Schema\CachedCollection->describe('sales_payments')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\ORM\Table.php(518): Cake\ORM\Table->schema()
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'sales_payments', 'SalesPayments')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('SalesPayments')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Bake\Shell\Task\ModelTask->main('SalesPayments')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(52): Bake\Shell\BakeShell->Bake\Shell\{closure}('SalesPayments', 0)
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\bake\src\Shell\BakeShell.php(260): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('sales_payments')
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\Shell.php(452): call_user_func_array(Array, Array)
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
