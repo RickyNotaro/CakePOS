@@ -13,21 +13,45 @@
     <h3><?= h($staff->id) ?></h3>
     <table class="vertical-table">
         <tr>
-            <th scope="row"><?= __('Name') ?></th>
-            <td><?= h($staff->name) ?></td>
+            <th scope="row"><?= __('Username') ?></th>
+            <td><?= h($staff->username) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Email') ?></th>
+            <td><?= h($staff->email) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Password') ?></th>
-            <td><?= h($staff->password) ?></td>
+            <td>••••••••••••••••</td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('First Name') ?></th>
+            <td><?= h($staff->first_name) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Last Name') ?></th>
+            <td><?= h($staff->last_name) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Role') ?></th>
+            <td><?= h($staff->role) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($staff->id) ?></td>
         </tr>
+        <tr>
+            <th scope="row"><?= __('Created') ?></th>
+            <td><?= h($staff->created) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Modified') ?></th>
+            <td><?= h($staff->modified) ?></td>
+        </tr>
     </table>
     <div class="row">
-        <h4><?= __('Staff Details') ?></h4>
-        <?= $this->Text->autoParagraph(h($staff->staff_details)); ?>
+        <h4><?= __('Notes') ?></h4>
+        <?= $this->Text->autoParagraph(h($staff->notes)); ?>
     </div>
     <div class="related">
         <h4><?= __('Related Sales Transactions') ?></h4>

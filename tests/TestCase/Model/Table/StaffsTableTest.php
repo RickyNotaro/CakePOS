@@ -12,10 +12,8 @@ class StaffsTableTest extends TestCase
 {
 
     /**
-     * Test subject
-     *
-     * @var \App\Model\Table\StaffsTable
-     */
+     * Test subject     *
+     * @var \App\Model\Table\StaffsTable     */
     public $Staffs;
 
     /**
@@ -28,6 +26,7 @@ class StaffsTableTest extends TestCase
         'app.sales_transactions',
         'app.customers',
         'app.sales_outlets',
+        'app.payments',
         'app.products_transactions',
         'app.products'
     ];
@@ -40,9 +39,7 @@ class StaffsTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Staffs') ? [] : ['className' => 'App\Model\Table\StaffsTable'];
-        $this->Staffs = TableRegistry::get('Staffs', $config);
-    }
+        $config = TableRegistry::exists('Staffs') ? [] : ['className' => 'App\Model\Table\StaffsTable'];        $this->Staffs = TableRegistry::get('Staffs', $config);    }
 
     /**
      * tearDown method
@@ -72,6 +69,16 @@ class StaffsTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test buildRules method
+     *
+     * @return void
+     */
+    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

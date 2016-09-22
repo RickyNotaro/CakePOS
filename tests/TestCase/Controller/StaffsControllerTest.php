@@ -20,6 +20,7 @@ class StaffsControllerTest extends IntegrationTestCase
         'app.sales_transactions',
         'app.customers',
         'app.sales_outlets',
+        'app.payments',
         'app.products_transactions',
         'app.products'
     ];

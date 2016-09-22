@@ -57,7 +57,7 @@ class SalesTransactionsFixture extends TestFixture
             'customer_id' => 1,
             'sales_outlet_id' => 1,
             'staff_id' => 1,
-            'transaction_date_time' => '2016-09-20 18:40:42',
+            'transaction_date_time' => '2016-09-21 15:23:53',
             'transaction_wholesale_price' => 1.5,
             'transaction_retail_price' => 1.5,
             'other_details' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.'

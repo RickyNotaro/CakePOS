@@ -43,7 +43,31 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+       $this->loadComponent('Auth', [
+                    'authenticate' => [
+                        'Form' => [
+                            'fields' => [
+                                'username' => 'username',
+                                'password' => 'password'
+                            ],'userModel' => 'Staffs'
+                        ]
+                    ],
+                    'loginAction' => [
+                        'controller' => 'Staffs',
+                        'action' => 'login'
+                    ]
+                ]);
+
+        // Autorise l'action display pour que notre controller de pages
+        // continue de fonctionner.
+        $this->Auth->allow(['display']);
     }
+
+    public function beforeFilter(Event $event)
+   {
+       $this->Auth->allow([]);
+   }
+
 
     /**
      * Before render callback.
