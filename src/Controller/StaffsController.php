@@ -6,8 +6,7 @@ use App\Controller\AppController;
 /**
  * Staffs Controller
  *
- * @property \App\Model\Table\StaffsTable $Staffs
- */
+ * @property \App\Model\Table\StaffsTable $Staffs */
 class StaffsController extends AppController
 {
 
@@ -108,4 +107,22 @@ class StaffsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function login()
+{
+if ($this->request->is('post')) {
+    $staff = $this->Auth->identify();
+    if ($staff) {
+        $this->Auth->setUser($staff);
+        return $this->redirect($this->Auth->redirectUrl());
+    }
+    $this->Flash->error('Your username or password in invalid.');
+    }
+}
+
+public function logout()
+{
+    $this->Flash->success('You are now disconnected.');
+    return $this->redirect($this->Auth->logout());
+}
 }

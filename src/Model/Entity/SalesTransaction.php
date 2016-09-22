@@ -18,9 +18,9 @@ use Cake\ORM\Entity;
  * @property \App\Model\Entity\Customer $customer
  * @property \App\Model\Entity\SalesOutlet $sales_outlet
  * @property \App\Model\Entity\Staff $staff
+ * @property \App\Model\Entity\Payment[] $payments
  * @property \App\Model\Entity\ProductsTransaction[] $products_transactions
- */
-class SalesTransaction extends Entity
+ */class SalesTransaction extends Entity
 {
 
     /**

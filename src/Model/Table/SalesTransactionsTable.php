@@ -12,6 +12,7 @@ use Cake\Validation\Validator;
  * @property \Cake\ORM\Association\BelongsTo $Customers
  * @property \Cake\ORM\Association\BelongsTo $SalesOutlets
  * @property \Cake\ORM\Association\BelongsTo $Staffs
+ * @property \Cake\ORM\Association\HasMany $Payments
  * @property \Cake\ORM\Association\HasMany $ProductsTransactions
  *
  * @method \App\Model\Entity\SalesTransaction get($primaryKey, $options = [])
@@ -21,8 +22,7 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\SalesTransaction patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \App\Model\Entity\SalesTransaction[] patchEntities($entities, array $data, array $options = [])
  * @method \App\Model\Entity\SalesTransaction findOrCreate($search, callable $callback = null)
- */
-class SalesTransactionsTable extends Table
+ */class SalesTransactionsTable extends Table
 {
 
     /**
@@ -51,6 +51,9 @@ class SalesTransactionsTable extends Table
             'foreignKey' => 'staff_id',
             'joinType' => 'INNER'
         ]);
+        $this->hasMany('Payments', [
+            'foreignKey' => 'sales_transaction_id'
+        ]);
         $this->hasMany('ProductsTransactions', [
             'foreignKey' => 'sales_transaction_id'
         ]);
@@ -65,28 +68,15 @@ class SalesTransactionsTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id')
-            ->allowEmpty('id', 'create');
-
+            ->integer('id')            ->allowEmpty('id', 'create');
         $validator
-            ->dateTime('transaction_date_time')
-            ->requirePresence('transaction_date_time', 'create')
-            ->notEmpty('transaction_date_time');
-
+            ->dateTime('transaction_date_time')            ->requirePresence('transaction_date_time', 'create')            ->notEmpty('transaction_date_time');
         $validator
-            ->decimal('transaction_wholesale_price')
-            ->requirePresence('transaction_wholesale_price', 'create')
-            ->notEmpty('transaction_wholesale_price');
-
+            ->decimal('transaction_wholesale_price')            ->requirePresence('transaction_wholesale_price', 'create')            ->notEmpty('transaction_wholesale_price');
         $validator
-            ->decimal('transaction_retail_price')
-            ->requirePresence('transaction_retail_price', 'create')
-            ->notEmpty('transaction_retail_price');
-
+            ->decimal('transaction_retail_price')            ->requirePresence('transaction_retail_price', 'create')            ->notEmpty('transaction_retail_price');
         $validator
-            ->requirePresence('other_details', 'create')
-            ->notEmpty('other_details');
-
+            ->requirePresence('other_details', 'create')            ->notEmpty('other_details');
         return $validator;
     }
 

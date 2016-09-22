@@ -6,8 +6,7 @@ use App\Controller\AppController;
 /**
  * SalesTransactions Controller
  *
- * @property \App\Model\Table\SalesTransactionsTable $SalesTransactions
- */
+ * @property \App\Model\Table\SalesTransactionsTable $SalesTransactions */
 class SalesTransactionsController extends AppController
 {
 
@@ -37,7 +36,7 @@ class SalesTransactionsController extends AppController
     public function view($id = null)
     {
         $salesTransaction = $this->SalesTransactions->get($id, [
-            'contain' => ['Customers', 'SalesOutlets', 'Staffs', 'ProductsTransactions']
+            'contain' => ['Customers', 'SalesOutlets', 'Staffs', 'Payments', 'ProductsTransactions']
         ]);
 
         $this->set('salesTransaction', $salesTransaction);

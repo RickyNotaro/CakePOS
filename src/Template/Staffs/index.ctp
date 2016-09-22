@@ -12,8 +12,14 @@
         <thead>
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('name') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('username') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('password') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('email') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('first_name') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('last_name') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('role') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -21,8 +27,14 @@
             <?php foreach ($staffs as $staff): ?>
             <tr>
                 <td><?= $this->Number->format($staff->id) ?></td>
-                <td><?= h($staff->name) ?></td>
-                <td><?= h($staff->password) ?></td>
+                <td><?= h($staff->username) ?></td>
+                <td>••••••••••••••••</td>
+                <td><?= h($staff->email) ?></td>
+                <td><?= h($staff->first_name) ?></td>
+                <td><?= h($staff->last_name) ?></td>
+                <td><?= h($staff->role) ?></td>
+                <td><?= h($staff->created) ?></td>
+                <td><?= h($staff->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $staff->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $staff->id]) ?>

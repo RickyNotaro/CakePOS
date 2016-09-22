@@ -12,10 +12,8 @@ class SalesTransactionsTableTest extends TestCase
 {
 
     /**
-     * Test subject
-     *
-     * @var \App\Model\Table\SalesTransactionsTable
-     */
+     * Test subject     *
+     * @var \App\Model\Table\SalesTransactionsTable     */
     public $SalesTransactions;
 
     /**
@@ -28,6 +26,7 @@ class SalesTransactionsTableTest extends TestCase
         'app.customers',
         'app.sales_outlets',
         'app.staffs',
+        'app.payments',
         'app.products_transactions',
         'app.products'
     ];
@@ -40,9 +39,7 @@ class SalesTransactionsTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('SalesTransactions') ? [] : ['className' => 'App\Model\Table\SalesTransactionsTable'];
-        $this->SalesTransactions = TableRegistry::get('SalesTransactions', $config);
-    }
+        $config = TableRegistry::exists('SalesTransactions') ? [] : ['className' => 'App\Model\Table\SalesTransactionsTable'];        $this->SalesTransactions = TableRegistry::get('SalesTransactions', $config);    }
 
     /**
      * tearDown method

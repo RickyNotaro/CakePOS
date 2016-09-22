@@ -11,6 +11,8 @@
         <li><?= $this->Html->link(__('New Sales Outlet'), ['controller' => 'SalesOutlets', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Staffs'), ['controller' => 'Staffs', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Staff'), ['controller' => 'Staffs', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Payments'), ['controller' => 'Payments', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Payment'), ['controller' => 'Payments', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Products Transactions'), ['controller' => 'ProductsTransactions', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Products Transaction'), ['controller' => 'ProductsTransactions', 'action' => 'add']) ?> </li>
     </ul>
@@ -50,6 +52,35 @@
     <div class="row">
         <h4><?= __('Other Details') ?></h4>
         <?= $this->Text->autoParagraph(h($salesTransaction->other_details)); ?>
+    </div>
+    <div class="related">
+        <h4><?= __('Related Payments') ?></h4>
+        <?php if (!empty($salesTransaction->payments)): ?>
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <th scope="col"><?= __('Id') ?></th>
+                <th scope="col"><?= __('Payment Method Code') ?></th>
+                <th scope="col"><?= __('Sales Transaction Id') ?></th>
+                <th scope="col"><?= __('Payment Amount') ?></th>
+                <th scope="col"><?= __('Other Details') ?></th>
+                <th scope="col" class="actions"><?= __('Actions') ?></th>
+            </tr>
+            <?php foreach ($salesTransaction->payments as $payments): ?>
+            <tr>
+                <td><?= h($payments->id) ?></td>
+                <td><?= h($payments->payment_method_code) ?></td>
+                <td><?= h($payments->sales_transaction_id) ?></td>
+                <td><?= h($payments->payment_amount) ?></td>
+                <td><?= h($payments->other_details) ?></td>
+                <td class="actions">
+                    <?= $this->Html->link(__('View'), ['controller' => 'Payments', 'action' => 'view', $payments->id]) ?>
+                    <?= $this->Html->link(__('Edit'), ['controller' => 'Payments', 'action' => 'edit', $payments->id]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Payments', 'action' => 'delete', $payments->id], ['confirm' => __('Are you sure you want to delete # {0}?', $payments->id)]) ?>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </table>
+        <?php endif; ?>
     </div>
     <div class="related">
         <h4><?= __('Related Products Transactions') ?></h4>

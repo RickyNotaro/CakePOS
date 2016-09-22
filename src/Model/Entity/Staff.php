@@ -2,18 +2,24 @@
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
+use Cake\Auth\DefaultPasswordHasher;
 
 /**
  * Staff Entity
  *
  * @property int $id
- * @property string $name
+ * @property string $username
+ * @property string $email
  * @property string $password
- * @property string $staff_details
+ * @property string $first_name
+ * @property string $last_name
+ * @property string $role
+ * @property string $notes
+ * @property \Cake\I18n\Time $created
+ * @property \Cake\I18n\Time $modified
  *
  * @property \App\Model\Entity\SalesTransaction[] $sales_transactions
- */
-class Staff extends Entity
+ */class Staff extends Entity
 {
 
     /**
@@ -29,6 +35,13 @@ class Staff extends Entity
         '*' => true,
         'id' => false
     ];
+
+    protected function _setPassword($value)
+        {
+            $hasher = new DefaultPasswordHasher();
+            return $hasher->hash($value);
+        }
+
 
     /**
      * Fields that are excluded from JSON versions of the entity.

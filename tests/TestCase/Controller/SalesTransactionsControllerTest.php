@@ -20,6 +20,7 @@ class SalesTransactionsControllerTest extends IntegrationTestCase
         'app.customers',
         'app.sales_outlets',
         'app.staffs',
+        'app.payments',
         'app.products_transactions',
         'app.products'
     ];
