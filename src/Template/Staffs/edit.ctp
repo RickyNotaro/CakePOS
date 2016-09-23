@@ -22,7 +22,7 @@
             echo $this->Form->input('password');
             echo $this->Form->input('first_name');
             echo $this->Form->input('last_name');
-            echo $this->Form->input('role');
+            echo $this->Form->input('role', ['options' => ['gestionnaire' => 'Gestionnaire', 'employe' => 'Employe']]);
             echo $this->Form->input('notes');
         ?>
     </fieldset>

@@ -44,6 +44,7 @@ class AppController extends Controller
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
        $this->loadComponent('Auth', [
+                    'authorize' => ['Controller'], // Ajout de cette ligne
                     'authenticate' => [
                         'Form' => [
                             'fields' => [
@@ -61,13 +62,19 @@ class AppController extends Controller
         // Autorise l'action display pour que notre controller de pages
         // continue de fonctionner.
         $this->Auth->allow(['display']);
+        $this->Auth->allow(['view', 'index']);
     }
 
-    public function beforeFilter(Event $event)
-   {
-       $this->Auth->allow([]);
-   }
 
+   public function isAuthorized($user)
+{
+    // Admin peuvent accéder à chaque action
+    if (isset($user['role']) && $user['role'] === 'gestionnaire') {
+        return true;
+    }
+    // Par défaut refuser
+    return false;
+}
 
     /**
      * Before render callback.
