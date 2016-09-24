@@ -40,6 +40,11 @@ class PaymentsTable extends Table
             'foreignKey' => 'sales_transaction_id',
             'joinType' => 'INNER'
         ]);
+
+        $this->belongsTo('RefPaymentMethods', [
+            'foreignKey' => 'payment_method_code',
+            'joinType' => 'INNER'
+        ]);
     }
 
     /**

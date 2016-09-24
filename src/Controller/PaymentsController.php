@@ -19,7 +19,7 @@ class PaymentsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['SalesTransactions']
+            'contain' => ['SalesTransactions', 'RefPaymentMethods']
         ];
         $payments = $this->paginate($this->Payments);
 
@@ -63,7 +63,8 @@ class PaymentsController extends AppController
             }
         }
         $salesTransactions = $this->Payments->SalesTransactions->find('list', ['limit' => 200]);
-        $this->set(compact('payment', 'salesTransactions'));
+        $RefPaymentMethods = $this->Payments->RefPaymentMethods->find('list', ['limit' => 200]);
+        $this->set(compact('payment', 'salesTransactions', 'RefPaymentMethods'));
         $this->set('_serialize', ['payment']);
     }
 
