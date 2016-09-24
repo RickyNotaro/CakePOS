@@ -2,6 +2,9 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Error\Debugger;
+use Cake\Core\App;
+
 
 /**
  * Staffs Controller
@@ -13,9 +16,30 @@ class StaffsController extends AppController
   public function initialize()
   {
       parent::initialize();
-      $this->Auth->allow(['display']);
-      $this->Auth->allow(['view', 'index', 'logout']);
+    $this->Auth->allow(['display', 'logout']);
   }
+
+  public function isAuthorized($user)
+{
+    $action = $this->request->params['action'];
+    // Add et index sont toujours permises.
+    if (in_array($action, ['index'])) {
+        return true;
+    }
+
+    // Vérifie que le bookmark appartient à l'utilisateur courant.
+    $id = $this->request->params['pass'][0];
+    $staff = $this->Staffs->get($id);
+    $currentUserId = $this->Auth->user('id');
+
+
+    if ($currentUserId == $staff['id']) {
+        return true;
+    }
+
+
+    return parent::isAuthorized($user);
+}
 
     /**
      * Index method

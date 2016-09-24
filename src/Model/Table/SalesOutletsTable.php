@@ -33,7 +33,7 @@ class SalesOutletsTable extends Table
         parent::initialize($config);
 
         $this->table('sales_outlets');
-        $this->displayField('id');
+        $this->displayField('sales_outlet_detail');
         $this->primaryKey('id');
 
         $this->hasMany('SalesTransactions', [
