@@ -56,6 +56,7 @@ $loguser = $this->request->session()->read('Auth.User');
         </div>
     </nav>
     <?= $this->Flash->render() ?>
+    <?= $this->Flash->render('auth') ?>
     <div class="container clearfix">
         <?= $this->fetch('content') ?>
     </div>

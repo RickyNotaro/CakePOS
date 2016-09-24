@@ -56,7 +56,8 @@ class AppController extends Controller
                     'loginAction' => [
                         'controller' => 'Staffs',
                         'action' => 'login'
-                    ]
+                    ],
+                     'unauthorizedRedirect' => $this->referer() 
                 ]);
 
         // Autorise l'action display pour que notre controller de pages

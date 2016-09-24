@@ -1313,3 +1313,938 @@ Stack Trace:
 #18 {main}
 
 
+2016-09-24 00:50:20 Error: [Error] Call to undefined method App\Model\Entity\SalesTransaction::h()
+Request URL: /CakePOS/customers/view/1
+Referer URL: http://localhost/CakePOS/customers
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\View\View.php(1008): include()
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\View\View.php(967): Cake\View\View->_evaluate('C:\\Program File...', Array)
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\View\View.php(591): Cake\View\View->_render('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Controller.php(617): Cake\View\View->render(NULL, NULL)
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CustomersController))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2016-09-24 00:50:21 Error: [Error] Call to undefined method App\Model\Entity\SalesTransaction::h()
+Request URL: /CakePOS/customers/view/1
+Referer URL: http://localhost/CakePOS/customers
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\View\View.php(1008): include()
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\View\View.php(967): Cake\View\View->_evaluate('C:\\Program File...', Array)
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\View\View.php(591): Cake\View\View->_render('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Controller.php(617): Cake\View\View->render(NULL, NULL)
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CustomersController))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2016-09-24 00:55:04 Error: [Error] Call to undefined method App\Model\Entity\SalesTransaction::h()
+Request URL: /CakePOS/customers/view/1
+Referer URL: http://localhost/CakePOS/customers
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\View\View.php(1008): include()
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\View\View.php(967): Cake\View\View->_evaluate('C:\\Program File...', Array)
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\View\View.php(591): Cake\View\View->_render('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Controller.php(617): Cake\View\View->render(NULL, NULL)
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CustomersController))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2016-09-24 00:55:05 Error: [Error] Call to undefined method App\Model\Entity\SalesTransaction::h()
+Request URL: /CakePOS/customers/view/1
+Referer URL: http://localhost/CakePOS/customers
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\View\View.php(1008): include()
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\View\View.php(967): Cake\View\View->_evaluate('C:\\Program File...', Array)
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\View\View.php(591): Cake\View\View->_render('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Controller.php(617): Cake\View\View->render(NULL, NULL)
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(128): Cake\Controller\Controller->render()
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CustomersController))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2016-09-24 18:10:27 Error: [ParseError] syntax error, unexpected ''unauthorizedRedirect'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\src\Controller\StaffsController.php(10): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#22 {main}
+
+
+2016-09-24 18:14:26 Error: [ParseError] syntax error, unexpected ''unauthorizedRedirect'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /CakePOS/staffs
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\src\Controller\StaffsController.php(10): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#22 {main}
+
+
+2016-09-24 18:20:04 Error: [ParseError] syntax error, unexpected ''unauthorizedRedirect'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /CakePOS/staffs
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\src\Controller\StaffsController.php(10): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#22 {main}
+
+
+2016-09-24 18:20:06 Error: [ParseError] syntax error, unexpected ''unauthorizedRedirect'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /CakePOS/staffs
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\src\Controller\StaffsController.php(10): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#22 {main}
+
+
+2016-09-24 18:20:10 Error: [ParseError] syntax error, unexpected ''unauthorizedRedirect'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /CakePOS/staffs
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\src\Controller\StaffsController.php(10): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#22 {main}
+
+
+2016-09-24 18:20:11 Error: [ParseError] syntax error, unexpected ''unauthorizedRedirect'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /CakePOS/staffs
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\src\Controller\StaffsController.php(10): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#22 {main}
+
+
+2016-09-24 18:20:13 Error: [ParseError] syntax error, unexpected ''unauthorizedRedirect'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /CakePOS/staffs
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\src\Controller\StaffsController.php(10): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#22 {main}
+
+
+2016-09-24 18:20:25 Error: [ParseError] syntax error, unexpected ''unauthorizedRedirect'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /CakePOS/staffs
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\src\Controller\StaffsController.php(10): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#22 {main}
+
+
+2016-09-24 18:20:26 Error: [ParseError] syntax error, unexpected ''unauthorizedRedirect'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /CakePOS/staffs
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\src\Controller\StaffsController.php(10): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#22 {main}
+
+
+2016-09-24 18:20:27 Error: [ParseError] syntax error, unexpected ''unauthorizedRedirect'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /CakePOS/staffs
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\src\Controller\StaffsController.php(10): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#22 {main}
+
+
+2016-09-24 18:20:28 Error: [ParseError] syntax error, unexpected ''unauthorizedRedirect'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /CakePOS/staffs
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\src\Controller\StaffsController.php(10): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#22 {main}
+
+
+2016-09-24 18:20:38 Error: [ParseError] syntax error, unexpected ''unauthorizedRedirect'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /CakePOS/staffs
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\src\Controller\StaffsController.php(10): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#22 {main}
+
+
+2016-09-24 18:20:40 Error: [ParseError] syntax error, unexpected ''unauthorizedRedirect'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /CakePOS/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\src\Controller\StaffsController.php(10): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#22 {main}
+
+
+2016-09-24 18:30:54 Warning: Headers already sent in C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Debugger.php:753
+2016-09-24 18:30:54 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /CakePOS/staffs/edit/6
+Referer URL: http://localhost/CakePOS/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2016-09-24 18:31:04 Warning: Headers already sent in C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Debugger.php:753
+2016-09-24 18:31:04 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /CakePOS/staffs/edit/6
+Referer URL: http://localhost/CakePOS/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2016-09-24 18:31:11 Warning: Headers already sent in C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Debugger.php:753
+2016-09-24 18:31:11 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /CakePOS/staffs/edit/6
+Referer URL: http://localhost/CakePOS/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2016-09-24 18:31:18 Warning: Headers already sent in C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Debugger.php:753
+2016-09-24 18:31:18 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /CakePOS/staffs/edit/6
+Referer URL: http://localhost/CakePOS/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2016-09-24 18:54:57 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /CakePOS/staffs/edit/6
+Referer URL: http://localhost/CakePOS/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2016-09-24 18:54:58 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /CakePOS/staffs/edit/6
+Referer URL: http://localhost/CakePOS/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2016-09-24 18:58:56 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /CakePOS/
+Referer URL: http://localhost/CakePOS/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2016-09-24 18:59:36 Error: [Error] Call to a member function get() on boolean
+Request URL: /CakePOS/staffs/edit/5
+Referer URL: http://localhost/CakePOS/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\StaffsController->isAuthorized(Array)
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(501): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Network\Request))
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(306): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(258): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(422): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Controller.php(501): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(117): Cake\Controller\Controller->startupProcess()
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\StaffsController))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#21 {main}
+
+
+2016-09-24 19:09:23 Error: [Error] Class 'App\Controller\CakeLog' not found
+Request URL: /CakePOS/Staffs
+Referer URL: http://localhost/CakePOS/Staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Controller.php(262): App\Controller\StaffsController->initialize()
+#1 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Staffs')
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(79): ReflectionClass->newInstance(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Staffs')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2016-09-24 19:09:25 Error: [Error] Class 'App\Controller\CakeLog' not found
+Request URL: /CakePOS/Staffs
+Referer URL: http://localhost/CakePOS/Staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Controller.php(262): App\Controller\StaffsController->initialize()
+#1 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Staffs')
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(79): ReflectionClass->newInstance(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Staffs')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2016-09-24 19:10:18 Error: [Error] Class 'App\Controller\Debugger' not found
+Request URL: /CakePOS/staffs/edit/5
+Referer URL: http://localhost/CakePOS/Staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\StaffsController->isAuthorized(Array)
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(501): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Network\Request))
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(306): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(258): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(422): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Controller.php(501): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(117): Cake\Controller\Controller->startupProcess()
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\StaffsController))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#21 {main}
+
+
+2016-09-24 19:11:21 Error: [Error] Class 'App\Controller\CakeLog' not found
+Request URL: /CakePOS/staffs/edit/5
+Referer URL: http://localhost/CakePOS/staffs/view/5
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\StaffsController->isAuthorized(Array)
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(501): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Network\Request))
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(306): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(258): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(422): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Controller.php(501): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(117): Cake\Controller\Controller->startupProcess()
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\StaffsController))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#21 {main}
+
+
+2016-09-24 19:11:57 Error: [Error] Class 'App\Controller\CakeLog' not found
+Request URL: /CakePOS/staffs/edit/5
+Referer URL: http://localhost/CakePOS/staffs/view/5
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\StaffsController->isAuthorized(Array)
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(501): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Network\Request))
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(306): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(258): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(422): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Controller.php(501): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(117): Cake\Controller\Controller->startupProcess()
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\StaffsController))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#21 {main}
+
+
+2016-09-24 19:11:58 Error: [Error] Class 'App\Controller\CakeLog' not found
+Request URL: /CakePOS/staffs/edit/5
+Referer URL: http://localhost/CakePOS/staffs/view/5
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\StaffsController->isAuthorized(Array)
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(501): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Network\Request))
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(306): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(258): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(422): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Controller.php(501): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(117): Cake\Controller\Controller->startupProcess()
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\StaffsController))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#21 {main}
+
+
+2016-09-24 19:11:59 Error: [Error] Class 'App\Controller\CakeLog' not found
+Request URL: /CakePOS/staffs/edit/5
+Referer URL: http://localhost/CakePOS/staffs/view/5
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\StaffsController->isAuthorized(Array)
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(501): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Network\Request))
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(306): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(258): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(422): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Controller.php(501): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(117): Cake\Controller\Controller->startupProcess()
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\StaffsController))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#21 {main}
+
+
+2016-09-24 19:12:25 Error: [Error] Class 'App\Controller\CakeLog' not found
+Request URL: /CakePOS/staffs/edit/5
+Referer URL: http://localhost/CakePOS/staffs/view/5
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\StaffsController->isAuthorized(Array)
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(501): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Network\Request))
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(306): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(258): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(422): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Controller.php(501): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(117): Cake\Controller\Controller->startupProcess()
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\StaffsController))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#21 {main}
+
+
+2016-09-24 19:12:27 Error: [Error] Class 'App\Controller\CakeLog' not found
+Request URL: /CakePOS/staffs/edit/5
+Referer URL: http://localhost/CakePOS/staffs/view/5
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\StaffsController->isAuthorized(Array)
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(501): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Network\Request))
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(306): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(258): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(422): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Controller.php(501): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(117): Cake\Controller\Controller->startupProcess()
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\StaffsController))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#21 {main}
+
+
+2016-09-24 19:12:31 Error: [Error] Class 'App\Controller\CakeLog' not found
+Request URL: /CakePOS/staffs/edit/5
+Referer URL: http://localhost/CakePOS/staffs/view/5
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\StaffsController->isAuthorized(Array)
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(501): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Network\Request))
+#2 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(306): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(258): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(422): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Controller\Controller.php(501): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(117): Cake\Controller\Controller->startupProcess()
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(96): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\StaffsController))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#19 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#21 {main}
+
+
+2016-09-24 19:18:20 Warning: Headers already sent in C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Debugger.php:753
+2016-09-24 19:18:20 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /CakePOS/staffs/logout
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2016-09-24 19:25:32 Error: [ParseError] syntax error, unexpected 'return' (T_RETURN), expecting ',' or ';'
+Request URL: /CakePOS/staffs/edit/6
+Referer URL: http://localhost/CakePOS/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Sta...', 'App')
+#5 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Core\App::className('Staffs', 'Controller', 'Controller')
+#6 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#10 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#17 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2016-09-24 19:33:33 Warning: Headers already sent in C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Debugger.php:753
+2016-09-24 19:33:33 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /CakePOS/staffs/edit/6
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2016-09-24 19:34:40 Warning: Headers already sent in C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Debugger.php:753
+2016-09-24 19:34:40 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /CakePOS/staffs/edit/6
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+

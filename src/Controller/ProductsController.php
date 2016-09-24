@@ -24,7 +24,17 @@ class ProductsController extends AppController
         $this->set('_serialize', ['products']);
     }
 
-    /**
+    public function isAuthorized($user)
+ {
+     // peuvent accéder à chaque action
+     if (isset($user['role']) && (($user['role'] === 'gestionnaire') || ($user['role'] === 'employe') ) ) {
+         return true;
+     }
+     // Par défaut refuser
+     return false;
+ }
+
+  /**
      * View method
      *
      * @param string|null $id Product id.
