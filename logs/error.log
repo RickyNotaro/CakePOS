@@ -2248,3 +2248,63 @@ Stack Trace:
 #2 {main}
 
 
+2016-09-25 01:01:48 Warning: Headers already sent in C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Debugger.php:753
+2016-09-25 01:01:48 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /CakePOS/staffs/add
+Referer URL: http://localhost/CakePOS/staffs/login
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2016-09-25 01:01:51 Warning: Headers already sent in C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Debugger.php:753
+2016-09-25 01:01:51 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /CakePOS/staffs/add
+Referer URL: http://localhost/CakePOS/staffs/login
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2016-09-25 01:01:58 Warning: Headers already sent in C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Debugger.php:753
+2016-09-25 01:01:58 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /CakePOS/staffs/add
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2016-09-25 01:02:43 Warning: Headers already sent in C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Debugger.php:753
+2016-09-25 01:02:43 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /CakePOS/staffs/add
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2016-09-25 01:03:10 Warning: Headers already sent in C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Debugger.php:753
+2016-09-25 01:03:10 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /CakePOS/staffs/edit/5
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+
+2016-09-25 01:03:29 Warning: Headers already sent in C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Error\Debugger.php:753
+2016-09-25 01:03:29 Error: [RuntimeException] Unable to emit response; headers already sent
+Request URL: /CakePOS/staffs/edit/5
+Referer URL: http://localhost/CakePOS/staffs
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CakePOS\vendor\cakephp\cakephp\src\Http\Server.php(107): Zend\Diactoros\Response\SapiStreamEmitter->emit(Object(Zend\Diactoros\Response))
+#1 C:\Program Files (x86)\Ampps\www\CakePOS\webroot\index.php(37): Cake\Http\Server->emit(Object(Zend\Diactoros\Response))
+#2 {main}
+
+

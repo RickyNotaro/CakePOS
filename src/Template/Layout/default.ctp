@@ -42,16 +42,17 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </ul>
         <div class="top-bar-section">
             <ul class="right">
-                <li>
               <?php
 $loguser = $this->request->session()->read('Auth.User');
  if ($loguser) {
     $staffEmail = $loguser['email'];
-    echo $this->Html->link("(" .$staffEmail . ') logout', ['controller' => 'Staffs', 'action' => 'logout']);
+    echo '<li>' . $this->Html->link($loguser['username'] . '  (' . $loguser['role'] . ')' , ['controller' => 'Staffs', 'action' => 'view',  $loguser['id'] ]) . '</li>' ;
+    echo '<li>' . $this->Html->link(__('Logout'), ['controller' => 'Staffs', 'action' => 'logout']) . '</li>' ;
 } else {
-    echo $this->Html->link('login', ['controller' => 'Staffs', 'action' => 'login']);
+    echo '<li>' . $this->Html->link( __('Login') , ['controller' => 'Staffs', 'action' => 'login']) . '</li>' ;
+    echo '<li>' . $this->Html->link( __('Register') , ['controller' => 'Staffs', 'action' => 'add']) . '</li>' ;
 }
-?></li>
+?>
             </ul>
         </div>
     </nav>
