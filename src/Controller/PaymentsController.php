@@ -37,9 +37,9 @@ class PaymentsController extends AppController
     public function view($id = null)
     {
         $payment = $this->Payments->get($id, [
-            'contain' => ['SalesTransactions']
+            'contain' => ['SalesTransactions', 'RefPaymentMethods' ]
         ]);
-
+        $RefPaymentMethods = $this->Payments->RefPaymentMethods->find('list', ['limit' => 200]);
         $this->set('payment', $payment);
         $this->set('_serialize', ['payment']);
     }
@@ -90,8 +90,9 @@ class PaymentsController extends AppController
                 $this->Flash->error(__('The payment could not be saved. Please, try again.'));
             }
         }
+        $RefPaymentMethods = $this->Payments->RefPaymentMethods->find('list', ['limit' => 200]);
         $salesTransactions = $this->Payments->SalesTransactions->find('list', ['limit' => 200]);
-        $this->set(compact('payment', 'salesTransactions'));
+        $this->set(compact('payment', 'salesTransactions', 'RefPaymentMethods'));
         $this->set('_serialize', ['payment']);
     }
 

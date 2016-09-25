@@ -64,14 +64,18 @@ class PaymentsTable extends Table
             ->requirePresence('payment_method_code', 'create')
             ->notEmpty('payment_method_code');
 
+
+
+        $validator
+            ->integer('sales_transaction_id')
+            ->requirePresence('sales_transaction_id')
+            ->notEmpty('sales_transaction_id');
+
         $validator
             ->numeric('payment_amount')
             ->requirePresence('payment_amount', 'create')
             ->notEmpty('payment_amount');
 
-        $validator
-            ->requirePresence('other_details', 'create')
-            ->notEmpty('other_details');
 
         return $validator;
     }

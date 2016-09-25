@@ -11,7 +11,7 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('id', __('Payment #')) ?></th>
                 <th scope="col"><?= $this->Paginator->sort('payment_method_name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('sales_transaction_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('payment_amount') ?></th>
@@ -22,7 +22,7 @@
             <?php foreach ($payments as $payment): ?>
             <tr>
                 <td><?= $this->Number->format($payment->id) ?></td>
-                <td><?= $payment->has('ref_payment_method') ? $this->Html->link($payment->ref_payment_method->payment_method_name, ['controller' => 'RefPaymentMethods', 'action' => 'view', $payment->ref_payment_method->payment_method_code]) : 'no' ?></td>
+                <td><?= $payment->has('ref_payment_method') ? $this->Html->link($payment->ref_payment_method->payment_method_name, ['controller' => 'RefPaymentMethods', 'action' => 'view', $payment->ref_payment_method->payment_method_code]) : __('N/A') ?></td>
                 <td><?= $this->Number->format($payment->sales_transaction_id) ?></td>
                 <td><?= $this->Number->format($payment->payment_amount) ?></td>
                 <td class="actions">
