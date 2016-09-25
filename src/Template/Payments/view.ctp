@@ -13,16 +13,17 @@
     <h3><?= h($payment->id) ?></h3>
     <table class="vertical-table">
         <tr>
-            <th scope="row"><?= __('Id') ?></th>
+            <th scope="row"><?= __('Payment #') ?></th>
             <td><?= $this->Number->format($payment->id) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Payment Method Code') ?></th>
-            <td><?= $this->Number->format($payment->payment_method_code) ?></td>
+            <td><?= $payment->has('ref_payment_method') ? $this->Html->link($payment->ref_payment_method->payment_method_name, ['controller' => 'RefPaymentMethods', 'action' => 'view', $payment->ref_payment_method->payment_method_code]) : __('N/A') ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Sales Transaction Id') ?></th>
             <td><?= $this->Number->format($payment->sales_transaction_id) ?></td>
+            <td><?=$this->Html->link($payment->sales_transaction_id, ['controller' => 'SalesTransactions', 'action' => 'view', $payment->sales_transaction_id]) ?>
         </tr>
         <tr>
             <th scope="row"><?= __('Payment Amount') ?></th>

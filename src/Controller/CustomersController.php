@@ -6,8 +6,7 @@ use App\Controller\AppController;
 /**
  * Customers Controller
  *
- * @property \App\Model\Table\CustomersTable $Customers
- */
+ * @property \App\Model\Table\CustomersTable $Customers */
 class CustomersController extends AppController
 {
 
