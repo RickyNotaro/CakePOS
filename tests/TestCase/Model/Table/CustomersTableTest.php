@@ -12,10 +12,8 @@ class CustomersTableTest extends TestCase
 {
 
     /**
-     * Test subject
-     *
-     * @var \App\Model\Table\CustomersTable
-     */
+     * Test subject     *
+     * @var \App\Model\Table\CustomersTable     */
     public $Customers;
 
     /**
@@ -25,7 +23,12 @@ class CustomersTableTest extends TestCase
      */
     public $fixtures = [
         'app.customers',
-        'app.sales_transactions'
+        'app.sales_transactions',
+        'app.sales_outlets',
+        'app.staffs',
+        'app.payments',
+        'app.products_transactions',
+        'app.products'
     ];
 
     /**
@@ -36,9 +39,7 @@ class CustomersTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Customers') ? [] : ['className' => 'App\Model\Table\CustomersTable'];
-        $this->Customers = TableRegistry::get('Customers', $config);
-    }
+        $config = TableRegistry::exists('Customers') ? [] : ['className' => 'App\Model\Table\CustomersTable'];        $this->Customers = TableRegistry::get('Customers', $config);    }
 
     /**
      * tearDown method

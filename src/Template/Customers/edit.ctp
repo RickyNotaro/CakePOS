@@ -17,7 +17,7 @@
     <fieldset>
         <legend><?= __('Edit Customer') ?></legend>
         <?php
-            echo $this->Form->input('customer_details');
+            echo $this->Form->input('customer_type');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
