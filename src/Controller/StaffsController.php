@@ -33,7 +33,7 @@ class StaffsController extends AppController
     $currentUserId = $this->Auth->user('id');
 
 
-    if ($currentUserId == $staff['id']) {
+    if ($currentUserId == $user['id']) {
         return true;
     }
 
