@@ -7,11 +7,10 @@ use Cake\ORM\Entity;
  * Customer Entity
  *
  * @property int $id
- * @property string $customer_details
+ * @property string $customer_type
  *
  * @property \App\Model\Entity\SalesTransaction[] $sales_transactions
- */
-class Customer extends Entity
+ */class Customer extends Entity
 {
 
     /**

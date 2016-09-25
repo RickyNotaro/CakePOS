@@ -13,14 +13,10 @@
     <h3><?= h($customer->id) ?></h3>
     <table class="vertical-table">
         <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($customer->id) ?></td>
+            <th scope="row"><?= __('Customer Type') ?></th>
+            <td><?= h($customer->customer_type) ?></td>
         </tr>
     </table>
-    <div class="row">
-        <h4><?= __('Customer Details') ?></h4>
-        <?= $this->Text->autoParagraph(h($customer->customer_details)); ?>
-    </div>
     <div class="related">
         <h4><?= __('Related Sales Transactions') ?></h4>
         <?php if (!empty($customer->sales_transactions)): ?>
