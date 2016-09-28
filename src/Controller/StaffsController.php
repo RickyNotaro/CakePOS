@@ -23,10 +23,12 @@ class StaffsController extends AppController
 {
     $action = $this->request->params['action'];
     // Add et index sont toujours permises.
+
     if (in_array($action, ['index'])) {
         return true;
     }
 
+        if (isset($this->request->params['pass'][0])) {
     // Vérifie que le bookmark appartient à l'utilisateur courant.
     $id = $this->request->params['pass'][0];
     $staff = $this->Staffs->get($id);
@@ -37,6 +39,7 @@ class StaffsController extends AppController
         return true;
     }
 
+    }
 
     return parent::isAuthorized($user);
 }
