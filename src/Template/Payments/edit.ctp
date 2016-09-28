@@ -17,8 +17,8 @@
     <fieldset>
         <legend><?= __('Edit Payment') ?></legend>
         <?php
-            echo $this->Form->input('payment_method_code');
-            echo $this->Form->input('sales_transaction_id');
+            echo $this->Form->input('payment_method_code', ['options' => $RefPaymentMethods]);
+            echo $this->Form->input('sales_transaction_id', ['label' => __('Transaction #')]);
             echo $this->Form->input('payment_amount');
             echo $this->Form->input('other_details');
         ?>

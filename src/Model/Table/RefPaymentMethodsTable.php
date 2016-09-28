@@ -31,7 +31,7 @@ class RefPaymentMethodsTable extends Table
         parent::initialize($config);
 
         $this->table('ref_payment_methods');
-        $this->displayField('payment_method_code');
+        $this->displayField('payment_method_name');
         $this->primaryKey('payment_method_code');
     }
 
