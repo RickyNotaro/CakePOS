@@ -18,8 +18,6 @@
                 <th scope="col"><?= $this->Paginator->sort('first_name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('last_name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('role') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -33,8 +31,6 @@
                 <td><?= h($staff->first_name) ?></td>
                 <td><?= h($staff->last_name) ?></td>
                 <td><?= h($staff->role) ?></td>
-                <td><?= h($staff->created) ?></td>
-                <td><?= h($staff->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $staff->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $staff->id]) ?>
