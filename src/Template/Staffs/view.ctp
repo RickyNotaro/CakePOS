@@ -10,7 +10,7 @@
     </ul>
 </nav>
 <div class="staffs view large-9 medium-8 columns content">
-    <h3><?= h($staff->id) ?></h3>
+    <h3><?= h($staff->first_name) . ' ' . h($staff->last_name)?></h3>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Username') ?></th>
@@ -37,16 +37,8 @@
             <td><?= h($staff->role) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Id') ?></th>
+            <th scope="row"><?= __('Staff #') ?></th>
             <td><?= $this->Number->format($staff->id) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Created') ?></th>
-            <td><?= h($staff->created) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Modified') ?></th>
-            <td><?= h($staff->modified) ?></td>
         </tr>
     </table>
     <div class="row">
@@ -56,7 +48,7 @@
     <div class="related">
         <h4><?= __('Related Sales Transactions') ?></h4>
         <?php if (!empty($staff->sales_transactions)): ?>
-        <table cellpadding="0" cellspacing="0">
+        <table>
             <tr>
                 <th scope="col"><?= __('Id') ?></th>
                 <th scope="col"><?= __('Customer Id') ?></th>

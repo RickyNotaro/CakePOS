@@ -16,7 +16,7 @@ class StaffsController extends AppController
   public function initialize()
   {
       parent::initialize();
-    $this->Auth->allow(['display', 'logout']);
+    $this->Auth->allow(['display', 'logout', 'add']);
   }
 
   public function isAuthorized($user)

@@ -6,6 +6,25 @@
         <li><?= $this->Html->link(__('New Sales Transaction'), ['controller' => 'SalesTransactions', 'action' => 'add']) ?></li>
     </ul>
 </nav>
+
+<a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="glyphicon glyphicon-bookmark"></i></a>
+<div id="sidebar-wrapper">
+  <ul class="sidebar-nav">
+    <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="glyphicon glyphicon-remove"></i></a>
+    <li class="sidebar-brand">
+      <a href="#">Project name</a>
+    </li>
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#about">About</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
+</div>
 <div class="staffs index large-9 medium-8 columns content">
     <h3><?= __('Staffs') ?></h3>
     <table cellpadding="0" cellspacing="0">
@@ -18,8 +37,6 @@
                 <th scope="col"><?= $this->Paginator->sort('first_name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('last_name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('role') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -33,8 +50,6 @@
                 <td><?= h($staff->first_name) ?></td>
                 <td><?= h($staff->last_name) ?></td>
                 <td><?= h($staff->role) ?></td>
-                <td><?= h($staff->created) ?></td>
-                <td><?= h($staff->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $staff->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $staff->id]) ?>
