@@ -27,7 +27,6 @@ $cakeDescription = 'CakePOS';
     <?= $this->Html->meta('icon') ?>
 
     <?= $this->Html->css('bootstrap.min.css') ?>
-    <?= $this->Html->css('starter-template.css') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -53,9 +52,7 @@ $cakeDescription = 'CakePOS';
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="active"><a href="#">Staff</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <?php

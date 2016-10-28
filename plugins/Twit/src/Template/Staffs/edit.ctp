@@ -1,31 +1,49 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $staff->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $staff->id)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('List Staffs'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Sales Transactions'), ['controller' => 'SalesTransactions', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Sales Transaction'), ['controller' => 'SalesTransactions', 'action' => 'add']) ?></li>
+<div class="row">
+<nav class="col-md-2" id="actions-sidebar">
+    <ul class="nav">
+      <li class="heading"><?= __('Other Actions') ?></li>
+      <li><?= $this->Html->link(__('Return to Staff list'), ['action' => 'index']) ?></li>
+      <li><?= $this->Form->postLink(
+              __('Delete') . " ". $staff->first_name . " " . $staff->last_name,
+              ['action' => 'delete', $staff->id],
+              ['confirm' => __('Are you sure you want to delete {0} from the system?', $staff->first_name)]
+          )
+      ?></li>
     </ul>
 </nav>
-<div class="staffs form large-9 medium-8 columns content">
-    <?= $this->Form->create($staff) ?>
-    <fieldset>
-        <legend><?= __('Edit Staff') ?></legend>
-        <?php
-            echo $this->Form->input('username');
-            echo $this->Form->input('email');
-            echo $this->Form->input('password');
-            echo $this->Form->input('first_name');
-            echo $this->Form->input('last_name');
-            echo $this->Form->input('role', ['options' => ['gestionnaire' => 'Gestionnaire', 'employe' => 'Employe']]);
-            echo $this->Form->input('notes');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+<div class="text-center col-md-10" style="padding:50px 0">
+	<h1><?=$staff->first_name. " " .  $staff->last_name . " " . __('Informations')?></h1>
+		<?= $this->Form->create($staff, array('class' => 'text-left')) ?>
+					<div class="form-group">
+						<label for="reg_username" class="sr-only"><?=__('Username')?></label>
+						<?= $this->Form->input('username',array('class'=>'form-control',)) ?>
+					</div>
+					<div class="form-group">
+						<label for="reg_password" class="sr-only"><?=__('Password')?></label>
+					  <?= $this->Form->input('password',array('class'=>'form-control',"placeholder"=> __('Password'))) ?>
+					</div>
+					<div class="form-group">
+						<label for="reg_email" class="sr-only"><?=__('Email')?></label>
+						<?= $this->Form->input('email',array('class'=>'form-control',"placeholder"=> __('you@exemple.com'))) ?>
+					</div>
+					<div class="form-group">
+						<label for="reg_fullname" class="sr-only"><?=__('First Name')?></label>
+						<?= $this->Form->input('first_name',array('class'=>'form-control',"placeholder"=> __('First name'))) ?>
+					</div>
+          <div class="form-group">
+            <label for="reg_fullname" class="sr-only"><?=__('Last Name')?></label>
+            <?= $this->Form->input('last_name',array('class'=>'form-control',"placeholder"=> __('Last name'))) ?>
+          </div>
+          <div class="form-group">
+            <label for="reg_fullname" class="sr-only"><?=__('role?')?></label>
+            <?= $this->Form->input('role',array('class'=>'form-control','options' => ['gestionnaire' => __('Manager'), 'employe' =>  __('Staff')])) ?>
+          </div>
+          <div class="form-group">
+            <label for="reg_fullname" class="sr-only"><?=__('Notes')?></label>
+            <?= $this->Form->input('notes',array('class'=>'form-control',"placeholder"=> __('Notes about this staff member'),"type"=>"textarea")) ?>
+          </div>
+      	<?= $this->Form->button('Edit',array('class'=>'btn btn-primary')) ?>
+		<?= $this->Form->end() ?>
+	<!-- end:Main Form -->
+</div>
 </div>

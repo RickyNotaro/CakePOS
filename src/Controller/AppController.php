@@ -57,7 +57,7 @@ class AppController extends Controller
                         'controller' => 'Staffs',
                         'action' => 'login'
                     ],
-                     'unauthorizedRedirect' => $this->referer() 
+                     'unauthorizedRedirect' => $this->referer()
                 ]);
 
         // Autorise l'action display pour que notre controller de pages
@@ -90,5 +90,7 @@ class AppController extends Controller
         ) {
             $this->set('_serialize', true);
         }
+
+            $this->viewBuilder()->theme('Twit');
     }
 }
