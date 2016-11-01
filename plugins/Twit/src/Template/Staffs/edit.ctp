@@ -15,31 +15,24 @@
 	<h1><?=$staff->first_name. " " .  $staff->last_name . " " . __('Informations')?></h1>
 		<?= $this->Form->create($staff, array('class' => 'text-left')) ?>
 					<div class="form-group">
-						<label for="reg_username" class="sr-only"><?=__('Username')?></label>
 						<?= $this->Form->input('username',array('class'=>'form-control',)) ?>
 					</div>
 					<div class="form-group">
-						<label for="reg_password" class="sr-only"><?=__('Password')?></label>
 					  <?= $this->Form->input('password',array('class'=>'form-control',"placeholder"=> __('Password'))) ?>
 					</div>
 					<div class="form-group">
-						<label for="reg_email" class="sr-only"><?=__('Email')?></label>
 						<?= $this->Form->input('email',array('class'=>'form-control',"placeholder"=> __('you@exemple.com'))) ?>
 					</div>
 					<div class="form-group">
-						<label for="reg_fullname" class="sr-only"><?=__('First Name')?></label>
 						<?= $this->Form->input('first_name',array('class'=>'form-control',"placeholder"=> __('First name'))) ?>
 					</div>
           <div class="form-group">
-            <label for="reg_fullname" class="sr-only"><?=__('Last Name')?></label>
             <?= $this->Form->input('last_name',array('class'=>'form-control',"placeholder"=> __('Last name'))) ?>
           </div>
           <div class="form-group">
-            <label for="reg_fullname" class="sr-only"><?=__('role?')?></label>
             <?= $this->Form->input('role',array('class'=>'form-control','options' => ['gestionnaire' => __('Manager'), 'employe' =>  __('Staff')])) ?>
           </div>
           <div class="form-group">
-            <label for="reg_fullname" class="sr-only"><?=__('Notes')?></label>
             <?= $this->Form->input('notes',array('class'=>'form-control',"placeholder"=> __('Notes about this staff member'),"type"=>"textarea")) ?>
           </div>
       	<?= $this->Form->button('Edit',array('class'=>'btn btn-primary')) ?>

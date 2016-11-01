@@ -1,6 +1,6 @@
 <div class="row">
 <nav class="col-md-2" >
-    <ul class="side-nav">
+    <ul class="nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New Staff'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Sales Transactions'), ['controller' => 'SalesTransactions', 'action' => 'index']) ?></li>
@@ -31,7 +31,7 @@
                 <td class="actions">
                      <?= $this->Html->link(__('View'), ['action' => 'view', $staff->id], ['class' => 'btn btn-sm btn-default']); ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $staff->id], ['class' => 'btn btn-sm btn-default']); ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $staff->id],['confirm' => __('Are you sure you want to delete the user {0}?', $staff->username), 'class' => 'btn btn-sm btn-default' ]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $staff->id],['confirm' => __('Are you sure you want to delete the user {0}?', $staff->username), 'class' => 'btn btn-sm btn-danger' ]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
