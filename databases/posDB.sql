@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mer 02 Novembre 2016 à 15:37
+-- Généré le :  Mer 02 Novembre 2016 à 18:35
 -- Version du serveur :  5.6.31
 -- Version de PHP :  7.0.10
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `customers` (
   `id` int(11) unsigned NOT NULL,
-  `customer_type` text NOT NULL
+  `customer_type` varchar(255) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
@@ -46,10 +46,23 @@ INSERT INTO `customers` (`id`, `customer_type`) VALUES
 
 CREATE TABLE IF NOT EXISTS `payments` (
   `id` int(11) unsigned NOT NULL,
-  `payment_method_code` int(11) unsigned NOT NULL,
+  `payment_method_id` int(11) unsigned NOT NULL,
   `sales_transaction_id` int(11) unsigned NOT NULL,
   `payment_amount` float(10,5) NOT NULL,
   `other_details` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `payment_methods`
+--
+
+CREATE TABLE IF NOT EXISTS `payment_methods` (
+  `id` int(11) unsigned NOT NULL,
+  `payment_method_code` varchar(4) NOT NULL,
+  `payment_method_name` varchar(100) NOT NULL,
+  `payment_method_description` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -60,8 +73,8 @@ CREATE TABLE IF NOT EXISTS `payments` (
 
 CREATE TABLE IF NOT EXISTS `products` (
   `id` int(10) unsigned NOT NULL,
-  `product_details` text NOT NULL,
-  `product_wholesale_price` decimal(10,5) NOT NULL,
+  `product_name` varchar(180) NOT NULL,
+  `product_description` text NOT NULL,
   `product_retail_price` decimal(10,5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -73,28 +86,9 @@ CREATE TABLE IF NOT EXISTS `products` (
 
 CREATE TABLE IF NOT EXISTS `products_transactions` (
   `product_id` int(10) unsigned NOT NULL,
-  `sales_transaction_id` int(10) unsigned NOT NULL,
+  `transaction_id` int(10) unsigned NOT NULL,
   `quantity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Structure de la table `ref_payment_methods`
---
-
-CREATE TABLE IF NOT EXISTS `ref_payment_methods` (
-  `payment_method_code` int(11) unsigned NOT NULL,
-  `payment_method_name` varchar(100) NOT NULL,
-  `payment_method_description` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Contenu de la table `ref_payment_methods`
---
-
-INSERT INTO `ref_payment_methods` (`payment_method_code`, `payment_method_name`, `payment_method_description`) VALUES
-(0, 'Visa', 'Payment par carte de crédit visa.');
 
 -- --------------------------------------------------------
 
@@ -104,40 +98,15 @@ INSERT INTO `ref_payment_methods` (`payment_method_code`, `payment_method_name`,
 
 CREATE TABLE IF NOT EXISTS `sales_outlets` (
   `id` int(10) unsigned NOT NULL,
-  `sales_outlet_detail` varchar(11) NOT NULL
+  `sales_outlet_name` varchar(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `sales_outlets`
 --
 
-INSERT INTO `sales_outlets` (`id`, `sales_outlet_detail`) VALUES
+INSERT INTO `sales_outlets` (`id`, `sales_outlet_name`) VALUES
 (1, 'Walmart');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `sales_transactions`
---
-
-CREATE TABLE IF NOT EXISTS `sales_transactions` (
-  `id` int(11) unsigned NOT NULL,
-  `customer_id` int(11) unsigned NOT NULL,
-  `sales_outlet_id` int(11) unsigned NOT NULL,
-  `staff_id` int(11) unsigned NOT NULL,
-  `transaction_date_time` datetime NOT NULL,
-  `transaction_wholesale_price` decimal(10,5) NOT NULL,
-  `transaction_retail_price` decimal(10,5) NOT NULL,
-  `other_details` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
-
---
--- Contenu de la table `sales_transactions`
---
-
-INSERT INTO `sales_transactions` (`id`, `customer_id`, `sales_outlet_id`, `staff_id`, `transaction_date_time`, `transaction_wholesale_price`, `transaction_retail_price`, `other_details`) VALUES
-(1, 1, 1, 2, '2016-10-19 20:15:00', '20.00000', '20.00000', 'fsdfsdf'),
-(2, 1, 1, 2, '2016-11-01 18:01:00', '87.00000', '90.00000', 'ukt');
 
 -- --------------------------------------------------------
 
@@ -165,6 +134,30 @@ INSERT INTO `staffs` (`id`, `username`, `email`, `password`, `notes`, `first_nam
 (3, 'admin', 'admin@localhost.com', '$2y$10$lONd7R97kMVLrU7pO7foaOP.MseFaBsAj6b0Cs9o4tOCE8ha4Wey6', 'Password is admin', 'Admin', 'Nistrater', 'gestionnaire'),
 (4, 'user', 'user@localhost.com', '$2y$10$HswtgTCndNhgbWT/Zo6qre.I1XUisiqGKimTJvbaUw6haVJi0Pipi', 'Password is User', 'User', 'Name', 'employe');
 
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `transactions`
+--
+
+CREATE TABLE IF NOT EXISTS `transactions` (
+  `id` int(11) unsigned NOT NULL,
+  `customer_id` int(11) unsigned NOT NULL,
+  `sales_outlet_id` int(11) unsigned NOT NULL,
+  `staff_id` int(11) unsigned NOT NULL,
+  `transaction_date_time` datetime NOT NULL,
+  `transaction_retail_price` decimal(10,5) NOT NULL,
+  `other_details` text NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `transactions`
+--
+
+INSERT INTO `transactions` (`id`, `customer_id`, `sales_outlet_id`, `staff_id`, `transaction_date_time`, `transaction_retail_price`, `other_details`) VALUES
+(1, 1, 1, 2, '2016-10-19 20:15:00', '20.00000', 'fsdfsdf'),
+(2, 1, 1, 2, '2016-11-01 18:01:00', '90.00000', 'ukt');
+
 --
 -- Index pour les tables exportées
 --
@@ -182,8 +175,15 @@ ALTER TABLE `customers`
 --
 ALTER TABLE `payments`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `payment_method_code` (`payment_method_code`),
+  ADD KEY `payment_method_code` (`payment_method_id`),
   ADD KEY `transaction_id` (`sales_transaction_id`);
+
+--
+-- Index pour la table `payment_methods`
+--
+ALTER TABLE `payment_methods`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `payment_method_code` (`payment_method_code`);
 
 --
 -- Index pour la table `products`
@@ -195,14 +195,8 @@ ALTER TABLE `products`
 -- Index pour la table `products_transactions`
 --
 ALTER TABLE `products_transactions`
-  ADD PRIMARY KEY (`product_id`,`sales_transaction_id`) USING BTREE,
-  ADD KEY `pf_transactionId` (`sales_transaction_id`);
-
---
--- Index pour la table `ref_payment_methods`
---
-ALTER TABLE `ref_payment_methods`
-  ADD PRIMARY KEY (`payment_method_code`);
+  ADD PRIMARY KEY (`product_id`,`transaction_id`) USING BTREE,
+  ADD KEY `pf_transactionId` (`transaction_id`);
 
 --
 -- Index pour la table `sales_outlets`
@@ -211,9 +205,15 @@ ALTER TABLE `sales_outlets`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `sales_transactions`
+-- Index pour la table `staffs`
 --
-ALTER TABLE `sales_transactions`
+ALTER TABLE `staffs`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `transactions`
+--
+ALTER TABLE `transactions`
   ADD PRIMARY KEY (`id`),
   ADD KEY `customer_id` (`customer_id`),
   ADD KEY `sales_outlet_id` (`sales_outlet_id`),
@@ -221,12 +221,6 @@ ALTER TABLE `sales_transactions`
   ADD KEY `customer_id_2` (`customer_id`),
   ADD KEY `sales_outlet_id_2` (`sales_outlet_id`),
   ADD KEY `staff_id_2` (`staff_id`);
-
---
--- Index pour la table `staffs`
---
-ALTER TABLE `staffs`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT pour les tables exportées
@@ -248,15 +242,15 @@ ALTER TABLE `products`
 ALTER TABLE `sales_outlets`
   MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT pour la table `sales_transactions`
---
-ALTER TABLE `sales_transactions`
-  MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
---
 -- AUTO_INCREMENT pour la table `staffs`
 --
 ALTER TABLE `staffs`
   MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT pour la table `transactions`
+--
+ALTER TABLE `transactions`
+  MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- Contraintes pour les tables exportées
 --
@@ -265,15 +259,23 @@ ALTER TABLE `staffs`
 -- Contraintes pour la table `payments`
 --
 ALTER TABLE `payments`
-  ADD CONSTRAINT `fk_pmc` FOREIGN KEY (`payment_method_code`) REFERENCES `ref_payment_methods` (`payment_method_code`),
-  ADD CONSTRAINT `payments_ibfk_1` FOREIGN KEY (`sales_transaction_id`) REFERENCES `sales_transactions` (`id`);
+  ADD CONSTRAINT `payments_ibfk_1` FOREIGN KEY (`sales_transaction_id`) REFERENCES `transactions` (`id`),
+  ADD CONSTRAINT `payments_ibfk_2` FOREIGN KEY (`payment_method_id`) REFERENCES `payment_methods` (`id`);
 
 --
 -- Contraintes pour la table `products_transactions`
 --
 ALTER TABLE `products_transactions`
   ADD CONSTRAINT `products_transactions_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`),
-  ADD CONSTRAINT `products_transactions_ibfk_2` FOREIGN KEY (`sales_transaction_id`) REFERENCES `sales_transactions` (`id`);
+  ADD CONSTRAINT `products_transactions_ibfk_2` FOREIGN KEY (`transaction_id`) REFERENCES `transactions` (`id`);
+
+--
+-- Contraintes pour la table `transactions`
+--
+ALTER TABLE `transactions`
+  ADD CONSTRAINT `transactions_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`),
+  ADD CONSTRAINT `transactions_ibfk_2` FOREIGN KEY (`sales_outlet_id`) REFERENCES `sales_outlets` (`id`),
+  ADD CONSTRAINT `transactions_ibfk_3` FOREIGN KEY (`staff_id`) REFERENCES `staffs` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
