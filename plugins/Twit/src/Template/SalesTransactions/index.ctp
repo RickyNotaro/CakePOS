@@ -1,22 +1,23 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Sales Transaction'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Customers'), ['controller' => 'Customers', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Customer'), ['controller' => 'Customers', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Sales Outlets'), ['controller' => 'SalesOutlets', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Sales Outlet'), ['controller' => 'SalesOutlets', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Staffs'), ['controller' => 'Staffs', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Staff'), ['controller' => 'Staffs', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Payments'), ['controller' => 'Payments', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Payment'), ['controller' => 'Payments', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Products Transactions'), ['controller' => 'ProductsTransactions', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Products Transaction'), ['controller' => 'ProductsTransactions', 'action' => 'add']) ?></li>
-    </ul>
+<div class="row">
+<nav class="col-md-2" >
+  <ul class="nav">
+      <li class="heading"><?= __('Actions') ?></li>
+      <li><?= $this->Html->link(__('New Sales Transaction'), ['action' => 'add']) ?></li>
+      <li><?= $this->Html->link(__('List Customers'), ['controller' => 'Customers', 'action' => 'index']) ?></li>
+      <li><?= $this->Html->link(__('New Customer'), ['controller' => 'Customers', 'action' => 'add']) ?></li>
+      <li><?= $this->Html->link(__('List Sales Outlets'), ['controller' => 'SalesOutlets', 'action' => 'index']) ?></li>
+      <li><?= $this->Html->link(__('New Sales Outlet'), ['controller' => 'SalesOutlets', 'action' => 'add']) ?></li>
+      <li><?= $this->Html->link(__('List Staffs'), ['controller' => 'Staffs', 'action' => 'index']) ?></li>
+      <li><?= $this->Html->link(__('New Staff'), ['controller' => 'Staffs', 'action' => 'add']) ?></li>
+      <li><?= $this->Html->link(__('List Payments'), ['controller' => 'Payments', 'action' => 'index']) ?></li>
+      <li><?= $this->Html->link(__('New Payment'), ['controller' => 'Payments', 'action' => 'add']) ?></li>
+      <li><?= $this->Html->link(__('List Products Transactions'), ['controller' => 'ProductsTransactions', 'action' => 'index']) ?></li>
+      <li><?= $this->Html->link(__('New Products Transaction'), ['controller' => 'ProductsTransactions', 'action' => 'add']) ?></li>
+  </ul>
 </nav>
-<div class="salesTransactions index large-9 medium-8 columns content">
+<div class="salesTransactions index col-md-10 text-right content">
     <h3><?= __('Sales Transactions') ?></h3>
-    <table cellpadding="0" cellspacing="0">
+    <table class="table table-bordered table-hover">
         <thead>
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
@@ -40,9 +41,9 @@
                 <td><?= $this->Number->format($salesTransaction->transaction_wholesale_price) ?></td>
                 <td><?= $this->Number->format($salesTransaction->transaction_retail_price) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $salesTransaction->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $salesTransaction->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $salesTransaction->id], ['confirm' => __('Are you sure you want to delete # {0}?', $salesTransaction->id)]) ?>
+                    <?= $this->Html->link(__('View'), ['action' => 'view', $salesTransaction->id], ['class' => 'btn btn-sm btn-default']); ?>
+                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $salesTransaction->id], ['class' => 'btn btn-sm btn-default']); ?>
+                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $salesTransaction->id], ['confirm' => __('Are you sure you want to delete # {0}?', $salesTransaction->id), 'class' => 'btn btn-sm btn-danger' ]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
