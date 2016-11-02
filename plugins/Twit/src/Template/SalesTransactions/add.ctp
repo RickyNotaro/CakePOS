@@ -1,5 +1,6 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
+<div class="row">
+  <nav class="col-md-2" id="actions-sidebar">
+    <ul class="nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('List Sales Transactions'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Customers'), ['controller' => 'Customers', 'action' => 'index']) ?></li>
@@ -14,20 +15,37 @@
         <li><?= $this->Html->link(__('New Products Transaction'), ['controller' => 'ProductsTransactions', 'action' => 'add']) ?></li>
     </ul>
 </nav>
-<div class="salesTransactions form large-9 medium-8 columns content">
-    <?= $this->Form->create($salesTransaction) ?>
+
+<div class="salesTransactions form col-md-10 columns content">
+    	<?= $this->Form->create($salesTransaction, array('class' => 'text-left')) ?>
     <fieldset>
-        <legend><?= __('Add Sales Transaction') ?></legend>
-        <?php
-            echo $this->Form->input('customer_id', ['options' => $customers]);
-            echo $this->Form->input('sales_outlet_id', ['options' => $salesOutlets]);
-            echo $this->Form->input('staff_id', ['options' => $staffs]);
-            echo $this->Form->input('transaction_date_time');
-            echo $this->Form->input('transaction_wholesale_price');
-            echo $this->Form->input('transaction_retail_price');
-            echo $this->Form->input('other_details');
-        ?>
+        <legend><?= __('Add a Sales Transaction') ?></legend>
+        <div class="form-group">
+          <?= $this->Form->input('customer_id',array('class'=>'form-control','options' => $customers)) ?>
+        </div>
+        <div class="form-group">
+          <?= $this->Form->input('sales_outlet_id',array('class'=>'form-control', 'options' => $salesOutlets)) ?>
+        </div>
+        <div class="form-group">
+          <?= $this->Form->input('staff_id',array('class'=>'form-control', 'options' => $staffs)) ?>
+        </div>
+        <div class="form-group">
+          <?= $this->Form->input('staff_id',array('class'=>'form-control', 'options' => $staffs)) ?>
+        </div>
+        <div class="form-group">
+          <?= $this->Form->input('transaction_date_time',array('class'=>'form-control selectpicker')) ?>
+        </div>
+        <div class="form-group">
+          <?= $this->Form->input('transaction_wholesale_price',array('class'=>'form-control')) ?>
+        </div>
+        <div class="form-group">
+          <?= $this->Form->input('transaction_retail_price',array('class'=>'form-control')) ?>
+        </div>
+        <div class="form-group">
+          <?= $this->Form->input('other_details',array('class'=>'form-control')) ?>
+        </div>
+      	<?= $this->Form->button('Add',array('class'=>'btn btn-primary')) ?>
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>
+</div>
 </div>

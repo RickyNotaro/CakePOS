@@ -1,0 +1,1052 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-11-01 22:38+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/add.ctp:3
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/edit.ctp:3
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:3;15
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:3;33
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/add.ctp:3
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/edit.ctp:3
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:3;18
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:3
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/add.ctp:3
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/edit.ctp:3
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/index.ctp:3;17
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:3;40
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/add.ctp:3
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/edit.ctp:3
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/index.ctp:3;19
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:3
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/add.ctp:3
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/edit.ctp:3
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/index.ctp:3;14
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/view.ctp:3
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/add.ctp:3
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/edit.ctp:3
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/index.ctp:3;16
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:3;37
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:4
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/edit.ctp:4
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:4;30
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:4;68;95
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/index.ctp:4;20
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:4;63
+msgid "Actions"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/add.ctp:4
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/edit.ctp:10
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/edit.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:9
+msgid "List Customers"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/add.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/edit.ctp:11
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:8
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/add.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/edit.ctp:11
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:8
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/add.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/edit.ctp:13
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/index.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:10
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/add.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/edit.ctp:11
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/index.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:8
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/edit.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/index.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:9
+msgid "List Sales Transactions"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/add.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/edit.ctp:12
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:9
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/add.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/edit.ctp:12
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:9
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/add.ctp:8
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/edit.ctp:14
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/index.ctp:8
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:11
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/add.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/edit.ctp:12
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/index.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:9
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:8
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/index.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:10
+msgid "New Sales Transaction"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/add.ctp:12
+msgid "Add Customer"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/add.ctp:17
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/edit.ctp:23
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/add.ctp:20
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/edit.ctp:26
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/add.ctp:19
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/edit.ctp:25
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/add.ctp:19
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/edit.ctp:25
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/add.ctp:16
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/edit.ctp:22
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/add.ctp:17
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/edit.ctp:23
+#: View/Helper/FormHelper.php:1809
+msgid "Submit"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/edit.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:25
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:48
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/edit.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:31
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/edit.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/index.ctp:29
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:50
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/edit.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/index.ctp:31
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/edit.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/index.ctp:25
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/edit.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/index.ctp:27
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:52
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:46
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:80;105
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/index.ctp:34
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:78
+msgid "Delete"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/edit.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:5;48
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/edit.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:31
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/edit.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/index.ctp:29
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:5;50
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/edit.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/index.ctp:31
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/edit.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/index.ctp:25
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/view.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/edit.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/index.ctp:27
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:5;52
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/edit.ctp:15
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:46
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:6;80;105
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:6;78
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/edit.ctp:18
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:4
+msgid "Edit Customer"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:4
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:10
+msgid "New Customer"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:10
+msgid "Customers"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:23
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:46
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:29
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/index.ctp:27
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:48
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/index.ctp:29
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/index.ctp:23
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/index.ctp:25
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:50
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:44
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:78;103
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/index.ctp:32
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:76
+msgid "View"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:24
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:47
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:30
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/index.ctp:28
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:49
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/index.ctp:30
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/index.ctp:24
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/index.ctp:26
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:51
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:45
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:79;104
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/index.ctp:33
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:77
+msgid "Edit"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:25
+msgid "Are you sure you want to delete : {0}?"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:33
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:39
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/index.ctp:37
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/index.ctp:39
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/index.ctp:33
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/index.ctp:35
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:54
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/index.ctp:42
+msgid "previous"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:35
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:41
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/index.ctp:39
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/index.ctp:41
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/index.ctp:35
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/index.ctp:37
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:56
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/index.ctp:44
+msgid "next"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:5
+msgid "Delete Customer"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:16
+msgid "Customer Type"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:21
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:25
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:51
+msgid "Related Sales Transactions"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:25
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:16
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:20;29
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:38;63
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:55
+msgid "Id"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:26
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:30
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:56
+msgid "Customer Id"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:27
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:31
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:57
+msgid "Sales Outlet Id"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:28
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:32
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:58
+msgid "Staff Id"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:29
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:33
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:50
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:59
+msgid "Transaction Date Time"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:30
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:34
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:42
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:60
+msgid "Transaction Wholesale Price"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:31
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:35
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:46
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:61
+msgid "Transaction Retail Price"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:32
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:34
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:36
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:55;67
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:62
+msgid "Other Details"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Layout/default.ctp:63
+msgid "Logout"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Layout/default.ctp:65
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/login.ctp:2
+msgid "Login"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Layout/default.ctp:66
+msgid "Register"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Layout/error.ctp:35
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Error/error400.ctp:36
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Error/error500.ctp:41
+msgid "Error"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/add.ctp:4
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/edit.ctp:10
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:12
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/edit.ctp:10
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:12
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:15
+msgid "List Payments"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/add.ctp:12
+msgid "Add Payment"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/edit.ctp:18
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:4
+msgid "Edit Payment"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/edit.ctp:21
+msgid "Transaction #"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:4
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:13
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:13
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:16
+msgid "New Payment"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:10
+msgid "Payments"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:14
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:16
+msgid "Payment #"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:25
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:21
+msgid "N/A"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:5
+msgid "Delete Payment"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:20
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/view.ctp:18
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:64
+msgid "Payment Method Code"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:24
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:38
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:65;93
+msgid "Sales Transaction Id"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:29
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:66
+msgid "Payment Amount"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/add.ctp:4
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/edit.ctp:10
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/add.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/edit.ctp:11
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/index.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:8
+msgid "List Products"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/add.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/edit.ctp:11
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/index.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:8
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/add.ctp:4
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/edit.ctp:10
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:14
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/edit.ctp:11
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:14
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:17
+msgid "List Products Transactions"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/add.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/edit.ctp:12
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/index.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:9
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/index.ctp:4
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:15
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:15
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:18
+msgid "New Products Transaction"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/add.ctp:12
+msgid "Add Product"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/edit.ctp:18
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:4
+msgid "Edit Product"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/index.ctp:4
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/add.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/edit.ctp:12
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/index.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:9
+msgid "New Product"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/index.ctp:10
+msgid "Products"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:5
+msgid "Delete Product"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:20
+msgid "Product Wholesale Price"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:24
+msgid "Product Retail Price"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:29
+msgid "Product Details"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:33
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:88
+msgid "Related Products Transactions"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:37
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:92
+msgid "Product Id"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:39
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:26
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:94
+msgid "Quantity"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/add.ctp:14
+msgid "Add Products Transaction"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/edit.ctp:20
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:4
+msgid "Edit Products Transaction"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/index.ctp:12
+msgid "Products Transactions"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:5
+msgid "Delete Products Transaction"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:18
+msgid "Product"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:22
+msgid "Sales Transaction"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/add.ctp:4
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/edit.ctp:10
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/view.ctp:6
+msgid "List Ref Payment Methods"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/add.ctp:10
+msgid "Add Ref Payment Method"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/edit.ctp:16
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/view.ctp:4
+msgid "Edit Ref Payment Method"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/index.ctp:4
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/view.ctp:7
+msgid "New Ref Payment Method"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/index.ctp:8
+msgid "Ref Payment Methods"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/view.ctp:5
+msgid "Delete Ref Payment Method"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/view.ctp:14
+msgid "Payment Method Name"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/view.ctp:23
+msgid "Payment Method Description"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/add.ctp:4
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/edit.ctp:10
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:8
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/edit.ctp:8
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:8
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:11
+msgid "List Sales Outlets"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/add.ctp:12
+msgid "Add Sales Outlet"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/edit.ctp:18
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:4
+msgid "Edit Sales Outlet"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/index.ctp:4
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:7
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:9
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:9
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:12
+msgid "New Sales Outlet"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/index.ctp:10
+msgid "Sales Outlets"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:5
+msgid "Delete Sales Outlet"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:16
+msgid "Sales Outlet Detail"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:10
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/edit.ctp:9
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:10
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:13
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:6
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:7
+msgid "List Staffs"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:11
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:11
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:14
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/index.ctp:5
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:8
+msgid "New Staff"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:22
+msgid "Add a Sales Transaction"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/edit.ctp:5
+msgid "Return to Sales Transaction index"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/edit.ctp:13
+msgid "Delete this sales Transaction"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/edit.ctp:23
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:5
+msgid "Edit Sales Transaction"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:19
+msgid "Sales Transactions"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:6
+msgid "Delete Sales Transaction"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:26
+msgid "Customer"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:30
+msgid "Sales Outlet"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:34
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:33
+msgid "Staff"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:59
+msgid "Related Payments"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:11
+msgid "Register A New Staff Member"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:18;19
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:18
+msgid "Username"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:22;23
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:21
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/login.ctp:14
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:26
+msgid "Password"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:26
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:22
+msgid "Email"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:27
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:24
+msgid "you@exemple.com"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:30
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:30
+msgid "First Name"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:31
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:27
+msgid "First name"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:34
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:34
+msgid "Last Name"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:35
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:30
+msgid "Last name"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:38
+msgid "role?"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:42
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:47
+msgid "Notes"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:43
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:36
+msgid "Notes about this staff member"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:50
+msgid "already have an account?"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:50
+msgid "Login here"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:4
+msgid "Other Actions"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:5
+msgid "Return to Staff list"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:9
+msgid "Are you sure you want to delete {0} from the system?"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:15
+msgid "Informations"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:33
+msgid "Manager"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/index.ctp:11
+msgid "Staffs"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/index.ctp:34
+msgid "Are you sure you want to delete the user {0}?"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/login.ctp:10
+msgid "Nom d'utilisateur"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/login.ctp:21
+msgid "New user?"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/login.ctp:21
+msgid "Create new account"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:5
+msgid "Edit Staff"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:6
+msgid "Delete Staff"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:38
+msgid "Role"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:42
+msgid "Staff #"
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: C:/Program Files (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+
+#: Controller/Component/AuthComponent.php:461
+msgid "You are not authorized to access that location."
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:154
+msgid "Missing CSRF token cookie"
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:158
+msgid "CSRF token mismatch."
+msgstr ""
+
+#: Error/ExceptionRenderer.php:251
+msgid "Not Found"
+msgstr ""
+
+#: Error/ExceptionRenderer.php:253
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: I18n/Number.php:90
+msgid "{0,number,#,###.##} KB"
+msgstr ""
+
+#: I18n/Number.php:92
+msgid "{0,number,#,###.##} MB"
+msgstr ""
+
+#: I18n/Number.php:94
+msgid "{0,number,#,###.##} GB"
+msgstr ""
+
+#: I18n/Number.php:96
+msgid "{0,number,#,###.##} TB"
+msgstr ""
+
+#: I18n/Number.php:88
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} from now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} after"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} before"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:114
+msgid "just now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:151
+msgid "about a second ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:152
+msgid "about a minute ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:153
+msgid "about an hour ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:154;332
+msgid "about a day ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:155;333
+msgid "about a week ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:156;334
+msgid "about a month ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:157;335
+msgid "about a year ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:168
+msgid "in about a second"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:169
+msgid "in about a minute"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:170
+msgid "in about an hour"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:171;346
+msgid "in about a day"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:172;347
+msgid "in about a week"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:173;348
+msgid "in about a month"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:174;349
+msgid "in about a year"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:304
+msgid "today"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:370
+msgid "%s ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:371
+msgid "on %s"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:47;126;316
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:51;129;319
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:57;132;322
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:59;135;325
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:64;138
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:68;141
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:72;144
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Network/Response.php:1451
+msgid "The requested file was not found"
+msgstr ""
+
+#: ORM/RulesChecker.php:57
+msgid "This value is already in use"
+msgstr ""
+
+#: ORM/RulesChecker.php:104
+msgid "This value does not exist"
+msgstr ""
+
+#: ORM/RulesChecker.php:128
+msgid "The count does not match {0}{1}"
+msgstr ""
+
+#: Utility/Text.php:894
+msgid "and"
+msgstr ""
+
+#: Validation/Validator.php:103
+msgid "This field is required"
+msgstr ""
+
+#: Validation/Validator.php:104
+msgid "This field cannot be left empty"
+msgstr ""
+
+#: Validation/Validator.php:1712
+msgid "The provided value is invalid"
+msgstr ""
+
+#: View/Helper/FormHelper.php:963
+msgid "New %s"
+msgstr ""
+
+#: View/Helper/FormHelper.php:966
+msgid "Edit %s"
+msgstr ""
+
+#: View/Helper/HtmlHelper.php:781
+msgid "Home"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:539
+msgid "January"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:540
+msgid "February"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:541
+msgid "March"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:542
+msgid "April"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:543
+msgid "May"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:544
+msgid "June"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:545
+msgid "July"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:546
+msgid "August"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:547
+msgid "September"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:548
+msgid "October"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:549
+msgid "November"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:550
+msgid "December"
+msgstr ""
+

@@ -1,0 +1,724 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-11-02 01:17+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: Ricky Notaro <me+momo@rickynotaro.com>, 2016\n"
+"Language-Team: French (Canada) (https://www.transifex.com/student-62/teams/68789/fr_CA/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr_CA\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: Controller/CustomersController.php54;80
+msgid "The customer has been saved."
+msgstr "Le client a été enregistré."
+
+#: Controller/CustomersController.php58;84
+msgid "The customer could not be saved. Please, try again."
+msgstr "Le client n'a pas pu être sauvé. Veuillez réessayer."
+
+#: Controller/CustomersController.php:103
+msgid "The customer has been deleted."
+msgstr "Le client a été supprimé."
+
+#: Controller/CustomersController.php:105
+msgid "The customer could not be deleted. Please, try again."
+msgstr "Le client n'a pas pu être supprimé. Veuillez réessayer."
+
+#: Controller/PaymentsController.php58;86
+msgid "The payment has been saved."
+msgstr "Le paiement a été enregistré."
+
+#: Controller/PaymentsController.php62;90
+msgid "The payment could not be saved. Please, try again."
+msgstr "Le paiement ne peut pas être sauvé. Veuillez réessayer."
+
+#: Controller/PaymentsController.php:111
+msgid "The payment has been deleted."
+msgstr "Le paiement a été supprimé."
+
+#: Controller/PaymentsController.php:113
+msgid "The payment could not be deleted. Please, try again."
+msgstr "Le paiement ne peut pas être supprimé. Veuillez réessayer."
+
+#: Controller/ProductsController.php65;91
+msgid "The product has been saved."
+msgstr "Le produit a été enregistré."
+
+#: Controller/ProductsController.php69;95
+msgid "The product could not be saved. Please, try again."
+msgstr "Le produit n'a pas pu être sauvé. Veuillez réessayer."
+
+#: Controller/ProductsController.php:114
+msgid "The product has been deleted."
+msgstr "Le produit a été supprimé."
+
+#: Controller/ProductsController.php:116
+msgid "The product could not be deleted. Please, try again."
+msgstr "Le produit ne peut pas être supprimé. Veuillez réessayer."
+
+#: Controller/ProductsTransactionsController.php58;86
+msgid "The products transaction has been saved."
+msgstr "La transaction de produits a été enregistrée."
+
+#: Controller/ProductsTransactionsController.php62;90
+msgid "The products transaction could not be saved. Please, try again."
+msgstr "La transaction de produits n'a pas pu être sauvé. Veuillez réessayer."
+
+#: Controller/ProductsTransactionsController.php:111
+msgid "The products transaction has been deleted."
+msgstr "La transaction de produits a été supprimé."
+
+#: Controller/ProductsTransactionsController.php:113
+msgid "The products transaction could not be deleted. Please, try again."
+msgstr ""
+"La transaction de produits ne peut pas être supprimé. Veuillez réessayer."
+
+#: Controller/RefPaymentMethodsController.php55;81
+msgid "The ref payment method has been saved."
+msgstr "La méthode de paiement ref a été enregistré."
+
+#: Controller/RefPaymentMethodsController.php59;85
+msgid "The ref payment method could not be saved. Please, try again."
+msgstr "La méthode de paiement ref n'a pas pu être sauvé. Veuillez réessayer."
+
+#: Controller/RefPaymentMethodsController.php:104
+msgid "The ref payment method has been deleted."
+msgstr "La méthode de paiement ref a été supprimé."
+
+#: Controller/RefPaymentMethodsController.php:106
+msgid "The ref payment method could not be deleted. Please, try again."
+msgstr ""
+"La méthode de paiement ref n'a pas pu être supprimé. Veuillez réessayer."
+
+#: Controller/SalesOutletsController.php55;81
+msgid "The sales outlet has been saved."
+msgstr "Le point de vente a été enregistrée."
+
+#: Controller/SalesOutletsController.php59;85
+msgid "The sales outlet could not be saved. Please, try again."
+msgstr "Le point de vente n'a pas pu être sauvé. Veuillez réessayer."
+
+#: Controller/SalesOutletsController.php:104
+msgid "The sales outlet has been deleted."
+msgstr "Le point de vente a été supprimé."
+
+#: Controller/SalesOutletsController.php:106
+msgid "The sales outlet could not be deleted. Please, try again."
+msgstr "Le point de vente ne peut pas être supprimé. Veuillez réessayer."
+
+#: Controller/SalesTransactionsController.php57;86
+msgid "The sales transaction has been saved."
+msgstr "La transaction de vente a été enregistrée."
+
+#: Controller/SalesTransactionsController.php61;90
+msgid "The sales transaction could not be saved. Please, try again."
+msgstr ""
+"La transaction de vente ne pouvait pas être sauvé. Veuillez réessayer."
+
+#: Controller/SalesTransactionsController.php:112
+msgid "The sales transaction has been deleted."
+msgstr "La transaction de vente a été supprimé."
+
+#: Controller/SalesTransactionsController.php:114
+msgid "The sales transaction could not be deleted. Please, try again."
+msgstr ""
+"La transaction de vente ne peut pas être supprimé. Veuillez réessayer."
+
+#: Controller/StaffsController.php88;114
+msgid "The staff has been saved."
+msgstr "Le personnel a été enregistré."
+
+#: Controller/StaffsController.php92;118
+msgid "The staff could not be saved. Please, try again."
+msgstr "Le personnel n'a pas pu être sauvé. Veuillez réessayer."
+
+#: Controller/StaffsController.php:137
+msgid "The staff has been deleted."
+msgstr "Le personnel a été supprimé."
+
+#: Controller/StaffsController.php:139
+msgid "The staff could not be deleted. Please, try again."
+msgstr "Le personnel n'a pas pu être supprimé. Veuillez réessayer."
+
+#: Model/Table/StaffsTable.php:75
+msgid "A role is neccessary"
+msgstr "Un rôle est neccessary"
+
+#: Template/Customers/add.ctp:3 Template/Customers/edit.ctp:3
+#: Template/Customers/index.ctp3;15 Template/Customers/view.ctp3;33
+#: Template/Payments/add.ctp:3 Template/Payments/edit.ctp:3
+#: Template/Payments/index.ctp3;18 Template/Payments/view.ctp:3
+#: Template/Products/add.ctp:3 Template/Products/edit.ctp:3
+#: Template/Products/index.ctp3;17 Template/Products/view.ctp3;40
+#: Template/ProductsTransactions/add.ctp:3
+#: Template/ProductsTransactions/edit.ctp:3
+#: Template/ProductsTransactions/index.ctp3;19
+#: Template/ProductsTransactions/view.ctp:3
+#: Template/RefPaymentMethods/add.ctp:3 Template/RefPaymentMethods/edit.ctp:3
+#: Template/RefPaymentMethods/index.ctp3;14
+#: Template/RefPaymentMethods/view.ctp:3 Template/SalesOutlets/add.ctp:3
+#: Template/SalesOutlets/edit.ctp:3 Template/SalesOutlets/index.ctp3;16
+#: Template/SalesOutlets/view.ctp3;37 Template/SalesTransactions/add.ctp:3
+#: Template/SalesTransactions/edit.ctp:3
+#: Template/SalesTransactions/index.ctp3;29
+#: Template/SalesTransactions/view.ctp3;66;93 Template/Staffs/add.ctp:3
+#: Template/Staffs/edit.ctp:3 Template/Staffs/index.ctp3;40
+#: Template/Staffs/view.ctp3;61
+msgid "Actions"
+msgstr "actes"
+
+#: Template/Customers/add.ctp:4 Template/Customers/edit.ctp:10
+#: Template/Customers/view.ctp:6 Template/SalesTransactions/add.ctp:5
+#: Template/SalesTransactions/edit.ctp:11
+#: Template/SalesTransactions/index.ctp:5
+#: Template/SalesTransactions/view.ctp:8
+msgid "List Customers"
+msgstr "Liste clients"
+
+#: Template/Customers/add.ctp:5 Template/Customers/edit.ctp:11
+#: Template/Customers/index.ctp:5 Template/Customers/view.ctp:8
+#: Template/Payments/add.ctp:5 Template/Payments/edit.ctp:11
+#: Template/Payments/index.ctp:5 Template/Payments/view.ctp:8
+#: Template/ProductsTransactions/add.ctp:7
+#: Template/ProductsTransactions/edit.ctp:13
+#: Template/ProductsTransactions/index.ctp:7
+#: Template/ProductsTransactions/view.ctp:10 Template/SalesOutlets/add.ctp:5
+#: Template/SalesOutlets/edit.ctp:11 Template/SalesOutlets/index.ctp:5
+#: Template/SalesOutlets/view.ctp:8 Template/SalesTransactions/add.ctp:4
+#: Template/SalesTransactions/edit.ctp:10
+#: Template/SalesTransactions/view.ctp:6 Template/Staffs/add.ctp:5
+#: Template/Staffs/edit.ctp:11 Template/Staffs/index.ctp:5
+#: Template/Staffs/view.ctp:8
+msgid "List Sales Transactions"
+msgstr "Transactions Liste des ventes"
+
+#: Template/Customers/add.ctp:6 Template/Customers/edit.ctp:12
+#: Template/Customers/index.ctp:6 Template/Customers/view.ctp:9
+#: Template/Payments/add.ctp:6 Template/Payments/edit.ctp:12
+#: Template/Payments/index.ctp:6 Template/Payments/view.ctp:9
+#: Template/ProductsTransactions/add.ctp:8
+#: Template/ProductsTransactions/edit.ctp:14
+#: Template/ProductsTransactions/index.ctp:8
+#: Template/ProductsTransactions/view.ctp:11 Template/SalesOutlets/add.ctp:6
+#: Template/SalesOutlets/edit.ctp:12 Template/SalesOutlets/index.ctp:6
+#: Template/SalesOutlets/view.ctp:9 Template/SalesTransactions/index.ctp:4
+#: Template/SalesTransactions/view.ctp:7 Template/Staffs/add.ctp:6
+#: Template/Staffs/edit.ctp:12 Template/Staffs/index.ctp:6
+#: Template/Staffs/view.ctp:9
+msgid "New Sales Transaction"
+msgstr "Nouvelle transaction de vente"
+
+#: Template/Customers/add.ctp:12
+msgid "Add Customer"
+msgstr "Ajouter client"
+
+#: Template/Customers/add.ctp:17 Template/Customers/edit.ctp:23
+#: Template/Payments/add.ctp:20 Template/Payments/edit.ctp:26
+#: Template/Products/add.ctp:19 Template/Products/edit.ctp:25
+#: Template/ProductsTransactions/add.ctp:19
+#: Template/ProductsTransactions/edit.ctp:25
+#: Template/RefPaymentMethods/add.ctp:16
+#: Template/RefPaymentMethods/edit.ctp:22 Template/SalesOutlets/add.ctp:17
+#: Template/SalesOutlets/edit.ctp:23 Template/SalesTransactions/add.ctp:31
+#: Template/SalesTransactions/edit.ctp:37 Template/Staffs/add.ctp:23
+#: Template/Staffs/edit.ctp:29
+msgid "Submit"
+msgstr "Soumettre"
+
+#: Template/Customers/edit.ctp:5 Template/Customers/index.ctp:25
+#: Template/Customers/view.ctp:48 Template/Payments/edit.ctp:5
+#: Template/Payments/index.ctp:31 Template/Products/edit.ctp:5
+#: Template/Products/index.ctp:29 Template/Products/view.ctp:50
+#: Template/ProductsTransactions/edit.ctp:5
+#: Template/ProductsTransactions/index.ctp:31
+#: Template/RefPaymentMethods/edit.ctp:5
+#: Template/RefPaymentMethods/index.ctp:25 Template/SalesOutlets/edit.ctp:5
+#: Template/SalesOutlets/index.ctp:27 Template/SalesOutlets/view.ctp:52
+#: Template/SalesTransactions/edit.ctp:5
+#: Template/SalesTransactions/index.ctp:45
+#: Template/SalesTransactions/view.ctp78;103 Template/Staffs/edit.ctp:5
+#: Template/Staffs/index.ctp:56 Template/Staffs/view.ctp:76
+msgid "Delete"
+msgstr "Effacer"
+
+#: Template/Customers/edit.ctp:7 Template/Customers/view.ctp5;48
+#: Template/Payments/edit.ctp:7 Template/Payments/index.ctp:31
+#: Template/Payments/view.ctp:5 Template/Products/edit.ctp:7
+#: Template/Products/index.ctp:29 Template/Products/view.ctp5;50
+#: Template/ProductsTransactions/edit.ctp:7
+#: Template/ProductsTransactions/index.ctp:31
+#: Template/ProductsTransactions/view.ctp:5
+#: Template/RefPaymentMethods/edit.ctp:7
+#: Template/RefPaymentMethods/index.ctp:25
+#: Template/RefPaymentMethods/view.ctp:5 Template/SalesOutlets/edit.ctp:7
+#: Template/SalesOutlets/index.ctp:27 Template/SalesOutlets/view.ctp5;52
+#: Template/SalesTransactions/edit.ctp:7
+#: Template/SalesTransactions/index.ctp:45
+#: Template/SalesTransactions/view.ctp5;78;103 Template/Staffs/edit.ctp:7
+#: Template/Staffs/index.ctp:56 Template/Staffs/view.ctp5;76
+msgid "Are you sure you want to delete # {0}?"
+msgstr "Etes-vous sûr de vouloir supprimer # {0}?"
+
+#: Template/Customers/edit.ctp:18 Template/Customers/view.ctp:4
+msgid "Edit Customer"
+msgstr "Modifier la clientèle"
+
+#: Template/Customers/index.ctp:4 Template/Customers/view.ctp:7
+#: Template/SalesTransactions/add.ctp:6 Template/SalesTransactions/edit.ctp:12
+#: Template/SalesTransactions/index.ctp:6
+#: Template/SalesTransactions/view.ctp:9
+msgid "New Customer"
+msgstr "Nouveau client"
+
+#: Template/Customers/index.ctp:10
+msgid "Customers"
+msgstr "Les clients"
+
+#: Template/Customers/index.ctp:23 Template/Customers/view.ctp:46
+#: Template/Payments/index.ctp:29 Template/Products/index.ctp:27
+#: Template/Products/view.ctp:48 Template/ProductsTransactions/index.ctp:29
+#: Template/RefPaymentMethods/index.ctp:23 Template/SalesOutlets/index.ctp:25
+#: Template/SalesOutlets/view.ctp:50 Template/SalesTransactions/index.ctp:43
+#: Template/SalesTransactions/view.ctp76;101 Template/Staffs/index.ctp:54
+#: Template/Staffs/view.ctp:74
+msgid "View"
+msgstr "Vue"
+
+#: Template/Customers/index.ctp:24 Template/Customers/view.ctp:47
+#: Template/Payments/index.ctp:30 Template/Products/index.ctp:28
+#: Template/Products/view.ctp:49 Template/ProductsTransactions/index.ctp:30
+#: Template/RefPaymentMethods/index.ctp:24 Template/SalesOutlets/index.ctp:26
+#: Template/SalesOutlets/view.ctp:51 Template/SalesTransactions/index.ctp:44
+#: Template/SalesTransactions/view.ctp77;102 Template/Staffs/index.ctp:55
+#: Template/Staffs/view.ctp:75
+msgid "Edit"
+msgstr "modifier"
+
+#: Template/Customers/index.ctp:25
+msgid "Are you sure you want to delete : {0}?"
+msgstr "Etes-vous sûr de vouloir supprimer: {0}?"
+
+#: Template/Customers/index.ctp:33 Template/Payments/index.ctp:39
+#: Template/Products/index.ctp:37 Template/ProductsTransactions/index.ctp:39
+#: Template/RefPaymentMethods/index.ctp:33 Template/SalesOutlets/index.ctp:35
+#: Template/SalesTransactions/index.ctp:53 Template/Staffs/index.ctp:64
+msgid "previous"
+msgstr "précédent"
+
+#: Template/Customers/index.ctp:35 Template/Payments/index.ctp:41
+#: Template/Products/index.ctp:39 Template/ProductsTransactions/index.ctp:41
+#: Template/RefPaymentMethods/index.ctp:35 Template/SalesOutlets/index.ctp:37
+#: Template/SalesTransactions/index.ctp:55 Template/Staffs/index.ctp:66
+msgid "next"
+msgstr "prochain"
+
+#: Template/Customers/view.ctp:5
+msgid "Delete Customer"
+msgstr "Supprimer client"
+
+#: Template/Customers/view.ctp:16
+msgid "Customer Type"
+msgstr "Type de client"
+
+#: Template/Customers/view.ctp:21 Template/SalesOutlets/view.ctp:25
+#: Template/Staffs/view.ctp:49
+msgid "Related Sales Transactions"
+msgstr "Related opérations de vente"
+
+#: Template/Customers/view.ctp:25 Template/Products/view.ctp:16
+#: Template/SalesOutlets/view.ctp20;29
+#: Template/SalesTransactions/view.ctp36;61 Template/Staffs/view.ctp:53
+msgid "Id"
+msgstr "ça"
+
+#: Template/Customers/view.ctp:26 Template/SalesOutlets/view.ctp:30
+#: Template/Staffs/view.ctp:54
+msgid "Customer Id"
+msgstr "N ° de client"
+
+#: Template/Customers/view.ctp:27 Template/SalesOutlets/view.ctp:31
+#: Template/Staffs/view.ctp:55
+msgid "Sales Outlet Id"
+msgstr "Sales Outlet Id"
+
+#: Template/Customers/view.ctp:28 Template/SalesOutlets/view.ctp:32
+#: Template/Staffs/view.ctp:56
+msgid "Staff Id"
+msgstr "Le personnel Id"
+
+#: Template/Customers/view.ctp:29 Template/SalesOutlets/view.ctp:33
+#: Template/SalesTransactions/view.ctp:48 Template/Staffs/view.ctp:57
+msgid "Transaction Date Time"
+msgstr "Transaction Date Heure"
+
+#: Template/Customers/view.ctp:30 Template/SalesOutlets/view.ctp:34
+#: Template/SalesTransactions/view.ctp:40 Template/Staffs/view.ctp:58
+msgid "Transaction Wholesale Price"
+msgstr "Transaction Prix de gros"
+
+#: Template/Customers/view.ctp:31 Template/SalesOutlets/view.ctp:35
+#: Template/SalesTransactions/view.ctp:44 Template/Staffs/view.ctp:59
+msgid "Transaction Retail Price"
+msgstr "Transaction Prix de détail"
+
+#: Template/Customers/view.ctp:32 Template/Payments/view.ctp:34
+#: Template/SalesOutlets/view.ctp:36 Template/SalesTransactions/view.ctp53;65
+#: Template/Staffs/view.ctp:60
+msgid "Other Details"
+msgstr "Autres détails"
+
+#: Template/Layout/default.ctp:50
+msgid "Logout"
+msgstr "Se déconnecter"
+
+#: Template/Layout/default.ctp:52 Template/Staffs/login.ctp:1
+msgid "Login"
+msgstr "S'identifier"
+
+#: Template/Layout/default.ctp:53
+msgid "Register"
+msgstr "registre"
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr "Erreur"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "Arrière"
+
+#: Template/Payments/add.ctp:4 Template/Payments/edit.ctp:10
+#: Template/Payments/view.ctp:6 Template/SalesTransactions/add.ctp:11
+#: Template/SalesTransactions/edit.ctp:17
+#: Template/SalesTransactions/index.ctp:11
+#: Template/SalesTransactions/view.ctp:14
+msgid "List Payments"
+msgstr "Liste des paiements"
+
+#: Template/Payments/add.ctp:12
+msgid "Add Payment"
+msgstr "Ajouter Paiement"
+
+#: Template/Payments/edit.ctp:18 Template/Payments/view.ctp:4
+msgid "Edit Payment"
+msgstr "Modifier Paiement"
+
+#: Template/Payments/edit.ctp:21
+msgid "Transaction #"
+msgstr "Transaction #"
+
+#: Template/Payments/index.ctp:4 Template/Payments/view.ctp:7
+#: Template/SalesTransactions/add.ctp:12
+#: Template/SalesTransactions/edit.ctp:18
+#: Template/SalesTransactions/index.ctp:12
+#: Template/SalesTransactions/view.ctp:15
+msgid "New Payment"
+msgstr "Nouveau paiement"
+
+#: Template/Payments/index.ctp:10
+msgid "Payments"
+msgstr "Paiements"
+
+#: Template/Payments/index.ctp:14 Template/Payments/view.ctp:16
+msgid "Payment #"
+msgstr "Paiement #"
+
+#: Template/Payments/index.ctp:25 Template/Payments/view.ctp:21
+msgid "N/A"
+msgstr "N / A"
+
+#: Template/Payments/view.ctp:5
+msgid "Delete Payment"
+msgstr "Supprimer Paiement"
+
+#: Template/Payments/view.ctp:20 Template/RefPaymentMethods/view.ctp:18
+#: Template/SalesTransactions/view.ctp:62
+msgid "Payment Method Code"
+msgstr "Paiement Code Méthode"
+
+#: Template/Payments/view.ctp:24 Template/Products/view.ctp:38
+#: Template/SalesTransactions/view.ctp63;91
+msgid "Sales Transaction Id"
+msgstr "Transaction de vente Id"
+
+#: Template/Payments/view.ctp:29 Template/SalesTransactions/view.ctp:64
+msgid "Payment Amount"
+msgstr "Montant du paiement"
+
+#: Template/Products/add.ctp:4 Template/Products/edit.ctp:10
+#: Template/Products/view.ctp:6 Template/ProductsTransactions/add.ctp:5
+#: Template/ProductsTransactions/edit.ctp:11
+#: Template/ProductsTransactions/index.ctp:5
+#: Template/ProductsTransactions/view.ctp:8
+msgid "List Products"
+msgstr "Liste des produits"
+
+#: Template/Products/add.ctp:5 Template/Products/edit.ctp:11
+#: Template/Products/index.ctp:5 Template/Products/view.ctp:8
+#: Template/ProductsTransactions/add.ctp:4
+#: Template/ProductsTransactions/edit.ctp:10
+#: Template/ProductsTransactions/view.ctp:6
+#: Template/SalesTransactions/add.ctp:13
+#: Template/SalesTransactions/edit.ctp:19
+#: Template/SalesTransactions/index.ctp:13
+#: Template/SalesTransactions/view.ctp:16
+msgid "List Products Transactions"
+msgstr "Produits Liste Transactions"
+
+#: Template/Products/add.ctp:6 Template/Products/edit.ctp:12
+#: Template/Products/index.ctp:6 Template/Products/view.ctp:9
+#: Template/ProductsTransactions/index.ctp:4
+#: Template/ProductsTransactions/view.ctp:7
+#: Template/SalesTransactions/add.ctp:14
+#: Template/SalesTransactions/edit.ctp:20
+#: Template/SalesTransactions/index.ctp:14
+#: Template/SalesTransactions/view.ctp:17
+msgid "New Products Transaction"
+msgstr "Nouveaux produits Transaction"
+
+#: Template/Products/add.ctp:12
+msgid "Add Product"
+msgstr "Ajouter le produit"
+
+#: Template/Products/edit.ctp:18 Template/Products/view.ctp:4
+msgid "Edit Product"
+msgstr "Modifier le produit"
+
+#: Template/Products/index.ctp:4 Template/Products/view.ctp:7
+#: Template/ProductsTransactions/add.ctp:6
+#: Template/ProductsTransactions/edit.ctp:12
+#: Template/ProductsTransactions/index.ctp:6
+#: Template/ProductsTransactions/view.ctp:9
+msgid "New Product"
+msgstr "Nouveau produit"
+
+#: Template/Products/index.ctp:10
+msgid "Products"
+msgstr "Produits"
+
+#: Template/Products/view.ctp:5
+msgid "Delete Product"
+msgstr "Supprimer produit"
+
+#: Template/Products/view.ctp:20
+msgid "Product Wholesale Price"
+msgstr "Produit Prix de gros"
+
+#: Template/Products/view.ctp:24
+msgid "Product Retail Price"
+msgstr "Prix ​​de détail de produits"
+
+#: Template/Products/view.ctp:29
+msgid "Product Details"
+msgstr "détails du produit"
+
+#: Template/Products/view.ctp:33 Template/SalesTransactions/view.ctp:86
+msgid "Related Products Transactions"
+msgstr "Produits connexes Transactions"
+
+#: Template/Products/view.ctp:37 Template/SalesTransactions/view.ctp:90
+msgid "Product Id"
+msgstr "Id Produit"
+
+#: Template/Products/view.ctp:39 Template/ProductsTransactions/view.ctp:26
+#: Template/SalesTransactions/view.ctp:92
+msgid "Quantity"
+msgstr "Quantité"
+
+#: Template/ProductsTransactions/add.ctp:14
+msgid "Add Products Transaction"
+msgstr "Ajouter les produits Transaction"
+
+#: Template/ProductsTransactions/edit.ctp:20
+#: Template/ProductsTransactions/view.ctp:4
+msgid "Edit Products Transaction"
+msgstr "Modifier les produits Transaction"
+
+#: Template/ProductsTransactions/index.ctp:12
+msgid "Products Transactions"
+msgstr "Produits Transactions"
+
+#: Template/ProductsTransactions/view.ctp:5
+msgid "Delete Products Transaction"
+msgstr "Supprimer Produits Transaction"
+
+#: Template/ProductsTransactions/view.ctp:18
+msgid "Product"
+msgstr "Produit"
+
+#: Template/ProductsTransactions/view.ctp:22
+msgid "Sales Transaction"
+msgstr "Transaction de vente"
+
+#: Template/RefPaymentMethods/add.ctp:4 Template/RefPaymentMethods/edit.ctp:10
+#: Template/RefPaymentMethods/view.ctp:6
+msgid "List Ref Payment Methods"
+msgstr "Liste Ref Modes de paiement"
+
+#: Template/RefPaymentMethods/add.ctp:10
+msgid "Add Ref Payment Method"
+msgstr "Ajouter Ref Méthode de paiement"
+
+#: Template/RefPaymentMethods/edit.ctp:16
+#: Template/RefPaymentMethods/view.ctp:4
+msgid "Edit Ref Payment Method"
+msgstr "Modifier Ref Méthode de paiement"
+
+#: Template/RefPaymentMethods/index.ctp:4
+#: Template/RefPaymentMethods/view.ctp:7
+msgid "New Ref Payment Method"
+msgstr "Nouvelle méthode de paiement Ref"
+
+#: Template/RefPaymentMethods/index.ctp:8
+msgid "Ref Payment Methods"
+msgstr "Modes de paiement Ref"
+
+#: Template/RefPaymentMethods/view.ctp:5
+msgid "Delete Ref Payment Method"
+msgstr "Supprimer Ref Méthode de paiement"
+
+#: Template/RefPaymentMethods/view.ctp:14
+msgid "Payment Method Name"
+msgstr "Méthode de paiement Nom"
+
+#: Template/RefPaymentMethods/view.ctp:23
+msgid "Payment Method Description"
+msgstr "Paiement Méthode Description"
+
+#: Template/SalesOutlets/add.ctp:4 Template/SalesOutlets/edit.ctp:10
+#: Template/SalesOutlets/view.ctp:6 Template/SalesTransactions/add.ctp:7
+#: Template/SalesTransactions/edit.ctp:13
+#: Template/SalesTransactions/index.ctp:7
+#: Template/SalesTransactions/view.ctp:10
+msgid "List Sales Outlets"
+msgstr "Points de vente Liste de vente"
+
+#: Template/SalesOutlets/add.ctp:12
+msgid "Add Sales Outlet"
+msgstr "Ajouter Sales Outlet"
+
+#: Template/SalesOutlets/edit.ctp:18 Template/SalesOutlets/view.ctp:4
+msgid "Edit Sales Outlet"
+msgstr "Modifier Sales Outlet"
+
+#: Template/SalesOutlets/index.ctp:4 Template/SalesOutlets/view.ctp:7
+#: Template/SalesTransactions/add.ctp:8 Template/SalesTransactions/edit.ctp:14
+#: Template/SalesTransactions/index.ctp:8
+#: Template/SalesTransactions/view.ctp:11
+msgid "New Sales Outlet"
+msgstr "Nouveau point de vente"
+
+#: Template/SalesOutlets/index.ctp:10
+msgid "Sales Outlets"
+msgstr "Points de vente"
+
+#: Template/SalesOutlets/view.ctp:5
+msgid "Delete Sales Outlet"
+msgstr "Supprimer Sales Outlet"
+
+#: Template/SalesOutlets/view.ctp:16
+msgid "Sales Outlet Detail"
+msgstr "Outlet Sales Détail"
+
+#: Template/SalesTransactions/add.ctp:9 Template/SalesTransactions/edit.ctp:15
+#: Template/SalesTransactions/index.ctp:9
+#: Template/SalesTransactions/view.ctp:12 Template/Staffs/add.ctp:4
+#: Template/Staffs/edit.ctp:10 Template/Staffs/view.ctp:6
+msgid "List Staffs"
+msgstr "Liste Staffs"
+
+#: Template/SalesTransactions/add.ctp:10
+#: Template/SalesTransactions/edit.ctp:16
+#: Template/SalesTransactions/index.ctp:10
+#: Template/SalesTransactions/view.ctp:13 Template/Staffs/index.ctp:4
+#: Template/Staffs/view.ctp:7
+msgid "New Staff"
+msgstr "Nouvelle équipe"
+
+#: Template/SalesTransactions/add.ctp:20
+msgid "Add Sales Transaction"
+msgstr "Ajouter Transaction Sales"
+
+#: Template/SalesTransactions/edit.ctp:26
+#: Template/SalesTransactions/view.ctp:4
+msgid "Edit Sales Transaction"
+msgstr "Transaction Modifier Sales"
+
+#: Template/SalesTransactions/index.ctp:18
+msgid "Sales Transactions"
+msgstr "Transactions de vente"
+
+#: Template/SalesTransactions/view.ctp:5
+msgid "Delete Sales Transaction"
+msgstr "Supprimer Transaction Sales"
+
+#: Template/SalesTransactions/view.ctp:24
+msgid "Customer"
+msgstr "Client"
+
+#: Template/SalesTransactions/view.ctp:28
+msgid "Sales Outlet"
+msgstr "Outlet Sales"
+
+#: Template/SalesTransactions/view.ctp:32
+msgid "Staff"
+msgstr "Personnel"
+
+#: Template/SalesTransactions/view.ctp:57
+msgid "Related Payments"
+msgstr "Les paiements connexes"
+
+#: Template/Staffs/add.ctp:12
+msgid "Add Staff"
+msgstr "Ajouter personnel"
+
+#: Template/Staffs/edit.ctp:18 Template/Staffs/view.ctp:4
+msgid "Edit Staff"
+msgstr "Modifier personnel"
+
+#: Template/Staffs/index.ctp:29
+msgid "Staffs"
+msgstr "Staffs"
+
+#: Template/Staffs/view.ctp:5
+msgid "Delete Staff"
+msgstr "Supprimer personnel"
+
+#: Template/Staffs/view.ctp:16
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: Template/Staffs/view.ctp:20
+msgid "Email"
+msgstr "Email"
+
+#: Template/Staffs/view.ctp:24
+msgid "Password"
+msgstr "Mot de passe"
+
+#: Template/Staffs/view.ctp:28
+msgid "First Name"
+msgstr "Prénom"
+
+#: Template/Staffs/view.ctp:32
+msgid "Last Name"
+msgstr "Nom de famille"
+
+#: Template/Staffs/view.ctp:36
+msgid "Role"
+msgstr "Rôle"
+
+#: Template/Staffs/view.ctp:40
+msgid "Staff #"
+msgstr "Personnel #"
+
+#: Template/Staffs/view.ctp:45
+msgid "Notes"
+msgstr "Remarques"
