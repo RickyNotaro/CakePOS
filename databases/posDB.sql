@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mer 02 Novembre 2016 à 15:06
+-- Généré le :  Mer 02 Novembre 2016 à 15:37
 -- Version du serveur :  5.6.31
 -- Version de PHP :  7.0.10
 
@@ -154,14 +154,16 @@ CREATE TABLE IF NOT EXISTS `staffs` (
   `first_name` varchar(80) NOT NULL,
   `last_name` varchar(80) NOT NULL,
   `role` varchar(80) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `staffs`
 --
 
 INSERT INTO `staffs` (`id`, `username`, `email`, `password`, `notes`, `first_name`, `last_name`, `role`) VALUES
-(2, 'rnotaro', 'rnotaro@localhost.com', '$2y$10$8b873MKhyq3jeWuagmPzFuP5dpmo5Zn.OplxdIbkiYYTCcpuw5x6G', 'Gros poop', 'Ricky', 'Notaro-Garcia', 'gestionnaire');
+(2, 'rnotaro', 'rnotaro@localhost.com', '$2y$10$8b873MKhyq3jeWuagmPzFuP5dpmo5Zn.OplxdIbkiYYTCcpuw5x6G', 'Gros poop', 'Ricky', 'Notaro-Garcia', 'gestionnaire'),
+(3, 'admin', 'admin@localhost.com', '$2y$10$lONd7R97kMVLrU7pO7foaOP.MseFaBsAj6b0Cs9o4tOCE8ha4Wey6', 'Password is admin', 'Admin', 'Nistrater', 'gestionnaire'),
+(4, 'user', 'user@localhost.com', '$2y$10$HswtgTCndNhgbWT/Zo6qre.I1XUisiqGKimTJvbaUw6haVJi0Pipi', 'Password is User', 'User', 'Name', 'employe');
 
 --
 -- Index pour les tables exportées
@@ -254,7 +256,7 @@ ALTER TABLE `sales_transactions`
 -- AUTO_INCREMENT pour la table `staffs`
 --
 ALTER TABLE `staffs`
-  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- Contraintes pour les tables exportées
 --
