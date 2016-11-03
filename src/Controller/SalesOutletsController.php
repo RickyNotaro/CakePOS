@@ -34,7 +34,7 @@ class SalesOutletsController extends AppController
     public function view($id = null)
     {
         $salesOutlet = $this->SalesOutlets->get($id, [
-            'contain' => ['SalesTransactions']
+            'contain' => ['Transactions']
         ]);
 
         $this->set('salesOutlet', $salesOutlet);

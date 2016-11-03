@@ -91,6 +91,6 @@ class AppController extends Controller
             $this->set('_serialize', true);
         }
 
-            $this->viewBuilder()->theme('Twit');
+            $this->viewBuilder()->theme('');
     }
 }

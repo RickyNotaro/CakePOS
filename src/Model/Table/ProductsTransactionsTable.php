@@ -10,7 +10,7 @@ use Cake\Validation\Validator;
  * ProductsTransactions Model
  *
  * @property \Cake\ORM\Association\BelongsTo $Products
- * @property \Cake\ORM\Association\BelongsTo $SalesTransactions
+ * @property \Cake\ORM\Association\BelongsTo $Transactions
  *
  * @method \App\Model\Entity\ProductsTransaction get($primaryKey, $options = [])
  * @method \App\Model\Entity\ProductsTransaction newEntity($data = null, array $options = [])
@@ -34,15 +34,15 @@ class ProductsTransactionsTable extends Table
         parent::initialize($config);
 
         $this->table('products_transactions');
-        $this->displayField('product_id');
-        $this->primaryKey(['product_id', 'sales_transaction_id']);
+        $this->displayField('id');
+        $this->primaryKey('id');
 
         $this->belongsTo('Products', [
             'foreignKey' => 'product_id',
             'joinType' => 'INNER'
         ]);
-        $this->belongsTo('SalesTransactions', [
-            'foreignKey' => 'sales_transaction_id',
+        $this->belongsTo('Transactions', [
+            'foreignKey' => 'transaction_id',
             'joinType' => 'INNER'
         ]);
     }
@@ -55,6 +55,10 @@ class ProductsTransactionsTable extends Table
      */
     public function validationDefault(Validator $validator)
     {
+        $validator
+            ->integer('id')
+            ->allowEmpty('id', 'create');
+
         $validator
             ->integer('quantity')
             ->requirePresence('quantity', 'create')
@@ -73,7 +77,7 @@ class ProductsTransactionsTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['product_id'], 'Products'));
-        $rules->add($rules->existsIn(['sales_transaction_id'], 'SalesTransactions'));
+        $rules->add($rules->existsIn(['transaction_id'], 'Transactions'));
 
         return $rules;
     }

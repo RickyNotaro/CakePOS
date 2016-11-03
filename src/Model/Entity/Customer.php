@@ -9,8 +9,9 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $customer_type
  *
- * @property \App\Model\Entity\SalesTransaction[] $sales_transactions
- */class Customer extends Entity
+ * @property \App\Model\Entity\Transaction[] $transactions
+ */
+class Customer extends Entity
 {
 
     /**

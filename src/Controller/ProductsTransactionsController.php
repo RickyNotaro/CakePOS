@@ -19,7 +19,7 @@ class ProductsTransactionsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Products', 'SalesTransactions']
+            'contain' => ['Products', 'Transactions']
         ];
         $productsTransactions = $this->paginate($this->ProductsTransactions);
 
@@ -37,7 +37,7 @@ class ProductsTransactionsController extends AppController
     public function view($id = null)
     {
         $productsTransaction = $this->ProductsTransactions->get($id, [
-            'contain' => ['Products', 'SalesTransactions']
+            'contain' => ['Products', 'Transactions']
         ]);
 
         $this->set('productsTransaction', $productsTransaction);
@@ -63,8 +63,8 @@ class ProductsTransactionsController extends AppController
             }
         }
         $products = $this->ProductsTransactions->Products->find('list', ['limit' => 200]);
-        $salesTransactions = $this->ProductsTransactions->SalesTransactions->find('list', ['limit' => 200]);
-        $this->set(compact('productsTransaction', 'products', 'salesTransactions'));
+        $transactions = $this->ProductsTransactions->Transactions->find('list', ['limit' => 200]);
+        $this->set(compact('productsTransaction', 'products', 'transactions'));
         $this->set('_serialize', ['productsTransaction']);
     }
 
@@ -91,8 +91,8 @@ class ProductsTransactionsController extends AppController
             }
         }
         $products = $this->ProductsTransactions->Products->find('list', ['limit' => 200]);
-        $salesTransactions = $this->ProductsTransactions->SalesTransactions->find('list', ['limit' => 200]);
-        $this->set(compact('productsTransaction', 'products', 'salesTransactions'));
+        $transactions = $this->ProductsTransactions->Transactions->find('list', ['limit' => 200]);
+        $this->set(compact('productsTransaction', 'products', 'transactions'));
         $this->set('_serialize', ['productsTransaction']);
     }
 

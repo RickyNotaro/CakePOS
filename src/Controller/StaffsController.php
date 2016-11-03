@@ -2,47 +2,14 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-use Cake\Error\Debugger;
-use Cake\Core\App;
-
 
 /**
  * Staffs Controller
  *
- * @property \App\Model\Table\StaffsTable $Staffs */
+ * @property \App\Model\Table\StaffsTable $Staffs
+ */
 class StaffsController extends AppController
 {
-
-  public function initialize()
-  {
-      parent::initialize();
-    $this->Auth->allow(['display', 'logout', 'add']);
-  }
-
-  public function isAuthorized($user)
-{
-    $action = $this->request->params['action'];
-    // Add et index sont toujours permises.
-
-    if (in_array($action, ['index'])) {
-        return true;
-    }
-
-        if (isset($this->request->params['pass'][0])) {
-    // Vérifie que le bookmark appartient à l'utilisateur courant.
-    $id = $this->request->params['pass'][0];
-    $staff = $this->Staffs->get($id);
-    $currentUserId = $this->Auth->user('id');
-
-
-    if ($currentUserId == $user['id']) {
-        return true;
-    }
-
-    }
-
-    return parent::isAuthorized($user);
-}
 
     /**
      * Index method
@@ -67,7 +34,7 @@ class StaffsController extends AppController
     public function view($id = null)
     {
         $staff = $this->Staffs->get($id, [
-            'contain' => ['SalesTransactions']
+            'contain' => ['Transactions']
         ]);
 
         $this->set('staff', $staff);
@@ -121,6 +88,18 @@ class StaffsController extends AppController
         $this->set(compact('staff'));
         $this->set('_serialize', ['staff']);
     }
+    
+    public function login()
+    {
+      if ($this->request->is('post')) {
+        $staff = $this->Auth->identify();
+        if ($staff) {
+        $this->Auth->setUser($staff);
+        return $this->redirect($this->Auth->redirectUrl());
+        }
+        $this->Flash->error('Your username or password in invalid.');
+      }
+    }
 
     /**
      * Delete method
@@ -141,22 +120,4 @@ class StaffsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
-
-    public function login()
-{
-if ($this->request->is('post')) {
-    $staff = $this->Auth->identify();
-    if ($staff) {
-        $this->Auth->setUser($staff);
-        return $this->redirect($this->Auth->redirectUrl());
-    }
-    $this->Flash->error('Your username or password in invalid.');
-    }
-}
-
-public function logout()
-{
-    $this->Flash->success('You are now disconnected.');
-    return $this->redirect($this->Auth->logout());
-}
 }

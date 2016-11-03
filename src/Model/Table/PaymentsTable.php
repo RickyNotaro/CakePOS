@@ -9,7 +9,8 @@ use Cake\Validation\Validator;
 /**
  * Payments Model
  *
- * @property \Cake\ORM\Association\BelongsTo $SalesTransactions
+ * @property \Cake\ORM\Association\BelongsTo $PaymentMethods
+ * @property \Cake\ORM\Association\BelongsTo $Transactions
  *
  * @method \App\Model\Entity\Payment get($primaryKey, $options = [])
  * @method \App\Model\Entity\Payment newEntity($data = null, array $options = [])
@@ -36,13 +37,12 @@ class PaymentsTable extends Table
         $this->displayField('id');
         $this->primaryKey('id');
 
-        $this->belongsTo('SalesTransactions', [
-            'foreignKey' => 'sales_transaction_id',
+        $this->belongsTo('PaymentMethods', [
+            'foreignKey' => 'payment_method_id',
             'joinType' => 'INNER'
         ]);
-
-        $this->belongsTo('RefPaymentMethods', [
-            'foreignKey' => 'payment_method_code',
+        $this->belongsTo('Transactions', [
+            'foreignKey' => 'sales_transaction_id',
             'joinType' => 'INNER'
         ]);
     }
@@ -60,22 +60,13 @@ class PaymentsTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->integer('payment_method_code')
-            ->requirePresence('payment_method_code', 'create')
-            ->notEmpty('payment_method_code');
-
-
-
-        $validator
-            ->integer('sales_transaction_id')
-            ->requirePresence('sales_transaction_id')
-            ->notEmpty('sales_transaction_id');
-
-        $validator
             ->numeric('payment_amount')
             ->requirePresence('payment_amount', 'create')
             ->notEmpty('payment_amount');
 
+        $validator
+            ->requirePresence('other_details', 'create')
+            ->notEmpty('other_details');
 
         return $validator;
     }
@@ -89,7 +80,8 @@ class PaymentsTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['sales_transaction_id'], 'SalesTransactions'));
+        $rules->add($rules->existsIn(['payment_method_id'], 'PaymentMethods'));
+        $rules->add($rules->existsIn(['sales_transaction_id'], 'Transactions'));
 
         return $rules;
     }
