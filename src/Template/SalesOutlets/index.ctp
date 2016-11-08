@@ -12,7 +12,6 @@ $this->start('tb_actions');
 <table class="table table-striped" cellpadding="0" cellspacing="0">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('id'); ?></th>
             <th><?= $this->Paginator->sort('sales_outlet_name'); ?></th>
             <th class="actions"><?= __('Actions'); ?></th>
         </tr>
@@ -20,7 +19,6 @@ $this->start('tb_actions');
     <tbody>
         <?php foreach ($salesOutlets as $salesOutlet): ?>
         <tr>
-            <td><?= $this->Number->format($salesOutlet->id) ?></td>
             <td><?= h($salesOutlet->sales_outlet_name) ?></td>
             <td class="actions">
                 <?= $this->Html->link('', ['action' => 'view', $salesOutlet->id], ['title' => __('View'), 'class' => 'btn btn-default glyphicon glyphicon-eye-open']) ?>

@@ -29,16 +29,12 @@ $this->end();
 <div class="panel panel-default">
     <!-- Panel header -->
     <div class="panel-heading">
-        <h3 class="panel-title"><?= h($salesOutlet->id) ?></h3>
+        <h3 class="panel-title"><?= h($salesOutlet->sales_outlet_name) ?></h3>
     </div>
     <table class="table table-striped" cellpadding="0" cellspacing="0">
         <tr>
             <td><?= __('Sales Outlet Name') ?></td>
             <td><?= h($salesOutlet->sales_outlet_name) ?></td>
-        </tr>
-        <tr>
-            <td><?= __('Id') ?></td>
-            <td><?= $this->Number->format($salesOutlet->id) ?></td>
         </tr>
     </table>
 </div>
@@ -52,7 +48,6 @@ $this->end();
         <table class="table table-striped">
             <thead>
             <tr>
-                <th><?= __('Id') ?></th>
                 <th><?= __('Customer Id') ?></th>
                 <th><?= __('Sales Outlet Id') ?></th>
                 <th><?= __('Staff Id') ?></th>
@@ -65,8 +60,7 @@ $this->end();
             <tbody>
             <?php foreach ($salesOutlet->transactions as $transactions): ?>
                 <tr>
-                    <td><?= h($transactions->id) ?></td>
-                    <td><?= h($transactions->customer_id) ?></td>
+                    <td><?= h($transactions->customer_id->customer_type) ?></td>
                     <td><?= h($transactions->sales_outlet_id) ?></td>
                     <td><?= h($transactions->staff_id) ?></td>
                     <td><?= h($transactions->transaction_date_time) ?></td>
