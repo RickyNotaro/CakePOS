@@ -11,6 +11,38 @@ use App\Controller\AppController;
 class StaffsController extends AppController
 {
 
+  public function initialize()
+  {
+      parent::initialize();
+    $this->Auth->deny('edit');
+    $this->Auth->allow(['display', 'logout', 'add']);
+  }
+
+  public function isAuthorized($user)
+{
+
+    $action = $this->request->params['action'];
+
+
+    if (in_array($action, ['index'])) {
+        return true;
+    }
+
+    if (isset($this->request->params['pass'][0])) {
+      $editId = $this->request->params['pass'][0];
+      $currentUserId = $this->Auth->user('id');
+
+
+      if ($currentUserId == $editId) {
+          return true;
+      }
+
+    }
+
+    return parent::isAuthorized($user);
+}
+
+
     /**
      * Index method
      *
@@ -88,7 +120,7 @@ class StaffsController extends AppController
         $this->set(compact('staff'));
         $this->set('_serialize', ['staff']);
     }
-    
+
     public function login()
     {
       if ($this->request->is('post')) {
@@ -119,5 +151,11 @@ class StaffsController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function logout()
+    {
+        $this->Flash->success('You are now disconnected.');
+        return $this->redirect($this->Auth->logout());
     }
 }

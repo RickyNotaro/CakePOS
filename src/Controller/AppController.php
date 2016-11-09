@@ -63,7 +63,7 @@ class AppController extends Controller
         // Autorise l'action display pour que notre controller de pages
         // continue de fonctionner.
         $this->Auth->allow(['display']);
-        $this->Auth->allow(['view', 'index']);
+        $this->Auth->allow(['view', 'index', 'edit']);
     }
 
 
@@ -73,6 +73,7 @@ class AppController extends Controller
     if (isset($user['role']) && $user['role'] === 'gestionnaire') {
         return true;
     }
+    $this->Flash->error(__("You are not autorized to do this action."));
     // Par défaut refuser
     return false;
 }
