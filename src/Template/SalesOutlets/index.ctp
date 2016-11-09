@@ -9,31 +9,21 @@ $this->start('tb_actions');
 <?php $this->end(); ?>
 <?php $this->assign('tb_sidebar', '<ul class="nav nav-sidebar">' . $this->fetch('tb_actions') . '</ul>'); ?>
 
-<table class="table table-striped" cellpadding="0" cellspacing="0">
-    <thead>
-        <tr>
-            <th><?= $this->Paginator->sort('sales_outlet_name'); ?></th>
-            <th class="actions"><?= __('Actions'); ?></th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach ($salesOutlets as $salesOutlet): ?>
-        <tr>
-            <td><?= h($salesOutlet->sales_outlet_name) ?></td>
-            <td class="actions">
-                <?= $this->Html->link('', ['action' => 'view', $salesOutlet->id], ['title' => __('View'), 'class' => 'btn btn-default glyphicon glyphicon-eye-open']) ?>
-                <?= $this->Html->link('', ['action' => 'edit', $salesOutlet->id], ['title' => __('Edit'), 'class' => 'btn btn-default glyphicon glyphicon-pencil']) ?>
-                <?= $this->Form->postLink('', ['action' => 'delete', $salesOutlet->id], ['confirm' => __('Are you sure you want to delete # {0}?', $salesOutlet->id), 'title' => __('Delete'), 'class' => 'btn btn-default glyphicon glyphicon-trash']) ?>
-            </td>
-        </tr>
-        <?php endforeach; ?>
-    </tbody>
-</table>
-<div class="paginator">
-    <ul class="pagination">
-        <?= $this->Paginator->prev('< ' . __('previous')) ?>
-        <?= $this->Paginator->numbers(['before' => '', 'after' => '']) ?>
-        <?= $this->Paginator->next(__('next') . ' >') ?>
-    </ul>
-    <p><?= $this->Paginator->counter() ?></p>
+<?php $this->Html->script('app', ['block' => true]); ?>
+
+<div class="col-md-4 col-md-offset-4">
+  <form action="sales-outlets/add.json" class="form-inline" role="form" id="add-to-do">
+    <div class="form-group">
+      <div class="input-append" id="task-input">
+        <input class="form-control input" name="sales_outlet_name" type="text" id="inputLarge" placeholder="Enter an outlet name...">
+        <button type="submit" class="btn btn-primary ">Add</button>
+        </div>
+      </div>
+  </form>
+  <div class="task-container" id="outlets">
+    <form action="/outlets/finish.json" class="form-inline" role="form" id="finish-to-do">
+      <div id="incomplete-label"><h5>Outlets:</h5></div>
+      <div class="form-group" id="incomplete-outlets"></div>
+    </form>
+  </div>
 </div>
