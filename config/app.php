@@ -221,9 +221,10 @@ return [
     'Datasources' => [
         'default' => [
             'className' => 'Cake\Database\Connection',
-            'driver' => 'Cake\Database\Driver\Mysql',
+            'driver' => 'Cake\Database\Driver\Sqlite',
             'persistent' => false,
             'host' => 'localhost',
+            'database' => ROOT . DS . 'databases' . DS . 'cakePOSlite.sqlite',
             /**
              * CakePHP will use the default DB port based on the driver selected
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
@@ -232,7 +233,7 @@ return [
             //'port' => 'non_standard_port_number',
             'username' => 'root',
             'password' => 'mysql',
-            'database' => 'posDB',
+            //'database' => 'posDB',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'flags' => [],
