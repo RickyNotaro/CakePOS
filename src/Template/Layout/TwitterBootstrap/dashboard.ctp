@@ -25,6 +25,7 @@ $this->start('tb_body_start');
                 <?= '<li>' . $this->Html->link( __('Payment Methods') , ['controller' => 'PaymentMethods']) . '</li>'?>
                 <?= '<li>' . $this->Html->link( __('Payments') , ['controller' => 'Payments']) . '</li>'?>
                 <?= '<li>' . $this->Html->link( __('Products') , ['controller' => 'Products']) . '</li>'?>
+                <?= '<li>' . $this->Html->link( __('Sales Outlets') , ['controller' => 'Sales-Outlets']) . '</li>'?>
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <?php

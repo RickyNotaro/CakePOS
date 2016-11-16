@@ -11,6 +11,13 @@ use App\Controller\AppController;
 class SalesOutletsController extends AppController
 {
 
+    public function initialize()
+    {
+        parent::initialize();
+      $this->Auth->Deny();
+    }
+
+
     /**
      * Index method
      *
