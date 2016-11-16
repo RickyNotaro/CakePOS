@@ -30,7 +30,10 @@ $this->end();
     echo $this->Form->input('first_name');
     echo $this->Form->input('last_name');
     echo $this->Form->input('role');
+    echo "</br>";
+    echo $this->Recaptcha->display();
     ?>
 </fieldset>
+</br>
 <?= $this->Form->button(__("Add")); ?>
 <?= $this->Form->end() ?>

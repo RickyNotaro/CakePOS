@@ -345,4 +345,21 @@ return [
     'Session' => [
         'defaults' => 'php',
     ],
+
+    // Recaptcha Plugin Config
+
+    'Recaptcha' => [
+        // Register API keys at https://www.google.com/recaptcha/admin
+        'sitekey' => '6LelIgwUAAAAAArPjZBTVFUDxmeepTbjl6tLwHqb',
+        'secret' => '6LelIgwUAAAAAPpEYKkIWVDZzJlrfiUDYogbT2R5',
+        // reCAPTCHA supported 40+ languages listed
+        // here: https://developers.google.com/recaptcha/docs/language
+        'lang' => 'fr',
+        // either light or dark
+        'theme' => 'light',
+        // either image or audio
+        'type' => 'image',
+        // either normal or compact
+        'size' => 'normal'
+    ]
 ];
