@@ -24,17 +24,7 @@ class ProductsController extends AppController
         $this->set('_serialize', ['products']);
     }
 
-    public function isAuthorized($user)
- {
-     // peuvent accéder à chaque action
-     if (isset($user['role']) && (($user['role'] === 'gestionnaire') || ($user['role'] === 'employe') ) ) {
-         return true;
-     }
-     // Par défaut refuser
-     return false;
- }
-
-  /**
+    /**
      * View method
      *
      * @param string|null $id Product id.
@@ -44,7 +34,7 @@ class ProductsController extends AppController
     public function view($id = null)
     {
         $product = $this->Products->get($id, [
-            'contain' => ['ProductsTransactions']
+            'contain' => ['Transactions']
         ]);
 
         $this->set('product', $product);
@@ -82,9 +72,7 @@ class ProductsController extends AppController
      */
     public function edit($id = null)
     {
-        $product = $this->Products->get($id, [
-            'contain' => []
-        ]);
+        $product = $this->Products->get($id);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $product = $this->Products->patchEntity($product, $this->request->data);
             if ($this->Products->save($product)) {

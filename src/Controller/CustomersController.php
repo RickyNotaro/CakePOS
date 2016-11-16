@@ -6,7 +6,8 @@ use App\Controller\AppController;
 /**
  * Customers Controller
  *
- * @property \App\Model\Table\CustomersTable $Customers */
+ * @property \App\Model\Table\CustomersTable $Customers
+ */
 class CustomersController extends AppController
 {
 
@@ -33,7 +34,7 @@ class CustomersController extends AppController
     public function view($id = null)
     {
         $customer = $this->Customers->get($id, [
-            'contain' => ['SalesTransactions']
+            'contain' => ['Transactions']
         ]);
 
         $this->set('customer', $customer);

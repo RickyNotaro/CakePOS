@@ -1,55 +1,87 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Customer'), ['action' => 'edit', $customer->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Customer'), ['action' => 'delete', $customer->id], ['confirm' => __('Are you sure you want to delete # {0}?', $customer->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Customers'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Customer'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Sales Transactions'), ['controller' => 'SalesTransactions', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Sales Transaction'), ['controller' => 'SalesTransactions', 'action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="customers view large-9 medium-8 columns content">
-    <h3><?= h($customer->id) ?></h3>
-    <table class="vertical-table">
+<?php
+$this->extend('../Layout/TwitterBootstrap/dashboard');
+
+
+$this->start('tb_actions');
+?>
+<li><?= $this->Html->link(__('Edit Customer'), ['action' => 'edit', $customer->id]) ?> </li>
+<li><?= $this->Form->postLink(__('Delete Customer'), ['action' => 'delete', $customer->id], ['confirm' => __('Are you sure you want to delete # {0}?', $customer->id)]) ?> </li>
+<li><?= $this->Html->link(__('List Customers'), ['action' => 'index']) ?> </li>
+<li><?= $this->Html->link(__('New Customer'), ['action' => 'add']) ?> </li>
+<li><?= $this->Html->link(__('List Transactions'), ['controller' => 'Transactions', 'action' => 'index']) ?> </li>
+<li><?= $this->Html->link(__('New Transaction'), ['controller' => 'Transactions', 'action' => 'add']) ?> </li>
+<?php
+$this->end();
+
+$this->start('tb_sidebar');
+?>
+<ul class="nav nav-sidebar">
+<li><?= $this->Html->link(__('Edit Customer'), ['action' => 'edit', $customer->id]) ?> </li>
+<li><?= $this->Form->postLink(__('Delete Customer'), ['action' => 'delete', $customer->id], ['confirm' => __('Are you sure you want to delete # {0}?', $customer->id)]) ?> </li>
+<li><?= $this->Html->link(__('List Customers'), ['action' => 'index']) ?> </li>
+<li><?= $this->Html->link(__('New Customer'), ['action' => 'add']) ?> </li>
+<li><?= $this->Html->link(__('List Transactions'), ['controller' => 'Transactions', 'action' => 'index']) ?> </li>
+<li><?= $this->Html->link(__('New Transaction'), ['controller' => 'Transactions', 'action' => 'add']) ?> </li>
+</ul>
+<?php
+$this->end();
+?>
+<div class="panel panel-default">
+    <!-- Panel header -->
+    <div class="panel-heading">
+        <h3 class="panel-title"><?= h($customer->id) ?></h3>
+    </div>
+    <table class="table table-striped" cellpadding="0" cellspacing="0">
         <tr>
-            <th scope="row"><?= __('Customer Type') ?></th>
+            <td><?= __('Customer Type') ?></td>
             <td><?= h($customer->customer_type) ?></td>
         </tr>
+        <tr>
+            <td><?= __('Id') ?></td>
+            <td><?= $this->Number->format($customer->id) ?></td>
+        </tr>
     </table>
-    <div class="related">
-        <h4><?= __('Related Sales Transactions') ?></h4>
-        <?php if (!empty($customer->sales_transactions)): ?>
-        <table cellpadding="0" cellspacing="0">
-            <tr>
-                <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Customer Id') ?></th>
-                <th scope="col"><?= __('Sales Outlet Id') ?></th>
-                <th scope="col"><?= __('Staff Id') ?></th>
-                <th scope="col"><?= __('Transaction Date Time') ?></th>
-                <th scope="col"><?= __('Transaction Wholesale Price') ?></th>
-                <th scope="col"><?= __('Transaction Retail Price') ?></th>
-                <th scope="col"><?= __('Other Details') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-            <?php foreach ($customer->sales_transactions as $salesTransactions): ?>
-            <tr>
-                <td><?= h($salesTransactions->id) ?></td>
-                <td><?= h($salesTransactions->customer_id) ?></td>
-                <td><?= h($salesTransactions->sales_outlet_id) ?></td>
-                <td><?= h($salesTransactions->staff_id) ?></td>
-                <td><?= h($salesTransactions->transaction_date_time) ?></td>
-                <td><?= h($salesTransactions->transaction_wholesale_price) ?></td>
-                <td><?= h($salesTransactions->transaction_retail_price) ?></td>
-                <td><?= h($salesTransactions->other_details) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'SalesTransactions', 'action' => 'view', $salesTransactions->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'SalesTransactions', 'action' => 'edit', $salesTransactions->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'SalesTransactions', 'action' => 'delete', $salesTransactions->id], ['confirm' => __('Are you sure you want to delete # {0}?', $salesTransactions->id)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-        <?php endif; ?>
+</div>
+
+<div class="panel panel-default">
+    <!-- Panel header -->
+    <div class="panel-heading">
+        <h3 class="panel-title"><?= __('Related Transactions') ?></h3>
     </div>
+    <?php if (!empty($customer->transactions)): ?>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th><?= __('Id') ?></th>
+                <th><?= __('Customer Id') ?></th>
+                <th><?= __('Sales Outlet Id') ?></th>
+                <th><?= __('Staff Id') ?></th>
+                <th><?= __('Transaction Date Time') ?></th>
+                <th><?= __('Transaction Retail Price') ?></th>
+                <th><?= __('Other Details') ?></th>
+                <th class="actions"><?= __('Actions') ?></th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($customer->transactions as $transactions): ?>
+                <tr>
+                    <td><?= h($transactions->id) ?></td>
+                    <td><?= h($transactions->customer_id) ?></td>
+                    <td><?= h($transactions->sales_outlet_id) ?></td>
+                    <td><?= h($transactions->staff_id) ?></td>
+                    <td><?= h($transactions->transaction_date_time) ?></td>
+                    <td><?= h($transactions->transaction_retail_price) ?></td>
+                    <td><?= h($transactions->other_details) ?></td>
+                    <td class="actions">
+                        <?= $this->Html->link('', ['controller' => 'Transactions', 'action' => 'view', $transactions->id], ['title' => __('View'), 'class' => 'btn btn-default glyphicon glyphicon-eye-open']) ?>
+                        <?= $this->Html->link('', ['controller' => 'Transactions', 'action' => 'edit', $transactions->id], ['title' => __('Edit'), 'class' => 'btn btn-default glyphicon glyphicon-pencil']) ?>
+                        <?= $this->Form->postLink('', ['controller' => 'Transactions', 'action' => 'delete', $transactions->id], ['confirm' => __('Are you sure you want to delete # {0}?', $transactions->id), 'title' => __('Delete'), 'class' => 'btn btn-default glyphicon glyphicon-trash']) ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    <?php else: ?>
+        <p class="panel-body">no related Transactions</p>
+    <?php endif; ?>
 </div>

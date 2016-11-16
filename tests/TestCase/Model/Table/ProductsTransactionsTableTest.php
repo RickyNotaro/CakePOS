@@ -26,7 +26,10 @@ class ProductsTransactionsTableTest extends TestCase
     public $fixtures = [
         'app.products_transactions',
         'app.products',
-        'app.sales_transactions'
+        'app.transactions',
+        'app.customers',
+        'app.sales_outlets',
+        'app.staffs'
     ];
 
     /**

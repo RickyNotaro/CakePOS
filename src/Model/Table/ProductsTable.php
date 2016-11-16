@@ -9,7 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Products Model
  *
- * @property \Cake\ORM\Association\HasMany $ProductsTransactions
+ * @property \Cake\ORM\Association\BelongsToMany $Transactions
  *
  * @method \App\Model\Entity\Product get($primaryKey, $options = [])
  * @method \App\Model\Entity\Product newEntity($data = null, array $options = [])
@@ -33,11 +33,13 @@ class ProductsTable extends Table
         parent::initialize($config);
 
         $this->table('products');
-        $this->displayField('id');
+        $this->displayField('product_name');
         $this->primaryKey('id');
 
-        $this->hasMany('ProductsTransactions', [
-            'foreignKey' => 'product_id'
+        $this->belongsToMany('Transactions', [
+            'foreignKey' => 'product_id',
+            'targetForeignKey' => 'transaction_id',
+            'joinTable' => 'products_transactions'
         ]);
     }
 
@@ -54,13 +56,12 @@ class ProductsTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->requirePresence('product_details', 'create')
-            ->notEmpty('product_details');
+            ->requirePresence('product_name', 'create')
+            ->notEmpty('product_name');
 
         $validator
-            ->decimal('product_wholesale_price')
-            ->requirePresence('product_wholesale_price', 'create')
-            ->notEmpty('product_wholesale_price');
+            ->requirePresence('product_description', 'create')
+            ->notEmpty('product_description');
 
         $validator
             ->decimal('product_retail_price')

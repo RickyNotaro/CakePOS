@@ -17,12 +17,11 @@ class StaffsControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.staffs',
-        'app.sales_transactions',
+        'app.transactions',
         'app.customers',
         'app.sales_outlets',
-        'app.payments',
-        'app.products_transactions',
-        'app.products'
+        'app.products',
+        'app.products_transactions'
     ];
 
     /**

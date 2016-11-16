@@ -9,7 +9,7 @@ use Cake\Validation\Validator;
 /**
  * SalesOutlets Model
  *
- * @property \Cake\ORM\Association\HasMany $SalesTransactions
+ * @property \Cake\ORM\Association\HasMany $Transactions
  *
  * @method \App\Model\Entity\SalesOutlet get($primaryKey, $options = [])
  * @method \App\Model\Entity\SalesOutlet newEntity($data = null, array $options = [])
@@ -33,10 +33,10 @@ class SalesOutletsTable extends Table
         parent::initialize($config);
 
         $this->table('sales_outlets');
-        $this->displayField('sales_outlet_detail');
+        $this->displayField('sales_outlet_name');
         $this->primaryKey('id');
 
-        $this->hasMany('SalesTransactions', [
+        $this->hasMany('Transactions', [
             'foreignKey' => 'sales_outlet_id'
         ]);
     }
@@ -54,8 +54,8 @@ class SalesOutletsTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->requirePresence('sales_outlet_detail', 'create')
-            ->notEmpty('sales_outlet_detail');
+            ->requirePresence('sales_outlet_name', 'create')
+            ->notEmpty('sales_outlet_name');
 
         return $validator;
     }

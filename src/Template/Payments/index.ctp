@@ -1,45 +1,51 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Payment'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Sales Transactions'), ['controller' => 'SalesTransactions', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Sales Transaction'), ['controller' => 'SalesTransactions', 'action' => 'add']) ?></li>
+<?php
+/* @var $this \Cake\View\View */
+$this->extend('../Layout/TwitterBootstrap/dashboard');
+$this->start('tb_actions');
+?>
+    <li><?= $this->Html->link(__('New Payment'), ['action' => 'add']); ?></li>
+    <li><?= $this->Html->link(__('List PaymentMethods'), ['controller' => 'PaymentMethods', 'action' => 'index']); ?></li>
+    <li><?= $this->Html->link(__('New Payment Method'), ['controller' => 'PaymentMethods', 'action' => 'add']); ?></li>
+    <li><?= $this->Html->link(__('List Transactions'), ['controller' => 'Transactions', 'action' => 'index']); ?></li>
+    <li><?= $this->Html->link(__('New Transaction'), ['controller' => 'Transactions', 'action' => 'add']); ?></li>
+<?php $this->end(); ?>
+<?php $this->assign('tb_sidebar', '<ul class="nav nav-sidebar">' . $this->fetch('tb_actions') . '</ul>'); ?>
+
+<table class="table table-striped" cellpadding="0" cellspacing="0">
+    <thead>
+        <tr>
+            <th><?= $this->Paginator->sort('id'); ?></th>
+            <th><?= $this->Paginator->sort('payment_method_id'); ?></th>
+            <th><?= $this->Paginator->sort('sales_transaction_id'); ?></th>
+            <th><?= $this->Paginator->sort('payment_amount'); ?></th>
+            <th class="actions"><?= __('Actions'); ?></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($payments as $payment): ?>
+        <tr>
+            <td><?= $this->Number->format($payment->id) ?></td>
+            <td>
+                <?= $payment->has('payment_method') ? $this->Html->link($payment->payment_method->id, ['controller' => 'PaymentMethods', 'action' => 'view', $payment->payment_method->id]) : '' ?>
+            </td>
+            <td>
+                <?= $payment->has('transaction') ? $this->Html->link($payment->transaction->id, ['controller' => 'Transactions', 'action' => 'view', $payment->transaction->id]) : '' ?>
+            </td>
+            <td><?= $this->Number->format($payment->payment_amount) ?></td>
+            <td class="actions">
+                <?= $this->Html->link('', ['action' => 'view', $payment->id], ['title' => __('View'), 'class' => 'btn btn-default glyphicon glyphicon-eye-open']) ?>
+                <?= $this->Html->link('', ['action' => 'edit', $payment->id], ['title' => __('Edit'), 'class' => 'btn btn-default glyphicon glyphicon-pencil']) ?>
+                <?= $this->Form->postLink('', ['action' => 'delete', $payment->id], ['confirm' => __('Are you sure you want to delete # {0}?', $payment->id), 'title' => __('Delete'), 'class' => 'btn btn-default glyphicon glyphicon-trash']) ?>
+            </td>
+        </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+<div class="paginator">
+    <ul class="pagination">
+        <?= $this->Paginator->prev('< ' . __('previous')) ?>
+        <?= $this->Paginator->numbers(['before' => '', 'after' => '']) ?>
+        <?= $this->Paginator->next(__('next') . ' >') ?>
     </ul>
-</nav>
-<div class="payments index large-9 medium-8 columns content">
-    <h3><?= __('Payments') ?></h3>
-    <table cellpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-                <th scope="col"><?= $this->Paginator->sort('id', __('Payment #')) ?></th>
-                <th scope="col"><?= $this->Paginator->sort('payment_method_name') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('sales_transaction_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('payment_amount') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($payments as $payment): ?>
-            <tr>
-                <td><?= $this->Number->format($payment->id) ?></td>
-                <td><?= $payment->has('ref_payment_method') ? $this->Html->link($payment->ref_payment_method->payment_method_name, ['controller' => 'RefPaymentMethods', 'action' => 'view', $payment->ref_payment_method->payment_method_code]) : __('N/A') ?></td>
-                <td><?= $this->Number->format($payment->sales_transaction_id) ?></td>
-                <td><?= $this->Number->format($payment->payment_amount) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $payment->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $payment->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $payment->id], ['confirm' => __('Are you sure you want to delete # {0}?', $payment->id)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-        </ul>
-        <p><?= $this->Paginator->counter() ?></p>
-    </div>
+    <p><?= $this->Paginator->counter() ?></p>
 </div>

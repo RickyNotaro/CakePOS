@@ -11,6 +11,13 @@ use App\Controller\AppController;
 class SalesOutletsController extends AppController
 {
 
+    public function initialize()
+    {
+        parent::initialize();
+      $this->Auth->Deny();
+    }
+
+
     /**
      * Index method
      *
@@ -34,7 +41,7 @@ class SalesOutletsController extends AppController
     public function view($id = null)
     {
         $salesOutlet = $this->SalesOutlets->get($id, [
-            'contain' => ['SalesTransactions']
+            'contain' => ['Transactions']
         ]);
 
         $this->set('salesOutlet', $salesOutlet);
@@ -48,19 +55,18 @@ class SalesOutletsController extends AppController
      */
     public function add()
     {
-        $salesOutlet = $this->SalesOutlets->newEntity();
-        if ($this->request->is('post')) {
-            $salesOutlet = $this->SalesOutlets->patchEntity($salesOutlet, $this->request->data);
-            if ($this->SalesOutlets->save($salesOutlet)) {
-                $this->Flash->success(__('The sales outlet has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The sales outlet could not be saved. Please, try again.'));
-            }
-        }
-        $this->set(compact('salesOutlet'));
-        $this->set('_serialize', ['salesOutlet']);
+      $response = ['result' => 'fail'];
+      $errors = $this->SalesOutlets->validator()->errors($this->request->data);
+      if (empty($errors)) {
+          $salesOutlet = $this->SalesOutlets->newEntity($this->request->data);
+          if ($this->SalesOutlets->save($salesOutlet)) {
+              $response = ['result' => 'success'];
+          }
+      } else {
+          $response['error'] = $errors;
+      }
+      $this->set(compact('response'));
+      $this->set('_serialize', ['response']);
     }
 
     /**
@@ -72,22 +78,33 @@ class SalesOutletsController extends AppController
      */
     public function edit($id = null)
     {
-        $salesOutlet = $this->SalesOutlets->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $salesOutlet = $this->SalesOutlets->patchEntity($salesOutlet, $this->request->data);
+      $response = ['result' => 'fail'];
+        $errors = $this->SalesOutlets->validator()->errors($this->request->data);
+        if (empty($errors)) {
+            $salesOutlet = $this->SalesOutlets->newEntity($this->request->data);
+            $salesOutlet->id = $this->request->data['id'];
             if ($this->SalesOutlets->save($salesOutlet)) {
-                $this->Flash->success(__('The sales outlet has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The sales outlet could not be saved. Please, try again.'));
+                $response = ['result' => 'success'];
             }
+        } else {
+            $response['error'] = $errors;
         }
+        $this->set(compact('response'));
+        $this->set('_serialize', ['response']);
+    }
+
+        /**
+     * gets either done or incomplete to-do's depending on the status
+     *
+     * @param int $status 0/1 incomplete/complete
+     * @return void
+     */
+    public function get($status = 0) {
+        $salesOutlet = $this->SalesOutlets->find('all');
         $this->set(compact('salesOutlet'));
         $this->set('_serialize', ['salesOutlet']);
     }
+
 
     /**
      * Delete method
@@ -98,14 +115,22 @@ class SalesOutletsController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $salesOutlet = $this->SalesOutlets->get($id);
-        if ($this->SalesOutlets->delete($salesOutlet)) {
-            $this->Flash->success(__('The sales outlet has been deleted.'));
-        } else {
-            $this->Flash->error(__('The sales outlet could not be deleted. Please, try again.'));
-        }
 
-        return $this->redirect(['action' => 'index']);
+        $response = ['result' => 'fail'];
+        $errors = $this->SalesOutlets->validator()->errors($this->request->data);
+        if (empty($errors)) {
+            $salesOutlet = $this->SalesOutlets->newEntity($this->request->data);
+            $id = $this->request->data['id'];
+            $salesOutlet = $this->SalesOutlets->get($id);
+            if ($this->SalesOutlets->delete($salesOutlet)) {
+                $response = ['result' => 'success'];
+            }
+        } else {
+            $response['error'] = $errors;
+        }
+        $this->set(compact('response'));
+        $this->set('_serialize', ['response']);
+
+
     }
 }

@@ -1,3 +1,7 @@
+<?php
+$this->extend('../Layout/TwitterBootstrap/signin');
+?>
+
 <h1><?=__('Login')?></h1>
 <?= $this->Form->create() ?>
 <?= $this->Form->input('username') ?>

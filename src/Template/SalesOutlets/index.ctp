@@ -1,41 +1,29 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Sales Outlet'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Sales Transactions'), ['controller' => 'SalesTransactions', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Sales Transaction'), ['controller' => 'SalesTransactions', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="salesOutlets index large-9 medium-8 columns content">
-    <h3><?= __('Sales Outlets') ?></h3>
-    <table cellpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('sales_outlet_detail') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($salesOutlets as $salesOutlet): ?>
-            <tr>
-                <td><?= $this->Number->format($salesOutlet->id) ?></td>
-                <td><?= h($salesOutlet->sales_outlet_detail) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $salesOutlet->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $salesOutlet->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $salesOutlet->id], ['confirm' => __('Are you sure you want to delete # {0}?', $salesOutlet->id)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-        </ul>
-        <p><?= $this->Paginator->counter() ?></p>
-    </div>
+<?php
+/* @var $this \Cake\View\View */
+$this->extend('../Layout/TwitterBootstrap/dashboard');
+$this->start('tb_actions');
+?>
+    <li><?= $this->Html->link(__('New Sales Outlet'), ['action' => 'add']); ?></li>
+    <li><?= $this->Html->link(__('List Transactions'), ['controller' => 'Transactions', 'action' => 'index']); ?></li>
+    <li><?= $this->Html->link(__('New Transaction'), ['controller' => 'Transactions', 'action' => 'add']); ?></li>
+<?php $this->end(); ?>
+<?php $this->assign('tb_sidebar', '<ul class="nav nav-sidebar">' . $this->fetch('tb_actions') . '</ul>'); ?>
+
+<?php $this->Html->script('app', ['block' => true]); ?>
+
+<div class="col-md-4 col-md-offset-4">
+  <form action="sales-outlets/add.json" class="form-inline" role="form" id="add-to-do">
+    <div class="form-group">
+      <div class="input-append" id="task-input">
+        <input class="form-control input" name="sales_outlet_name" type="text" id="inputLarge" placeholder="Enter an outlet name...">
+        <button type="submit" class="btn btn-primary ">Add</button>
+        </div>
+      </div>
+  </form>
+  <div class="task-container" id="outlets">
+    <form action="/outlets/finish.json" class="form-inline" role="form" id="finish-to-do">
+      <div id="incomplete-label"><h5>Outlets:</h5></div>
+      <div class="form-group" id="incomplete-outlets"></div>
+    </form>
+  </div>
 </div>
