@@ -5,7 +5,7 @@ $this->extend('../Layout/TwitterBootstrap/dashboard');
 $this->start('tb_actions');
 ?>
 <li><?= $this->Html->link(__('Edit Payment Method'), ['action' => 'edit', $paymentMethod->id]) ?> </li>
-<li><?= $this->Form->postLink(__('Delete Payment Method'), ['action' => 'delete', $paymentMethod->id], ['confirm' => __('Are you sure you want to delete # {0}?', $paymentMethod->id)]) ?> </li>
+<li><?= $this->Form->postLink(__('Delete Payment Method'), ['action' => 'delete', $paymentMethod->id], ['confirm' => __('Are you sure you want to delete # {0}?', $paymentMethod->payment_method_name)]) ?> </li>
 <li><?= $this->Html->link(__('List Payment Methods'), ['action' => 'index']) ?> </li>
 <li><?= $this->Html->link(__('New Payment Method'), ['action' => 'add']) ?> </li>
 <li><?= $this->Html->link(__('List Payments'), ['controller' => 'Payments', 'action' => 'index']) ?> </li>
@@ -17,7 +17,7 @@ $this->start('tb_sidebar');
 ?>
 <ul class="nav nav-sidebar">
 <li><?= $this->Html->link(__('Edit Payment Method'), ['action' => 'edit', $paymentMethod->id]) ?> </li>
-<li><?= $this->Form->postLink(__('Delete Payment Method'), ['action' => 'delete', $paymentMethod->id], ['confirm' => __('Are you sure you want to delete # {0}?', $paymentMethod->id)]) ?> </li>
+<li><?= $this->Form->postLink(__('Delete Payment Method'), ['action' => 'delete', $paymentMethod->id], ['confirm' => __('Are you sure you want to delete # {0}?', $paymentMethod->payment_method_name)]) ?> </li>
 <li><?= $this->Html->link(__('List Payment Methods'), ['action' => 'index']) ?> </li>
 <li><?= $this->Html->link(__('New Payment Method'), ['action' => 'add']) ?> </li>
 <li><?= $this->Html->link(__('List Payments'), ['controller' => 'Payments', 'action' => 'index']) ?> </li>
@@ -29,7 +29,7 @@ $this->end();
 <div class="panel panel-default">
     <!-- Panel header -->
     <div class="panel-heading">
-        <h3 class="panel-title"><?= h($paymentMethod->id) ?></h3>
+        <h3 class="panel-title"><?= h($paymentMethod->payment_method_name) ?></h3>
     </div>
     <table class="table table-striped" cellpadding="0" cellspacing="0">
         <tr>
@@ -39,10 +39,6 @@ $this->end();
         <tr>
             <td><?= __('Payment Method Name') ?></td>
             <td><?= h($paymentMethod->payment_method_name) ?></td>
-        </tr>
-        <tr>
-            <td><?= __('Id') ?></td>
-            <td><?= $this->Number->format($paymentMethod->id) ?></td>
         </tr>
         <tr>
             <td><?= __('Payment Method Description') ?></td>

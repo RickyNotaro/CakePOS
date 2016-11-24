@@ -12,7 +12,6 @@ $this->start('tb_actions');
 <table class="table table-striped" cellpadding="0" cellspacing="0">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('id'); ?></th>
             <th><?= $this->Paginator->sort('payment_method_code'); ?></th>
             <th><?= $this->Paginator->sort('payment_method_name'); ?></th>
             <th class="actions"><?= __('Actions'); ?></th>
@@ -21,7 +20,6 @@ $this->start('tb_actions');
     <tbody>
         <?php foreach ($paymentMethods as $paymentMethod): ?>
         <tr>
-            <td><?= $this->Number->format($paymentMethod->id) ?></td>
             <td><?= h($paymentMethod->payment_method_code) ?></td>
             <td><?= h($paymentMethod->payment_method_name) ?></td>
             <td class="actions">
