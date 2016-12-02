@@ -29,7 +29,8 @@ $this->end();
     echo $this->Form->input('notes');
     echo $this->Form->input('first_name');
     echo $this->Form->input('last_name');
-    echo $this->Form->input('role');
+    // IF SOMEONE IS LOOKING AT MY CODE, I KNOW THAT'S WRONG.
+    echo $this->Form->input('role', ['options' => ['gestionnaire' => __('Gestionnaire'), 'employe' => __('Employe')]]);
     echo "</br>";
     echo $this->Recaptcha->display();
     ?>

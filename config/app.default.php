@@ -42,6 +42,7 @@ return [
         'defaultLocale' => env('APP_DEFAULT_LOCALE', 'en_US'),
         'base' => false,
         'dir' => 'src',
+        'title' => 'CakePOS',
         'webroot' => 'webroot',
         'wwwRoot' => WWW_ROOT,
         // 'baseUrl' => env('SCRIPT_NAME'),
@@ -64,7 +65,7 @@ return [
      *   You should treat it as extremely sensitive data.
      */
     'Security' => [
-        'salt' => env('SECURITY_SALT', '__SALT__'),
+        'salt' => env('SECURITY_SALT', '08476b7efcc64f4fc1718c57f67165b00c762011ec1fca610e0fb6168e7dd32a'),
     ],
 
     /**
@@ -220,18 +221,20 @@ return [
     'Datasources' => [
         'default' => [
             'className' => 'Cake\Database\Connection',
+            // 'driver' => 'Cake\Database\Driver\Sqlite',
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
             'host' => 'localhost',
+            //'database' => ROOT . DS . 'databases' . DS . 'cakePOSlite.sqlite',
             /**
              * CakePHP will use the default DB port based on the driver selected
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
              * the following line and set the port accordingly
              */
             //'port' => 'non_standard_port_number',
-            'username' => 'my_app',
-            'password' => 'secret',
-            'database' => 'my_app',
+            'username' => 'root',
+            'password' => 'mysql',
+            'database' => 'posDB',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'flags' => [],
@@ -269,9 +272,9 @@ return [
             'persistent' => false,
             'host' => 'localhost',
             //'port' => 'non_standard_port_number',
-            'username' => 'my_app',
-            'password' => 'secret',
-            'database' => 'test_myapp',
+            'username' => 'root',
+            'password' => 'mysql',
+            'database' => 'POSdb',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'cacheMetadata' => true,
@@ -343,4 +346,21 @@ return [
     'Session' => [
         'defaults' => 'php',
     ],
+
+    // Recaptcha Plugin Config
+
+    'Recaptcha' => [
+        // Register API keys at https://www.google.com/recaptcha/admin
+        'sitekey' => '6LelIgwUAAAAAArPjZBTVFUDxmeepTbjl6tLwHqb',
+        'secret' => '6LelIgwUAAAAAPpEYKkIWVDZzJlrfiUDYogbT2R5',
+        // reCAPTCHA supported 40+ languages listed
+        // here: https://developers.google.com/recaptcha/docs/language
+        'lang' => 'fr',
+        // either light or dark
+        'theme' => 'light',
+        // either image or audio
+        'type' => 'image',
+        // either normal or compact
+        'size' => 'normal'
+    ]
 ];
