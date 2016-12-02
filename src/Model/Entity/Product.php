@@ -7,11 +7,11 @@ use Cake\ORM\Entity;
  * Product Entity
  *
  * @property int $id
- * @property string $product_details
- * @property float $product_wholesale_price
+ * @property string $product_name
+ * @property string $product_description
  * @property float $product_retail_price
  *
- * @property \App\Model\Entity\ProductsTransaction[] $products_transactions
+ * @property \App\Model\Entity\Transaction[] $transactions
  */
 class Product extends Entity
 {

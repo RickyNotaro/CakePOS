@@ -7,12 +7,13 @@ use Cake\ORM\Entity;
  * Payment Entity
  *
  * @property int $id
- * @property int $payment_method_code
+ * @property int $payment_method_id
  * @property int $sales_transaction_id
  * @property float $payment_amount
  * @property string $other_details
  *
- * @property \App\Model\Entity\SalesTransaction $sales_transaction
+ * @property \App\Model\Entity\PaymentMethod $payment_method
+ * @property \App\Model\Entity\Transaction $transaction
  */
 class Payment extends Entity
 {

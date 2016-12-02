@@ -9,7 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Staffs Model
  *
- * @property \Cake\ORM\Association\HasMany $SalesTransactions
+ * @property \Cake\ORM\Association\HasMany $Transactions
  *
  * @method \App\Model\Entity\Staff get($primaryKey, $options = [])
  * @method \App\Model\Entity\Staff newEntity($data = null, array $options = [])
@@ -18,9 +18,8 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\Staff patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \App\Model\Entity\Staff[] patchEntities($entities, array $data, array $options = [])
  * @method \App\Model\Entity\Staff findOrCreate($search, callable $callback = null)
- *
- * @mixin \Cake\ORM\Behavior\TimestampBehavior
- */class StaffsTable extends Table
+ */
+class StaffsTable extends Table
 {
 
     /**
@@ -36,10 +35,8 @@ use Cake\Validation\Validator;
         $this->table('staffs');
         $this->displayField('id');
         $this->primaryKey('id');
-
-        $this->addBehavior('Timestamp');
-
-        $this->hasMany('SalesTransactions', [
+        $this->displayField('username');
+        $this->hasMany('Transactions', [
             'foreignKey' => 'staff_id'
         ]);
     }
@@ -53,30 +50,38 @@ use Cake\Validation\Validator;
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id')            ->allowEmpty('id', 'create');
-        $validator
-            ->requirePresence('username', 'create')            ->notEmpty('username')            ->add('username', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
-        $validator
-            ->email('email')            ->requirePresence('email', 'create')            ->notEmpty('email')            ->add('email', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
-        $validator
-            ->requirePresence('password', 'create')            ->notEmpty('password');
-        $validator
-            ->requirePresence('first_name', 'create')            ->notEmpty('first_name');
-        $validator
-            ->requirePresence('last_name', 'create')            ->notEmpty('last_name');
-        $validator
-            ->requirePresence('role', 'create')            ->notEmpty('role');
-        $validator
-            ->allowEmpty('notes');
+            ->integer('id')
+            ->allowEmpty('id', 'create');
 
-            $validator
-        ->notEmpty('username', "Un nom d'utilisateur est nécessaire")
-        ->notEmpty('password', 'Un mot de passe est nécessaire')
-        ->notEmpty('role', __("A role is neccessary"))
-        ->add('role', 'inList', [
-             'rule' => ['inList', ['gestionnaire', 'employe']],
-              'message' => 'Merci de rentrer un role valide'
-        ]);
+        $validator
+            ->requirePresence('username', 'create')
+            ->notEmpty('username');
+
+        $validator
+            ->email('email')
+            ->requirePresence('email', 'create')
+            ->notEmpty('email');
+
+        $validator
+            ->requirePresence('password', 'create')
+            ->notEmpty('password');
+
+        $validator
+            ->requirePresence('notes', 'create')
+            ->notEmpty('notes');
+
+        $validator
+            ->requirePresence('first_name', 'create')
+            ->notEmpty('first_name');
+
+        $validator
+            ->requirePresence('last_name', 'create')
+            ->notEmpty('last_name');
+
+        $validator
+            ->requirePresence('role', 'create')
+            ->notEmpty('role');
+
         return $validator;
     }
 

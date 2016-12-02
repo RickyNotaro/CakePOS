@@ -6,12 +6,13 @@ use Cake\ORM\Entity;
 /**
  * ProductsTransaction Entity
  *
+ * @property int $id
  * @property int $product_id
- * @property int $sales_transaction_id
+ * @property int $transaction_id
  * @property int $quantity
  *
  * @property \App\Model\Entity\Product $product
- * @property \App\Model\Entity\SalesTransaction $sales_transaction
+ * @property \App\Model\Entity\Transaction $transaction
  */
 class ProductsTransaction extends Entity
 {
@@ -28,6 +29,6 @@ class ProductsTransaction extends Entity
     protected $_accessible = [
         '*' => true,
         'product_id' => false,
-        'sales_transaction_id' => false
+        'transaction_id' => false
     ];
 }

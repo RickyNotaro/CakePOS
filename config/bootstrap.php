@@ -225,3 +225,7 @@ if (Configure::read('debug')) {
 Plugin::load('Migrations');
 
 Plugin::load('Twit', ['bootstrap' => false, 'routes' => true]);
+
+Plugin::load('BootstrapUI');
+
+Plugin::load('Recaptcha', ['bootstrap' => true, 'routes' => true]);

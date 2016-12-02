@@ -11,15 +11,14 @@ use Cake\Auth\DefaultPasswordHasher;
  * @property string $username
  * @property string $email
  * @property string $password
+ * @property string $notes
  * @property string $first_name
  * @property string $last_name
  * @property string $role
- * @property string $notes
- * @property \Cake\I18n\Time $created
- * @property \Cake\I18n\Time $modified
  *
- * @property \App\Model\Entity\SalesTransaction[] $sales_transactions
- */class Staff extends Entity
+ * @property \App\Model\Entity\Transaction[] $transactions
+ */
+class Staff extends Entity
 {
 
     /**
@@ -41,7 +40,6 @@ use Cake\Auth\DefaultPasswordHasher;
             $hasher = new DefaultPasswordHasher();
             return $hasher->hash($value);
         }
-
 
     /**
      * Fields that are excluded from JSON versions of the entity.

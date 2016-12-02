@@ -42,6 +42,7 @@ return [
         'defaultLocale' => env('APP_DEFAULT_LOCALE', 'en_US'),
         'base' => false,
         'dir' => 'src',
+        'title' => 'CakePOS',
         'webroot' => 'webroot',
         'wwwRoot' => WWW_ROOT,
         // 'baseUrl' => env('SCRIPT_NAME'),
@@ -220,9 +221,11 @@ return [
     'Datasources' => [
         'default' => [
             'className' => 'Cake\Database\Connection',
+            // 'driver' => 'Cake\Database\Driver\Sqlite',
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
             'host' => 'localhost',
+            //'database' => ROOT . DS . 'databases' . DS . 'cakePOSlite.sqlite',
             /**
              * CakePHP will use the default DB port based on the driver selected
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
@@ -343,4 +346,21 @@ return [
     'Session' => [
         'defaults' => 'php',
     ],
+
+    // Recaptcha Plugin Config
+
+    'Recaptcha' => [
+        // Register API keys at https://www.google.com/recaptcha/admin
+        'sitekey' => '6LelIgwUAAAAAArPjZBTVFUDxmeepTbjl6tLwHqb',
+        'secret' => '6LelIgwUAAAAAPpEYKkIWVDZzJlrfiUDYogbT2R5',
+        // reCAPTCHA supported 40+ languages listed
+        // here: https://developers.google.com/recaptcha/docs/language
+        'lang' => 'fr',
+        // either light or dark
+        'theme' => 'light',
+        // either image or audio
+        'type' => 'image',
+        // either normal or compact
+        'size' => 'normal'
+    ]
 ];

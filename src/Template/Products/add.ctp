@@ -1,21 +1,32 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Products'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Products Transactions'), ['controller' => 'ProductsTransactions', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Products Transaction'), ['controller' => 'ProductsTransactions', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="products form large-9 medium-8 columns content">
-    <?= $this->Form->create($product) ?>
-    <fieldset>
-        <legend><?= __('Add Product') ?></legend>
-        <?php
-            echo $this->Form->input('product_details');
-            echo $this->Form->input('product_wholesale_price');
-            echo $this->Form->input('product_retail_price');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
-</div>
+<?php
+$this->extend('../Layout/TwitterBootstrap/dashboard');
+
+$this->start('tb_actions');
+?>
+    <li><?= $this->Html->link(__('List Products'), ['action' => 'index']) ?></li>
+    <li><?= $this->Html->link(__('List Transactions'), ['controller' => 'Transactions', 'action' => 'index']) ?> </li>
+    <li><?= $this->Html->link(__('New Transaction'), ['controller' => 'Transactions', 'action' => 'add']) ?> </li>
+<?php
+$this->end();
+
+$this->start('tb_sidebar');
+?>
+<ul class="nav nav-sidebar">
+    <li><?= $this->Html->link(__('List Products'), ['action' => 'index']) ?></li>
+    <li><?= $this->Html->link(__('List Transactions'), ['controller' => 'Transactions', 'action' => 'index']) ?> </li>
+    <li><?= $this->Html->link(__('New Transaction'), ['controller' => 'Transactions', 'action' => 'add']) ?> </li>
+</ul>
+<?php
+$this->end();
+?>
+<?= $this->Form->create($product); ?>
+<fieldset>
+    <legend><?= __('Add {0}', ['Product']) ?></legend>
+    <?php
+    echo $this->Form->input('product_name');
+    echo $this->Form->input('product_description');
+    echo $this->Form->input('product_retail_price');
+    ?>
+</fieldset>
+<?= $this->Form->button(__("Add")); ?>
+<?= $this->Form->end() ?>

@@ -17,6 +17,9 @@ class StaffsController extends AppController
   {
       parent::initialize();
     $this->Auth->allow(['display', 'logout', 'add']);
+    if ($this->request->action === 'add') {
+      $this->loadComponent('Recaptcha.Recaptcha');
+    }
   }
 
   public function isAuthorized($user)
@@ -67,7 +70,7 @@ class StaffsController extends AppController
     public function view($id = null)
     {
         $staff = $this->Staffs->get($id, [
-            'contain' => ['SalesTransactions']
+            'contain' => ['Transactions']
         ]);
 
         $this->set('staff', $staff);
@@ -83,14 +86,20 @@ class StaffsController extends AppController
     {
         $staff = $this->Staffs->newEntity();
         if ($this->request->is('post')) {
-            $staff = $this->Staffs->patchEntity($staff, $this->request->data);
-            if ($this->Staffs->save($staff)) {
-                $this->Flash->success(__('The staff has been saved.'));
+           if ($this->Recaptcha->verify()) {
+              $staff = $this->Staffs->patchEntity($staff, $this->request->data);
+              if ($this->Staffs->save($staff)) {
+                  $this->Flash->success(__('The staff has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                  return $this->redirect(['action' => 'index']);
+              } else {
+                  $this->Flash->error(__('The staff could not be saved. Please, try again.'));
+              }
             } else {
-                $this->Flash->error(__('The staff could not be saved. Please, try again.'));
-            }
+            // You can debug developers errors with
+            // debug($this->Recaptcha->errors());
+            $this->Flash->error(__('Please check your Recaptcha Box.'));
+          }
         }
         $this->set(compact('staff'));
         $this->set('_serialize', ['staff']);

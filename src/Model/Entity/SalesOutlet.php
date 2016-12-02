@@ -7,9 +7,9 @@ use Cake\ORM\Entity;
  * SalesOutlet Entity
  *
  * @property int $id
- * @property string $sales_outlet_detail
+ * @property string $sales_outlet_name
  *
- * @property \App\Model\Entity\SalesTransaction[] $sales_transactions
+ * @property \App\Model\Entity\Transaction[] $transactions
  */
 class SalesOutlet extends Entity
 {

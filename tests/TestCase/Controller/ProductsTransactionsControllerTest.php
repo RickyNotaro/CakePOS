@@ -18,7 +18,10 @@ class ProductsTransactionsControllerTest extends IntegrationTestCase
     public $fixtures = [
         'app.products_transactions',
         'app.products',
-        'app.sales_transactions'
+        'app.transactions',
+        'app.customers',
+        'app.sales_outlets',
+        'app.staffs'
     ];
 
     /**

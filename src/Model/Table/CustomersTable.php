@@ -9,7 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Customers Model
  *
- * @property \Cake\ORM\Association\HasMany $SalesTransactions
+ * @property \Cake\ORM\Association\HasMany $Transactions
  *
  * @method \App\Model\Entity\Customer get($primaryKey, $options = [])
  * @method \App\Model\Entity\Customer newEntity($data = null, array $options = [])
@@ -18,7 +18,8 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\Customer patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \App\Model\Entity\Customer[] patchEntities($entities, array $data, array $options = [])
  * @method \App\Model\Entity\Customer findOrCreate($search, callable $callback = null)
- */class CustomersTable extends Table
+ */
+class CustomersTable extends Table
 {
 
     /**
@@ -32,10 +33,10 @@ use Cake\Validation\Validator;
         parent::initialize($config);
 
         $this->table('customers');
-        $this->displayField('id');
+        $this->displayField('customer_type');
         $this->primaryKey('id');
 
-        $this->hasMany('SalesTransactions', [
+        $this->hasMany('Transactions', [
             'foreignKey' => 'customer_id'
         ]);
     }
@@ -49,9 +50,14 @@ use Cake\Validation\Validator;
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id')            ->allowEmpty('id', 'create')            ->add('id', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
+            ->integer('id')
+            ->allowEmpty('id', 'create')
+            ->add('id', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
+
         $validator
-            ->requirePresence('customer_type', 'create')            ->notEmpty('customer_type');
+            ->requirePresence('customer_type', 'create')
+            ->notEmpty('customer_type');
+
         return $validator;
     }
 
