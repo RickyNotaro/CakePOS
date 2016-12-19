@@ -1,6 +1,6 @@
 # LANGUAGE translation of CakePHP Application
 # Copyright YEAR NAME <EMAIL@ADDRESS>
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -8,12 +8,12 @@ msgstr ""
 "POT-Creation-Date: 2016-11-01 22:38+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: Ricky Notaro <me+momo@rickynotaro.com>, 2016\n"
-"Language-Team: French (Canada) (https://www.transifex.com/student-62/teams/68789/fr_CA/)\n"
+"Language-Team: German (Germany) (https://www.transifex.com/student-62/teams/68789/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr_CA\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/add.ctp:3
@@ -78,7 +78,7 @@ msgstr ""
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp4;63
 msgid "Actions"
-msgstr "Actions"
+msgstr "Aktionen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/add.ctp:4
@@ -95,7 +95,7 @@ msgstr "Actions"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:9
 msgid "List Customers"
-msgstr "Liste des clients"
+msgstr "Liste Kunden"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/add.ctp:5
@@ -140,7 +140,7 @@ msgstr "Liste des clients"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:9
 msgid "List Sales Transactions"
-msgstr "Liste des ventes"
+msgstr "Liste von Verkaufstransaktionen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/add.ctp:6
@@ -183,12 +183,12 @@ msgstr "Liste des ventes"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:10
 msgid "New Sales Transaction"
-msgstr "Nouvelle vente"
+msgstr "Neue Verkaufstransaktion"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/add.ctp:12
 msgid "Add Customer"
-msgstr "Ajouter un client"
+msgstr "Kunden hinzufügen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/add.ctp:17
@@ -216,7 +216,7 @@ msgstr "Ajouter un client"
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/edit.ctp:23
 #: View/Helper/FormHelper.php:1809
 msgid "Submit"
-msgstr "Soumettre"
+msgstr "einreichen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/edit.ctp:5
@@ -259,7 +259,7 @@ msgstr "Soumettre"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:78
 msgid "Delete"
-msgstr "Supprimer"
+msgstr "Löschen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/edit.ctp:7
@@ -304,14 +304,14 @@ msgstr "Supprimer"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp6;78
 msgid "Are you sure you want to delete # {0}?"
-msgstr "Etes-vous sûr de vouloir supprimer # {0}?"
+msgstr "Sind Sie sicher, dass Sie # {0} löschen?"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/edit.ctp:18
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:4
 msgid "Edit Customer"
-msgstr "Modifier le client"
+msgstr "Kunden bearbeiten"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:4
@@ -324,12 +324,12 @@ msgstr "Modifier le client"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:10
 msgid "New Customer"
-msgstr "Nouveau client"
+msgstr "Neukunde"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:10
 msgid "Customers"
-msgstr "Clients"
+msgstr "Kundschaft"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:23
@@ -358,7 +358,7 @@ msgstr "Clients"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:76
 msgid "View"
-msgstr "Vue"
+msgstr "Aussicht"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:24
@@ -387,12 +387,12 @@ msgstr "Vue"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:77
 msgid "Edit"
-msgstr "Modifier"
+msgstr "Bearbeiten"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:25
 msgid "Are you sure you want to delete : {0}?"
-msgstr "Etes-vous sûr de vouloir supprimer: {0}?"
+msgstr "Sind Sie sicher, dass Sie löschen möchten: {0}?"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:33
@@ -411,7 +411,7 @@ msgstr "Etes-vous sûr de vouloir supprimer: {0}?"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/index.ctp:42
 msgid "previous"
-msgstr "précédent"
+msgstr "früher"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/index.ctp:35
@@ -430,17 +430,17 @@ msgstr "précédent"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/index.ctp:44
 msgid "next"
-msgstr "suivant"
+msgstr "Nächster"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:5
 msgid "Delete Customer"
-msgstr "Supprimer le client"
+msgstr "löschen Kunden"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:16
 msgid "Customer Type"
-msgstr "Type de client"
+msgstr "Kundentyp"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:21
@@ -449,7 +449,7 @@ msgstr "Type de client"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:51
 msgid "Related Sales Transactions"
-msgstr "opérations de vente liées"
+msgstr "Ähnliche Verkaufstransaktionen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:25
@@ -462,7 +462,7 @@ msgstr "opérations de vente liées"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:55
 msgid "Id"
-msgstr "Id"
+msgstr "Ich würde"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:26
@@ -471,7 +471,7 @@ msgstr "Id"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:56
 msgid "Customer Id"
-msgstr "N ° de client"
+msgstr "Kundennummer"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:27
@@ -480,7 +480,7 @@ msgstr "N ° de client"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:57
 msgid "Sales Outlet Id"
-msgstr "Point de Vente Id"
+msgstr "Der Umsatz Outlet Id"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:28
@@ -489,7 +489,7 @@ msgstr "Point de Vente Id"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:58
 msgid "Staff Id"
-msgstr "Employé Id"
+msgstr "Mitarbeiter Id"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:29
@@ -500,7 +500,7 @@ msgstr "Employé Id"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:59
 msgid "Transaction Date Time"
-msgstr "Date De Transaction"
+msgstr "Transaktion Datum Zeit"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:30
@@ -511,7 +511,7 @@ msgstr "Date De Transaction"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:60
 msgid "Transaction Wholesale Price"
-msgstr "Prix en lots de la transaction "
+msgstr "Transaktion Großhandelspreis"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:31
@@ -522,7 +522,7 @@ msgstr "Prix en lots de la transaction "
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:61
 msgid "Transaction Retail Price"
-msgstr "Prix de détail de la transaction"
+msgstr "Transaktion Einzelhandelspreis"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Customers/view.ctp:32
@@ -535,24 +535,24 @@ msgstr "Prix de détail de la transaction"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:62
 msgid "Other Details"
-msgstr "Autres détails"
+msgstr "Andere Details"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Layout/default.ctp:63
 msgid "Logout"
-msgstr "Se déconnecter"
+msgstr "Ausloggen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Layout/default.ctp:65
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/login.ctp:2
 msgid "Login"
-msgstr "S'identifier"
+msgstr "Anmeldung"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Layout/default.ctp:66
 msgid "Register"
-msgstr "S'enregistrer"
+msgstr "Neu registrieren"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Layout/error.ctp:35
@@ -561,12 +561,12 @@ msgstr "S'enregistrer"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Error/error500.ctp:41
 msgid "Error"
-msgstr "Erreur"
+msgstr "Fehler"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Layout/error.ctp:43
 msgid "Back"
-msgstr "Précédent"
+msgstr "Zurück"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/add.ctp:4
@@ -583,24 +583,24 @@ msgstr "Précédent"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:15
 msgid "List Payments"
-msgstr "Liste des paiements"
+msgstr "Liste Zahlungen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/add.ctp:12
 msgid "Add Payment"
-msgstr "Ajouter une méthode de paiement"
+msgstr "In Zahlung"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/edit.ctp:18
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:4
 msgid "Edit Payment"
-msgstr "Modifier Paiement"
+msgstr "Bearbeiten Zahlung"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/edit.ctp:21
 msgid "Transaction #"
-msgstr "Transaction #"
+msgstr "Transaktion #"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:4
@@ -613,31 +613,31 @@ msgstr "Transaction #"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:16
 msgid "New Payment"
-msgstr "Nouveau Paiement"
+msgstr "Neue Zahlungs"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:10
 msgid "Payments"
-msgstr "Paiements"
+msgstr "Zahlungen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:14
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:16
 msgid "Payment #"
-msgstr "Paiement #"
+msgstr "Zahlung #"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/index.ctp:25
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:21
 msgid "N/A"
-msgstr "N/D"
+msgstr "N / A"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:5
 msgid "Delete Payment"
-msgstr "Supprimer le méthode de paiement"
+msgstr "löschen Zahlung"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:20
@@ -646,7 +646,7 @@ msgstr "Supprimer le méthode de paiement"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:64
 msgid "Payment Method Code"
-msgstr "Code de la méthode de paiement"
+msgstr "Zahlungs-Methode-Code"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:24
@@ -655,14 +655,14 @@ msgstr "Code de la méthode de paiement"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp65;93
 msgid "Sales Transaction Id"
-msgstr "Transaction de vente #"
+msgstr "Verkaufstransaktion Id"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Payments/view.ctp:29
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:66
 msgid "Payment Amount"
-msgstr "Montant du paiement"
+msgstr "Zahlungsbetrag"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/add.ctp:4
@@ -679,7 +679,7 @@ msgstr "Montant du paiement"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:8
 msgid "List Products"
-msgstr "Liste des produits"
+msgstr "Produkte Liste"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/add.ctp:5
@@ -704,7 +704,7 @@ msgstr "Liste des produits"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:17
 msgid "List Products Transactions"
-msgstr "Produits Liste Transactions"
+msgstr "Liste Produkte Transaktionen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/add.ctp:6
@@ -725,19 +725,19 @@ msgstr "Produits Liste Transactions"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:18
 msgid "New Products Transaction"
-msgstr "Nouveaux produits Transaction"
+msgstr "Neue Produkte Transaktion"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/add.ctp:12
 msgid "Add Product"
-msgstr "Ajouter le produit"
+msgstr "Produkt hinzufügen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/edit.ctp:18
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:4
 msgid "Edit Product"
-msgstr "Modifier le produit"
+msgstr "Produkt bearbeiten"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/index.ctp:4
@@ -752,46 +752,46 @@ msgstr "Modifier le produit"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:9
 msgid "New Product"
-msgstr "Nouveau produit"
+msgstr "Neues Produkt"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/index.ctp:10
 msgid "Products"
-msgstr "Produits"
+msgstr "Produkte"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:5
 msgid "Delete Product"
-msgstr "Supprimer le produit"
+msgstr "löschen Produkt"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:20
 msgid "Product Wholesale Price"
-msgstr "Produit prix en gros"
+msgstr "Produkt-Großhandelspreis"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:24
 msgid "Product Retail Price"
-msgstr "Prix ​​de détail du produit"
+msgstr "Produkt-Verkaufspreis"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:29
 msgid "Product Details"
-msgstr "détails du produit"
+msgstr "Produktdetails"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:33
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:88
 msgid "Related Products Transactions"
-msgstr "Transactions de produits connexes "
+msgstr "Ähnliche Produkte Transaktionen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:37
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:92
 msgid "Product Id"
-msgstr "Id Produit"
+msgstr "Produkt ID"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Products/view.ctp:39
@@ -800,39 +800,39 @@ msgstr "Id Produit"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:94
 msgid "Quantity"
-msgstr "Quantité"
+msgstr "Menge"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/add.ctp:14
 msgid "Add Products Transaction"
-msgstr "Ajouter les produits Transaction"
+msgstr "Produkte hinzufügen Transaktions"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/edit.ctp:20
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:4
 msgid "Edit Products Transaction"
-msgstr "Modifier les produits Transaction"
+msgstr "Produkte bearbeiten Transaktions"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/index.ctp:12
 msgid "Products Transactions"
-msgstr "Produits Transactions"
+msgstr "Produkte Transaktionen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:5
 msgid "Delete Products Transaction"
-msgstr "Supprimer Produits Transaction"
+msgstr "Löschen Produkte Transaktion"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:18
 msgid "Product"
-msgstr "Produit"
+msgstr "Produkt"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/ProductsTransactions/view.ctp:22
 msgid "Sales Transaction"
-msgstr "Transaction de vente"
+msgstr "Verkaufstransaktion"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/add.ctp:4
@@ -841,46 +841,46 @@ msgstr "Transaction de vente"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/view.ctp:6
 msgid "List Ref Payment Methods"
-msgstr "Liste Reférences Modes de paiement"
+msgstr "Liste Ref Zahlungsmethoden"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/add.ctp:10
 msgid "Add Ref Payment Method"
-msgstr "Ajouter Ref Méthode de paiement"
+msgstr "In Ref Zahlungsmethode"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/edit.ctp:16
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/view.ctp:4
 msgid "Edit Ref Payment Method"
-msgstr "Modifier Ref Méthode de paiement"
+msgstr "Bearbeiten Ref Zahlungsmethode"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/index.ctp:4
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/view.ctp:7
 msgid "New Ref Payment Method"
-msgstr "Nouvelle méthode de paiement Ref"
+msgstr "New Ref Zahlungsmethode"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/index.ctp:8
 msgid "Ref Payment Methods"
-msgstr "Références modes de paiement "
+msgstr "Ref Zahlungsmethoden"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/view.ctp:5
 msgid "Delete Ref Payment Method"
-msgstr "Supprimer Ref Méthode de paiement"
+msgstr "Löschen Ref Zahlungsmethode"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/view.ctp:14
 msgid "Payment Method Name"
-msgstr "Nom de la méthode de paiement "
+msgstr "Zahlungsmethodenname"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/RefPaymentMethods/view.ctp:23
 msgid "Payment Method Description"
-msgstr "Description Méthode Paiement"
+msgstr "Zahlungs-Methode Beschreibung"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/add.ctp:4
@@ -897,19 +897,19 @@ msgstr "Description Méthode Paiement"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:11
 msgid "List Sales Outlets"
-msgstr "Liste des Points de vente "
+msgstr "Liste Verkaufsstellen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/add.ctp:12
 msgid "Add Sales Outlet"
-msgstr "Ajouter Points de vente"
+msgstr "In Verkaufs Outlet"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/edit.ctp:18
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:4
 msgid "Edit Sales Outlet"
-msgstr "Modifier Points de vente"
+msgstr "Bearbeiten Verkaufsstelle"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/index.ctp:4
@@ -922,22 +922,22 @@ msgstr "Modifier Points de vente"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:12
 msgid "New Sales Outlet"
-msgstr "Nouveau point de vente"
+msgstr "Neuer Sales Outlet"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/index.ctp:10
 msgid "Sales Outlets"
-msgstr "Points de vente"
+msgstr "Verkaufsstellen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:5
 msgid "Delete Sales Outlet"
-msgstr "Supprimer le Points de vente"
+msgstr "Löschen Verkauf Outlet"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesOutlets/view.ctp:16
 msgid "Sales Outlet Detail"
-msgstr "Détail Points de vente"
+msgstr "Der Umsatz Outlet-Detail"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:10
@@ -952,7 +952,7 @@ msgstr "Détail Points de vente"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:7
 msgid "List Staffs"
-msgstr "Liste des employés"
+msgstr "Liste Staffs"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:11
@@ -965,73 +965,73 @@ msgstr "Liste des employés"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:8
 msgid "New Staff"
-msgstr "Nouvelle employé"
+msgstr "Neue Mitarbeiter"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/add.ctp:22
 msgid "Add a Sales Transaction"
-msgstr "Ajouter une opération de vente"
+msgstr "In einer Transaktion"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/edit.ctp:5
 msgid "Return to Sales Transaction index"
-msgstr "Retour à Sales Index de transaction"
+msgstr "Zurück zur Verkaufstransaktion Index"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/edit.ctp:13
 msgid "Delete this sales Transaction"
-msgstr "Supprimer cette opération de vente"
+msgstr "Löschen Sie diese Verkaufstransaktion"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/edit.ctp:23
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:5
 msgid "Edit Sales Transaction"
-msgstr "Transaction Modifier Sales"
+msgstr "Bearbeiten Verkaufstransaktion"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/index.ctp:19
 msgid "Sales Transactions"
-msgstr "Transactions de vente"
+msgstr "Verkaufstransaktionen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:6
 msgid "Delete Sales Transaction"
-msgstr "Supprimer Transaction Sales"
+msgstr "Löschen Verkaufstransaktion"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:26
 msgid "Customer"
-msgstr "Client"
+msgstr "Kunde"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:30
 msgid "Sales Outlet"
-msgstr "Points de vente"
+msgstr "Verkaufsstelle"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:34
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:33
 msgid "Staff"
-msgstr "Personnel"
+msgstr "Personal"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/SalesTransactions/view.ctp:59
 msgid "Related Payments"
-msgstr "Paiements connexes"
+msgstr "Zahlungen im Zusammenhang mit"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:11
 msgid "Register A New Staff Member"
-msgstr "Inscrire un nouveau membre du personnel"
+msgstr "Registrieren Sie ein neues Belegschaftsmitglied"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp18;19
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:18
 msgid "Username"
-msgstr "Nom d'utilisateur"
+msgstr "Benutzername"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp22;23
@@ -1042,7 +1042,7 @@ msgstr "Nom d'utilisateur"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:26
 msgid "Password"
-msgstr "Mot de passe"
+msgstr "Passwort"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:26
@@ -1056,164 +1056,164 @@ msgstr "Email"
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:24
 msgid "you@exemple.com"
-msgstr "vous@exemple.com"
+msgstr "you@exemple.com"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:30
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:30
 msgid "First Name"
-msgstr "Prénom"
+msgstr "Vorname"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:31
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:27
 msgid "First name"
-msgstr "Prénom"
+msgstr "Vorname"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:34
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:34
 msgid "Last Name"
-msgstr "Nom de famille"
+msgstr "Familienname, Nachname"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:35
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:30
 msgid "Last name"
-msgstr "Nom de famille"
+msgstr "Familienname, Nachname"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:38
 msgid "role?"
-msgstr "rôle?"
+msgstr "Rolle?"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:42
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:47
 msgid "Notes"
-msgstr "Remarques"
+msgstr "Notizen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:43
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:36
 msgid "Notes about this staff member"
-msgstr "Remarques à propos de ce membre du personnel"
+msgstr "Hinweise zu dieser Mitarbeiter"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:50
 msgid "already have an account?"
-msgstr "Vous avez déjà un compte?"
+msgstr "Habe schon einen Account?"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/add.ctp:50
 msgid "Login here"
-msgstr "Connectez-vous ici"
+msgstr "Hier anmelden"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:4
 msgid "Other Actions"
-msgstr "Autres actions"
+msgstr "Andere Aktionen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:5
 msgid "Return to Staff list"
-msgstr "Retour à la liste du personnel"
+msgstr "Zurück zur Mitarbeiterliste"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:9
 msgid "Are you sure you want to delete {0} from the system?"
-msgstr "Etes-vous sûr de vouloir supprimer {0} dans le système?"
+msgstr "Sind Sie sicher, dass Sie {0} aus dem System zu löschen?"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:15
 msgid "Informations"
-msgstr "Informations"
+msgstr "Informationen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/edit.ctp:33
 msgid "Manager"
-msgstr "Gestionnaire"
+msgstr "Manager"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/index.ctp:11
 msgid "Staffs"
-msgstr "Personnel"
+msgstr "Staffs"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/index.ctp:34
 msgid "Are you sure you want to delete the user {0}?"
-msgstr "Etes-vous sûr de vouloir supprimer l'utilisateur {0}?"
+msgstr "Sind Sie sicher, dass Sie den Benutzer {0} löschen?"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/login.ctp:10
 msgid "Nom d'utilisateur"
-msgstr "Nom d'Utilisateur"
+msgstr "Benutzername"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/login.ctp:21
 msgid "New user?"
-msgstr "Nouvel utilisateur?"
+msgstr "Neuer Benutzer?"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/login.ctp:21
 msgid "Create new account"
-msgstr "Créer un nouveau compte"
+msgstr "Neuen Account erstellen"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:5
 msgid "Edit Staff"
-msgstr "Modifier personnel"
+msgstr "Bearbeiten Mitarbeiter"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:6
 msgid "Delete Staff"
-msgstr "Supprimer personnel"
+msgstr "löschen Mitarbeiter"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:38
 msgid "Role"
-msgstr "Rôle"
+msgstr "Rolle"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Staffs/view.ctp:42
 msgid "Staff #"
-msgstr "Personnel #"
+msgstr "Mitarbeiter #"
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Error/error400.ctp:37
 msgid "The requested address {0} was not found on this server."
-msgstr "L'adresse demandée {0} n'a pas été trouvé sur ce serveur."
+msgstr "Die gewünschte Adresse {0} wurde auf diesem Server nicht gefunden."
 
 #: C/Program Files
 #: (x86)/Ampps/www/CakePOS/plugins/Twit/src/Template/Error/error500.ctp:39
 msgid "An Internal Error Has Occurred"
-msgstr "Une erreur interne s'est produite"
+msgstr "Ein interner Fehler ist aufgetreten"
 
 #: Controller/Component/AuthComponent.php:461
 msgid "You are not authorized to access that location."
-msgstr "Vous n'êtes pas autorisé à accéder à cet emplacement."
+msgstr "Sie sind nicht, dass die Lage für den Zugriff autorisiert."
 
 #: Controller/Component/CsrfComponent.php:154
 msgid "Missing CSRF token cookie"
-msgstr "Cookie manquant token CSRF"
+msgstr "Fehlende CSRF-Token-Cookie"
 
 #: Controller/Component/CsrfComponent.php:158
 msgid "CSRF token mismatch."
-msgstr ""
+msgstr "CSRF-Token stimmen nicht überein."
 
 #: Error/ExceptionRenderer.php:251
 msgid "Not Found"
-msgstr "Non trouvé"
+msgstr "Nicht gefunden"
 
 #: Error/ExceptionRenderer.php:253
 msgid "An Internal Error Has Occurred."
-msgstr "Une erreur interne s'est produite."
+msgstr "Ein interner Fehler ist aufgetreten."
 
 #: I18n/Number.php:90
 msgid "{0,number,#,###.##} KB"
@@ -1221,240 +1221,246 @@ msgstr "{0,number,#,###.##} KB"
 
 #: I18n/Number.php:92
 msgid "{0,number,#,###.##} MB"
-msgstr "{0,number,#,###.##} MB"
+msgstr "{0,number,#,###.##}  MB"
 
 #: I18n/Number.php:94
 msgid "{0,number,#,###.##} GB"
-msgstr "{0,number,#,###.##} GB"
+msgstr "{0,number,#,###.##}  GB"
 
 #: I18n/Number.php:96
 msgid "{0,number,#,###.##} TB"
-msgstr "{0,number,#,###.##} TB"
+msgstr "{0,number,#,###.##}  TB"
 
 #: I18n/Number.php:88
 msgid "{0,number,integer} Byte"
 msgid_plural "{0,number,integer} Bytes"
-msgstr[0] "{0, number, integer} Byte"
-msgstr[1] "{0,number,integer} Octets"
+msgstr[0] "{0,number,integer} Byte"
+msgstr[1] "{0,number,integer} Bytes"
 
 #: I18n/RelativeTimeFormatter.php:80
 msgid "{0} from now"
-msgstr "{0} à partir de maintenant"
+msgstr "{0} von jetzt"
 
 #: I18n/RelativeTimeFormatter.php:80
 msgid "{0} ago"
-msgstr "Il y a {0} "
+msgstr "{0} vor"
 
 #: I18n/RelativeTimeFormatter.php:83
 msgid "{0} after"
-msgstr "{0} après "
+msgstr "{0} nach"
 
 #: I18n/RelativeTimeFormatter.php:83
 msgid "{0} before"
-msgstr "{0} avant"
+msgstr "{0}, bevor"
 
 #: I18n/RelativeTimeFormatter.php:114
 msgid "just now"
-msgstr "Maintenant"
+msgstr "gerade jetzt"
 
 #: I18n/RelativeTimeFormatter.php:151
 msgid "about a second ago"
-msgstr "il y a environ une seconde"
+msgstr "etwa eine Sekunde vor"
 
 #: I18n/RelativeTimeFormatter.php:152
 msgid "about a minute ago"
-msgstr "Il y a environ une minute"
+msgstr "Vor ca. einer Minute"
 
 #: I18n/RelativeTimeFormatter.php:153
 msgid "about an hour ago"
-msgstr "il y a à peu près une heure"
+msgstr "vor ungefähr einer Stunde"
 
 #: I18n/RelativeTimeFormatter.php154;332
 msgid "about a day ago"
-msgstr "il y a environ un jour"
+msgstr "Vor etwa einem Tag"
 
 #: I18n/RelativeTimeFormatter.php155;333
 msgid "about a week ago"
-msgstr "il y a environ une semaine"
+msgstr "Ungefähr vor einer Woche"
 
 #: I18n/RelativeTimeFormatter.php156;334
 msgid "about a month ago"
-msgstr "il y a environ un mois"
+msgstr "vor ungefähr einem Monat"
 
 #: I18n/RelativeTimeFormatter.php157;335
 msgid "about a year ago"
-msgstr "Il ya environ un an"
+msgstr "vor etwa einem Jahr"
 
 #: I18n/RelativeTimeFormatter.php:168
 msgid "in about a second"
-msgstr "en une seconde"
+msgstr "in etwa einer Sekunde"
 
 #: I18n/RelativeTimeFormatter.php:169
 msgid "in about a minute"
-msgstr "en une minute"
+msgstr "in etwa einer Minute"
 
 #: I18n/RelativeTimeFormatter.php:170
 msgid "in about an hour"
-msgstr "en environ une heure"
+msgstr "in ungefähr einer Stunde"
 
 #: I18n/RelativeTimeFormatter.php171;346
 msgid "in about a day"
-msgstr "en une journée"
+msgstr "in etwa einem Tag"
 
 #: I18n/RelativeTimeFormatter.php172;347
 msgid "in about a week"
-msgstr "dans environ une semaine"
+msgstr "in etwa einer Woche"
 
 #: I18n/RelativeTimeFormatter.php173;348
 msgid "in about a month"
-msgstr "dans environ un mois"
+msgstr "in etwa einem Monat"
 
 #: I18n/RelativeTimeFormatter.php174;349
 msgid "in about a year"
-msgstr "dans environ un an"
+msgstr "in etwa einem Jahr"
 
 #: I18n/RelativeTimeFormatter.php:304
 msgid "today"
-msgstr "aujourd'hui"
+msgstr "heute"
 
 #: I18n/RelativeTimeFormatter.php:370
 msgid "%s ago"
-msgstr "Il y a %s"
+msgstr "%s vor"
 
 #: I18n/RelativeTimeFormatter.php:371
 msgid "on %s"
-msgstr "le %s"
+msgstr "auf %s"
 
 #: I18n/RelativeTimeFormatter.php47;126;316
 msgid "{0} year"
 msgid_plural "{0} years"
-msgstr[0] "{0} an"
-msgstr[1] "{0} ans"
+msgstr[0] "{0} Jahr"
+msgstr[1] "{0} Jahre"
 
 #: I18n/RelativeTimeFormatter.php51;129;319
 msgid "{0} month"
 msgid_plural "{0} months"
-msgstr[0] "{0} mois"
-msgstr[1] "{0} mois"
+msgstr[0] "{0} Monat"
+msgstr[1] "{0} Monate"
 
 #: I18n/RelativeTimeFormatter.php57;132;322
 msgid "{0} week"
 msgid_plural "{0} weeks"
-msgstr[0] "{0} semaine"
-msgstr[1] "{0} semaines"
+msgstr[0] "{0} Woche"
+msgstr[1] "{0} Wochen"
 
 #: I18n/RelativeTimeFormatter.php59;135;325
 msgid "{0} day"
 msgid_plural "{0} days"
-msgstr[0] "{0} jour"
-msgstr[1] "{0} jours"
+msgstr[0] "{0} Tag"
+msgstr[1] "{0} Tage"
 
 #: I18n/RelativeTimeFormatter.php64;138
 msgid "{0} hour"
 msgid_plural "{0} hours"
-msgstr[0] "{0} heures"
-msgstr[1] "{0} heures"
+msgstr[0] "{0} Stunde"
+msgstr[1] "{0} Stunden"
 
 #: I18n/RelativeTimeFormatter.php68;141
 msgid "{0} minute"
 msgid_plural "{0} minutes"
-msgstr[0] "{0} minutes"
-msgstr[1] "{0} minutes"
+msgstr[0] "{0} Minute"
+msgstr[1] "{0} Minuten"
 
 #: I18n/RelativeTimeFormatter.php72;144
 msgid "{0} second"
 msgid_plural "{0} seconds"
-msgstr[0] "{0} secondes"
-msgstr[1] "{0} secondes"
+msgstr[0] "{0} Sekunden"
+msgstr[1] "{0} Sekunden"
 
 #: Network/Response.php:1451
 msgid "The requested file was not found"
-msgstr "Le fichier demandé n'a pas été trouvé"
+msgstr "Die angeforderte Datei wurde nicht gefunden"
 
 #: ORM/RulesChecker.php:57
 msgid "This value is already in use"
-msgstr "Cette valeur est déjà en cours d'utilisation"
+msgstr "Dieser Wert ist bereits in Verwendung"
 
 #: ORM/RulesChecker.php:104
 msgid "This value does not exist"
-msgstr "n'existe pas cette valeur"
+msgstr "Dieser Wert ist nicht vorhanden"
 
 #: ORM/RulesChecker.php:128
 msgid "The count does not match {0}{1}"
-msgstr "Le nombre ne correspond pas à {0} {1}"
+msgstr "Die Zahl entspricht nicht {0} {1}"
 
 #: Utility/Text.php:894
 msgid "and"
-msgstr "et"
+msgstr "und"
 
 #: Validation/Validator.php:103
 msgid "This field is required"
-msgstr "Ce champ est requis"
+msgstr "Dieses Feld wird benötigt"
 
 #: Validation/Validator.php:104
 msgid "This field cannot be left empty"
-msgstr "Ce champ ne peut pas être laissé vide"
+msgstr "Dieses Feld kann nicht leer gelassen werden"
 
 #: Validation/Validator.php:1712
 msgid "The provided value is invalid"
-msgstr "La valeur fournie est invalide"
+msgstr "Der angegebene Wert ist ungültig"
 
 #: View/Helper/FormHelper.php:963
 msgid "New %s"
-msgstr "Nouveaux %s"
+msgstr "Nachrichten %s"
 
 #: View/Helper/FormHelper.php:966
 msgid "Edit %s"
-msgstr "Modifier %s"
+msgstr "Bearbeiten %s"
 
 #: View/Helper/HtmlHelper.php:781
 msgid "Home"
-msgstr "Accueil"
+msgstr "Zuhause"
 
 #: View/Widget/DateTimeWidget.php:539
 msgid "January"
-msgstr "janvier"
+msgstr "Januar"
 
 #: View/Widget/DateTimeWidget.php:540
 msgid "February"
-msgstr "février"
+msgstr "Februar"
 
 #: View/Widget/DateTimeWidget.php:541
 msgid "March"
-msgstr "mars"
+msgstr "März"
 
 #: View/Widget/DateTimeWidget.php:542
 msgid "April"
-msgstr "avril"
+msgstr "April"
 
 #: View/Widget/DateTimeWidget.php:543
 msgid "May"
-msgstr "mai"
+msgstr "Kann"
 
 #: View/Widget/DateTimeWidget.php:544
 msgid "June"
-msgstr "juin"
+msgstr "Juni"
 
 #: View/Widget/DateTimeWidget.php:545
 msgid "July"
-msgstr "juillet"
+msgstr "Juli"
 
 #: View/Widget/DateTimeWidget.php:546
 msgid "August"
-msgstr "août"
+msgstr "August"
 
 #: View/Widget/DateTimeWidget.php:547
 msgid "September"
-msgstr "septembre"
+msgstr "September"
 
 #: View/Widget/DateTimeWidget.php:548
 msgid "October"
-msgstr "octobre"
+msgstr "Oktober"
 
 #: View/Widget/DateTimeWidget.php:549
 msgid "November"
-msgstr "novembre"
+msgstr "November"
 
 #: View/Widget/DateTimeWidget.php:550
 msgid "December"
-msgstr "décembre"
+msgstr "Dezember"
+
+msgid "Gestionnaire"
+msgstr "Verwalter"
+
+msgid "Employe"
+msgstr "Mitarbeiter"
