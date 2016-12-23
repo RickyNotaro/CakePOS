@@ -16,7 +16,9 @@ $this->start('tb_body_start');
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><?= Configure::read('App.title') ?></a>
+              <?= $this->Html->link(Configure::read('App.title')
+                ,['controller' => 'Pages', 'action' => 'apropos'],
+                ['class' => 'navbar-brand']);?>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
@@ -28,6 +30,14 @@ $this->start('tb_body_start');
                 <?= '<li>' . $this->Html->link( __('Sales Outlets') , ['controller' => 'Sales-Outlets', 'action' => 'index']) . '</li>'?>
               </ul>
               <ul class="nav navbar-nav navbar-right">
+                <li >
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle" ><span class="glyphicon glyphicon-globe" style="vertical-align:middle"></span> <?= __('Change language') ?><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><?= $this->Html->Link(__('Français (French)'), ['action' => 'changeLang', 'fr_CA'], ['escape' => false]) ?></li>
+                      <li><?= $this->Html->Link(__('English (English)'), ['action' => 'changeLang', 'en_US'], ['escape' => false]) ?></li>
+                      <li><?= $this->Html->link(__('Deutsch (German)'), ['action' => 'changeLang', 'de_DE']); ?></li>
+                    </ul>
+                </li>
                 <?php
                 $loguser = $this->request->session()->read('Auth.User');
                 if ($loguser) {
