@@ -5,6 +5,11 @@ use App\Controller\AppController;
 use Cake\Error\Debugger;
 use Cake\Core\App;
 
+use Cake\Utility\Text;
+use Cake\Mailer\MailerAwareTrait;
+use Cake\ORM\TableRegistry;
+
+use App\Model\Entity\Staff;
 
 /**
  * Staffs Controller
@@ -12,6 +17,8 @@ use Cake\Core\App;
  * @property \App\Model\Table\StaffsTable $Staffs */
 class StaffsController extends AppController
 {
+
+  use MailerAwareTrait;
 
   public function initialize()
   {
@@ -87,10 +94,12 @@ class StaffsController extends AppController
         $staff = $this->Staffs->newEntity();
         if ($this->request->is('post')) {
            if ($this->Recaptcha->verify()) {
+              $staff->uuid = Text::uuid();
+              echo $staff->uuid;
               $staff = $this->Staffs->patchEntity($staff, $this->request->data);
               if ($this->Staffs->save($staff)) {
                   $this->Flash->success(__('The staff has been saved.'));
-
+                  $this->getMailer('Staff')->send('welcome', [$staff]);
                   return $this->redirect(['action' => 'index']);
               } else {
                   $this->Flash->error(__('The staff could not be saved. Please, try again.'));
@@ -104,6 +113,28 @@ class StaffsController extends AppController
         $this->set(compact('staff'));
         $this->set('_serialize', ['staff']);
     }
+
+
+     public function confirm($uuid = null)
+    {
+               
+        $staffs = TableRegistry::get('Staffs');
+        $staff = $staffs->find('all')->where(['uuid' => $uuid])->first();
+
+        if ($staff != null) {
+             $staff->isVerified = 1;
+             $staff = $this->Staffs->patchEntity($staff, $this->request->data);
+             if ($this->Staffs->save($staff)) {
+               $this->Flash->default(__('This account have been activated.'));
+             } else {
+                 $this->Flash->error(__('Error when activating the account.'));
+             }
+        }else {
+            $this->Flash->error(__('Invalid confirmation link.'));
+        }
+        return $this->redirect(['action' => 'index']);
+    }
+
 
     /**
      * Edit method
