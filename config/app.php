@@ -179,15 +179,15 @@ return [
      */
     'EmailTransport' => [
         'default' => [
-            'className' => 'Mail',
+            'className' => 'Smtp',
             // The following keys are used in SMTP transports
-            'host' => 'localhost',
-            'port' => 25,
-            'timeout' => 30,
-            'username' => 'user',
-            'password' => 'secret',
+            'host' => 'mail.rickynotaro.com',
+            'port' => 587,
+            'timeout' => 10,
+            'username' => 'cmontmorency@rickynotaro.com',
+            'password' => '7gQdjQX2MP',
             'client' => null,
-            'tls' => null,
+            'tls' => true,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
     ],
@@ -204,9 +204,9 @@ return [
     'Email' => [
         'default' => [
             'transport' => 'default',
-            'from' => 'you@localhost',
+            'from' => 'cmontmorency@rickynotaro.com',
             //'charset' => 'utf-8',
-            //'headerCharset' => 'utf-8',
+            // 'headerCharset' => 'utf-8',
         ],
     ],
 
@@ -221,20 +221,20 @@ return [
     'Datasources' => [
         'default' => [
             'className' => 'Cake\Database\Connection',
-            // 'driver' => 'Cake\Database\Driver\Sqlite',
-            'driver' => 'Cake\Database\Driver\Mysql',
+            'driver' => 'Cake\Database\Driver\Sqlite',
+            //'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
             'host' => 'localhost',
-            //'database' => ROOT . DS . 'databases' . DS . 'cakePOSlite.sqlite',
+            'database' => ROOT . DS . 'databases' . DS . 'CakePOSlite.sqlite',
             /**
              * CakePHP will use the default DB port based on the driver selected
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
              * the following line and set the port accordingly
              */
-            //'port' => 'non_standard_port_number',
+            'port' => 'non_standard_port_number',
             'username' => 'root',
-            'password' => 'mysql',
-            'database' => 'posDB',
+            'password' => 'root',
+            // 'database' => 'CakePOS',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'flags' => [],
@@ -274,7 +274,7 @@ return [
             //'port' => 'non_standard_port_number',
             'username' => 'root',
             'password' => 'mysql',
-            'database' => 'POSdb',
+            'database' => 'CakePOS',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'cacheMetadata' => true,

@@ -16,7 +16,7 @@ namespace App\Controller;
 
 use Cake\Controller\Controller;
 use Cake\Event\Event;
-
+use Cake\I18n\I18n;
 /**
  * Application Controller
  *
@@ -43,7 +43,7 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
-       $this->loadComponent('Auth', [
+        $this->loadComponent('Auth', [
                     'authorize' => ['Controller'], // Ajout de cette ligne
                     'authenticate' => [
                         'Form' => [
@@ -62,10 +62,28 @@ class AppController extends Controller
 
         // Autorise l'action display pour que notre controller de pages
         // continue de fonctionner.
-        $this->Auth->allow(['display']);
-        $this->Auth->allow(['view', 'index', 'edit']);
+        $this->Auth->allow(['display', 'changeLang', 'view', 'index', 'edit', 'confirm']);
+        I18n::Locale($this->request->session()->read('Config.language'));
     }
 
+
+
+    public function changeLang($lang = 'en_US') {
+        $this->request->session()->write('Config.language', $lang);
+        return $this->redirect($this->request->referer());
+    }
+
+
+
+    public function beforeFilter(Event $event)
+    {
+        $lang = $this->request->session()->read('Config.language');
+        if (empty($lang)) {
+            return;
+        }
+
+        I18n::locale($lang);
+    }
 
    public function isAuthorized($user)
 {
